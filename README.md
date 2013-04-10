@@ -11,7 +11,7 @@ Using Git
 4. After you make changes, "add" them to the list of things to be committed: ```git add .```
 5. Then "commit" them locally: ```git commit -am "My Commit Messge."```
 6. You will need a GitHub account for the next step, and access to the project (Kevin can do that).
-7. Commit only commits locally, you must now "push" your changes back to GitHub: ```git push```
+7. Commit only commits to your local repository, you must now "push" your changes back to GitHub: ```git push```
 
 
 If all else fails, grab the [zip](https://github.com/iteam-msse/busbuddy/archive/master.zip), edit, and we can commit your changes for you.
