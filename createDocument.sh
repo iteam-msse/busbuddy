@@ -1,5 +1,5 @@
-rm -rf target/doxygen
-mkdir target/doxygen
+#rm -rf target/doxygen
+#mkdir target/doxygen
 doxygen
 cd target/doxygen/latex
 make
