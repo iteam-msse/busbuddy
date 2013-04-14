@@ -1,6 +1,7 @@
 package edu.umn.msse.busbuddy.transit;
 
 import java.util.Collection;
+import java.util.Set;
 
 /**
  * The Interface RouteRepository.
@@ -20,6 +21,8 @@ public interface RouteRepository {
 	 * @param route the route
 	 */
 	public void save(Route route);
+	
+	public void save(Set<Route> routes);
 
 	/**
 	 * Read.
