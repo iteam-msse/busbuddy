@@ -1,12 +1,16 @@
 package edu.umn.msse.busbuddy.tracking;
 
 public class TrackingService implements ITrackingService {
-	
-	public void getVehicleLocation() {
+
+	public void AddTransitVehicle() {
 		
 	}
-	
-	public void getVheicleAlerts() {
+
+	public void getTransitVehicleLocation() {
+		
+	}
+
+	public void getTransitVehicleAlerts() {
 		
 	}
 
