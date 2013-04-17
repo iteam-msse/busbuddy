@@ -3,7 +3,7 @@ package edu.umn.msse.busbuddy.transit;
 /**
  * The Class ITeamRestTripService.
  */
-public class ITeamRestTripService implements TripService {
+public class ITeamRESTTripService implements TripService {
 
 	/* (non-Javadoc)
 	 * @see edu.umn.msse.busbuddy.transit.TripService#calculateTrip(edu.umn.msse.busbuddy.transit.Location, edu.umn.msse.busbuddy.transit.Location)
