@@ -1,5 +1,7 @@
 package edu.umn.msse.busbuddy.tracking;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class TrackingServiceController {
@@ -12,10 +14,14 @@ public class TrackingServiceController {
 	public static void main(String[] args) {
 		
 		TransitVehicleFactory transitFactory = new TransitVehicleFactory();
-		char type = 'B';
-		String url = "rpt.com/route12/bus/740";
+		URL url = null;
+		try {
+			url = new URL("http://rpt.com/route12/bus/740");
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
 		int vehicleNum = 740;
-		TransitVehicle tv = transitFactory.createTransitVehicle(type, url, vehicleNum);
+		TransitVehicle tv = transitFactory.createTransitVehicle(url, vehicleNum);
 	}
 	
 	public void registerVehicleOnRoute(char type, String url, int vehicleNum) {} 
@@ -25,6 +31,10 @@ public class TrackingServiceController {
 		if (tv != null) {
 			vehicleList.add(tv);
 		}
+		
+	}
+	
+	public void addUserTrackingAlert() {
 		
 	}
 

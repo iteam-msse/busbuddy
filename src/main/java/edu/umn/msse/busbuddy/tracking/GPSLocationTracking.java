@@ -18,7 +18,7 @@ public interface GPSLocationTracking {
 	 */
 	public void unregisterGPSDevice(GPSLocationObserver gpsObs);
 	/**
-	 * pollGPSDevice - continuously poll registered GPSDevices for location updates
+	 * pollGPSDevice - continuously poll registered GPS Devices for location updates
 	 */
 	public void pollGPSDevice();
 

@@ -9,8 +9,10 @@ public class TrackingService implements ITrackingService {
 	public void getTransitVehicleLocation() {
 		
 	}
+	
+	public void getTransitVehicleAlerts() { }
 
-	public void getTransitVehicleAlerts() {
+	public void createTrackingAlert(AlertType type) {
 		
 	}
 

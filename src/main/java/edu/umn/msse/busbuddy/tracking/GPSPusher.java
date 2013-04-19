@@ -7,28 +7,28 @@ import java.util.ArrayList;
  * from outside commercial tracking services.
  *
  */
-public class CommercialTracking implements GPSLocationTracking {
+public class GPSPusher implements GPSLocationTracking {
 	
 	private ArrayList<GPSLocationObserver> gpsObserver; /**< Array list of GPS devices registered for updates*/
 	
 	/**
-	 * Only need one Commercial Tracking Service running to track by polling all registered GPS devices.
+	 * Only need one GPS Pusher Service running to track by polling all registered GPS devices.
 	 * Constructor, creates ArrayList<{@link GPSLocationObserver}> to hold registered observers.
 	 */
-	private CommercialTracking () {
+	private GPSPusher () {
 		gpsObserver = new ArrayList<GPSLocationObserver>();
 	}
 	
     /**
-	 * Commercial Tracking Holder is loaded on the first execution of CommercialTracking.getInstance() 
-	 * or the first access to CommercialTracking.INSTANCE, not before (lazy instantiation).
+	 * GPS Pusher Holder is loaded on the first execution of GPSPusher.getInstance() 
+	 * or the first access to GPSPusher.INSTANCE, not before (lazy instantiation).
 	 */
-	private static class CommercialTrackingHolder { 
-	    public static final CommercialTracking INSTANCE = new CommercialTracking();
+	private static class GPSPusherHolder { 
+	    public static final GPSPusher INSTANCE = new GPSPusher();
 	}
 
-	public static CommercialTracking getInstance() {
-		return CommercialTrackingHolder.INSTANCE;
+	public static GPSPusher getInstance() {
+		return GPSPusherHolder.INSTANCE;
 	}
 	
 	/**
