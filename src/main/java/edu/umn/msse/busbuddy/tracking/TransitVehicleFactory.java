@@ -1,27 +1,20 @@
 package edu.umn.msse.busbuddy.tracking;
 
+import java.net.URL;
+
 public class TransitVehicleFactory extends ATransitVehicleFactory {
 	
-	public TransitVehicle createTransitVehicle(char type, String url, int vehicle) {
+	public TransitVehicle createTransitVehicle(URL url, int vehicle) {
 		
-		getVehicleGPSDeviceID(type, url);
-		
-		TransitVehicle tv = null;
-		
-		switch (type) {
-		case 'B':
-			tv = new BusVehicle();
-			break;
+		getVehicleGPSDeviceID(url);
 
-		}
-		
-		return tv;
+	    return new BusVehicle();
+
 	}
 	/**
 	 * Retrieve the GPS Device ID from repository of vehicles registered for route identified by type and URL.
-	 * @param type
-	 * @param url
+	 * @param url - URL identifying the transit company
 	 * @return integer GPS Device ID
 	 */
-	protected int getVehicleGPSDeviceID(char type, String url) { return 2; } 
+	protected int getVehicleGPSDeviceID(URL url) { return 2; } 
 }
