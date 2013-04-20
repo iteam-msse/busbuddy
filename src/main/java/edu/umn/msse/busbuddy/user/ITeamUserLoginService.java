@@ -2,34 +2,37 @@ package edu.umn.msse.busbuddy.user;
 
 public class ITeamUserLoginService implements UserLoginService {
 	@Override
-	public User createUser(User userToCreate, String password) {
+	public String login(String username, String password) {
+		return "SESSION_TOKEN";
+	}
+
+	@Override
+	public void logout(String sessionToken) {
+	}
+
+	@Override
+	public User getUser(String sessionToken) {
 		return new User();
 	}
 
 	@Override
-	public User findUserByUsername(String sessionToken, String username) {
-		return new User();
+	public String createAlertSession(String sessionToken) {
+		return "SESSION_TOKEN";
 	}
 
 	@Override
-	public User findUserByEmail(String sessionToken, String email) {
-		return new User();
+	public void sendUsername(String email) {
 	}
 
 	@Override
-	public User findUserByMobile(String sessionToken, short countryCode, String mobile) {
-		return new User();
+	public void sendUsername(short countryCode, String mobile) {
 	}
 
 	@Override
-	public void updateUser(String sessionToken, User newUserData, String password) {
+	public void resetPassword(String username, String email) {
 	}
 
 	@Override
-	public void deleteUser(String sessionToken, User userToDelete) {
-	}
-	
-	protected boolean checkPermissions(String sessionToken) {
-		return true;
+	public void resetPassword(String username, short countryCode, String mobile) {
 	}
 }
