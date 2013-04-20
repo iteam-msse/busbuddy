@@ -3,7 +3,7 @@ package edu.umn.msse.busbuddy.transit;
 import java.util.Set;
 
 /**
- * The Interface TransitFeed.
+ * TODO:
  */
 public interface TransitFeed {
 

@@ -3,7 +3,7 @@ package edu.umn.msse.busbuddy.transit;
 import java.net.URL;
 
 /**
- * The Class TransitInfo.
+ * TODO:
  */
 public class TransitInfo {
 

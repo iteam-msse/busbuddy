@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.Set;
 
+import edu.umn.msse.busbuddy.common.Specification;
+
 /**
  * A Template Method pattern to allow for the import of data from different
  * {@link TransitProvider}s in potentially different formats.
@@ -21,19 +23,29 @@ import java.util.Set;
  */
 public abstract class AbstractFeedParserTemplate {
 	
-	/** The {@link RouteRepository} dependency allows for the persistence of the
+	/** 
+	 * The {@link RouteRepository} dependency allows for the persistence of the
 	 * parsed {@link Route}s. 
 	 */
 	private RouteRepository routeRepository;
+	
+	/** 
+	 * This {@link Specification} allows subclasses to validate {@link Route}s as
+	 * they are parsed. 
+	 */
+	private Specification<Route> routeSpecification;
 	
 	/**
 	 * The start method initiates the process and calls the appropriate methods in the
 	 * appropriate order.
 	 *
+	 * @throws InvalidRouteParseException if any of the parsed {@link Route}s
+	 * fail to validate via the given {@link #routeSpecification}.
+	 *
 	 * @param location The input data resource location. This may be a local file or a
 	 * remote resource.
 	 */
-	protected void start(URL location){
+	protected void start(URL location) throws InvalidRouteParseException {
 		InputStream input = this.loadFeed(location);
 		Set<Route> routes = this.parseFeed(input);
 		this.saveRoutes(routes);
@@ -62,6 +74,17 @@ public abstract class AbstractFeedParserTemplate {
 	protected abstract Set<Route> parseFeed(InputStream feed);
 	
 	/**
+	 * Allow subclasses to validate {@link Route}s as they are parsed. Subclasses
+	 * are encouraged to use this method
+	 *
+	 * @param route the route
+	 * @return true, if successful
+	 */
+	protected boolean validate(Route route){
+		return this.routeSpecification.isSatisfiedBy(route);
+	}
+	
+	/**
 	 * Save the {@link Route}s to the {@link RouteRepository}.
 	 *
 	 * @pre \paramname{routes} may be an empty Set, but must not be null.
@@ -71,4 +94,21 @@ public abstract class AbstractFeedParserTemplate {
 	protected void saveRoutes(Set<Route> routes){
 		this.routeRepository.save(routes);
 	}
+
+	public RouteRepository getRouteRepository() {
+		return routeRepository;
+	}
+
+	public void setRouteRepository(RouteRepository routeRepository) {
+		this.routeRepository = routeRepository;
+	}
+
+	public Specification<Route> getRouteSpecification() {
+		return routeSpecification;
+	}
+
+	public void setRouteSpecification(Specification<Route> routeSpecification) {
+		this.routeSpecification = routeSpecification;
+	}
+
 }
