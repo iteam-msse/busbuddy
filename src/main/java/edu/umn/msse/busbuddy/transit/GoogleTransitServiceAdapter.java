@@ -1,13 +1,12 @@
 package edu.umn.msse.busbuddy.transit;
 
-import java.net.URL;
 import java.util.Set;
 
 /**
  * An Adapter Class to allow a {@GoogleTransitServiceAPI} service to appear as
  * a {@link TransitService}.
  */
-public class GoogleTransitServiceAdapter implements TransitService {
+public class GoogleTransitServiceAdapter implements TransitFeed {
 
 	/** 
 	 * The {@GoogleTransitServiceAPI} to adapt as a {@link TransitService}.
@@ -31,17 +30,7 @@ public class GoogleTransitServiceAdapter implements TransitService {
 	}
 
 	@Override
-	public Set<Route> getRoutes(Location pickup, int distance) {
-		throw new UnsupportedOperationException();
-	}
-
-	@Override
-	public TransitInfo getTransitlnfo() {
-		throw new UnsupportedOperationException();
-	}
-
-	@Override
-	public URL getServiceURL() {
+	public Set<Route> getRoutes(Location pickup, Location dropoff, int distance) {
 		throw new UnsupportedOperationException();
 	}
 

@@ -1,6 +1,9 @@
 package edu.umn.msse.busbuddy.transit;
 
 import java.util.List;
+import java.util.Set;
+
+import edu.umn.msse.busbuddy.tracking.TransitVehicle;
 
 /**
  * A Route is a {@link TransitVehicle} path of travel, or a "Line," as referred to
@@ -32,6 +35,13 @@ public class Route {
 	 */
 	private List<Stop> stops;
 
+	/**
+	 * A set of {@link Detour}s, or disruptions in Route availability and/or
+	 * {@link Stop} schedule. These {@link Detour}s represent disruptions
+	 * that are current at the time of retrieval of this Route.
+	 */
+	private Set<Detour> detours;
+	
 	public List<Stop> getStops() {
 		return stops;
 	}
@@ -54,6 +64,14 @@ public class Route {
 
 	public void setRouteName(String routeName) {
 		this.routeName = routeName;
+	}
+
+	public Set<Detour> getDetours() {
+		return detours;
+	}
+
+	public void setDetours(Set<Detour> detours) {
+		this.detours = detours;
 	}
 
 }
