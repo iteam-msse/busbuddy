@@ -1,30 +1,40 @@
 package edu.umn.msse.busbuddy.transit;
 
 /**
- * The Class Location.
+ * An immutable Value Object representing a physical point on the
+ * geographic coordinate system. 
  */
 public class Location {
 
-	/** The latitude. */
+	/** 
+	 * The latitude of the point. 
+	 */
 	private double latitude;
 	
-	/** The longitude. */
+	/** 
+	 * The longitude of the point. 
+	 */
 	private double longitude;
+
+	/**
+	 * Instantiates a new immutable Location with
+	 * the given latitude and longitude.
+	 *
+	 * @param latitude The point latitude
+	 * @param longitude The point longitude
+	 */
+	public Location(double latitude, double longitude) {
+		super();
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
 
 	public double getLatitude() {
 		return latitude;
 	}
 
-	public void setLatitude(double latitude) {
-		this.latitude = latitude;
-	}
-	
 	public double getLongitude() {
 		return longitude;
 	}
 	
-	public void setLongitude(double longitude) {
-		this.longitude = longitude;
-	}
-
 }

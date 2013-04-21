@@ -7,7 +7,7 @@ public class TrackingLocationAlert extends TrackingAlertObserver {
 	 * @param vehicle {@link TransitVehicle} Vehicle to add alert monitoring
 	 * @param alert - {@link TrackingAlert} User contact details and vehicle location indicating when user wants to receive alert.
 	 */
-	public TrackingLocationAlert(TransitVehicle vehicle, TrackingAlert userAlertInfo) {
+	public TrackingLocationAlert(TransitVehicle vehicle) {
 		vehicle.registerTrackingAlert(this);
 	}
 	

@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * from outside commercial tracking services.
  *
  */
-public class CommercialTracking implements GPSLocationTracking {
+public class CommercialTracking extends GPSLocationTracking {
 	
 	private ArrayList<GPSLocationObserver> gpsObserver; /**< Array list of GPS devices registered for updates*/
 	

@@ -4,15 +4,25 @@ import java.util.ArrayList;
 
 public class BusVehicle extends TransitVehicle {
 	
-	private ArrayList<TrackingAlertObserver> alertList;
+	private ArrayList<TrackingAlertObserver> alertList; /**< List of alerts registered for this vehicle. Note alerts may be tracking or delay alerts */
 
+	/**
+	 * Constructor for bus type vehicles, perform any initializations unique to buses. 
+	 */
 	public BusVehicle() {
-		GPSLocationTracking gpsLocationServer = CommercialTracking.getInstance();
-		GPSVehicleTracker gpsTracker = new GPSVehicleTracker(gpsLocationServer);
-		gpsLocationServer.registerGPSDevice(gpsTracker);
+
 	}
 
+	/**
+	 * Register any user alerts for this vehicle.
+	 */
 	public void registerTrackingAlert(TrackingAlertObserver ao) {}
+	/**
+	 * Unregister any user alert currently tracking this bus.
+	 */
 	public void unregisterTrackingAlert(TrackingAlertObserver ao) {}
-	public void triggerAlert() {} 
+	/**
+	 * When the bus GPS position is updated, determine if any user alerts need to be sent.
+	 */
+	public void checkForAlerts() {} 
 }

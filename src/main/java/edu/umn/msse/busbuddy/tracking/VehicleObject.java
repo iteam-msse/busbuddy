@@ -1,41 +1,37 @@
 package edu.umn.msse.busbuddy.tracking;
-
+/**
+ * Value Object containing vehicle information obtained when the user registers a vehicle using the user interface.
+ *
+ */
 public class VehicleObject {
 	
-	private int gpsDeviceID;
-	private int gpsDeviceType;
-	private int vehicleType;
-	private String transitCoURL;
-	private int currentRoute;
+	private int gpsDeviceID;        /**< GPS hardware device ID */
+	private String gpsDeviceInfo;   /**< GPS device contact information, commercial web URL, GPS wireless connection or port number */
+	private String transitCoURL;    /**< Transit company operating this vehicle */
+	private int currentRoute;       /**< Current route number */
 	
-	public int getGpsDeviceID() {
+	public int getGPSDeviceID() {
 		return gpsDeviceID;
 	}
-	public void setGpsDeviceID(int gpsDeviceID) {
+	protected void setGPSDeviceID(int gpsDeviceID) {
 		this.gpsDeviceID = gpsDeviceID;
 	}
-	public int getGpsDeviceType() {
-		return gpsDeviceType;
+	public String getGPSDeviceInfo() {
+		return gpsDeviceInfo;
 	}
-	public void setGpsDeviceType(int gpsDeviceType) {
-		this.gpsDeviceType = gpsDeviceType;
-	}
-	public int getVehicleType() {
-		return vehicleType;
-	}
-	public void setVehicleType(int vehicleType) {
-		this.vehicleType = vehicleType;
+	protected void setGPSDeviceInfo(String gpsDeviceInfo) {
+		this.gpsDeviceInfo = gpsDeviceInfo;
 	}
 	public String getTransitCoURL() {
 		return transitCoURL;
 	}
-	public void setTransitCoURL(String transitCoURL) {
+	protected void setTransitCoURL(String transitCoURL) {
 		this.transitCoURL = transitCoURL;
 	}
 	public int getCurrentRoute() {
 		return currentRoute;
 	}
-	public void setCurrentRoute(int currentRoute) {
+	protected void setCurrentRoute(int currentRoute) {
 		this.currentRoute = currentRoute;
 	}
 

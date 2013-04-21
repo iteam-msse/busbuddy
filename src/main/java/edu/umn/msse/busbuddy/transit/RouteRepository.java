@@ -4,37 +4,62 @@ import java.util.Collection;
 import java.util.Set;
 
 /**
- * The Interface RouteRepository.
+ * A Repository Pattern supporting lifecycle operations of {@link Route}s,
+ * such as Read, Save, Delete, and Query functionality.
  */
 public interface RouteRepository {
 	
 	/**
-	 * Delete.
+	 * Deletes the {@link Route} corresponding to the given \paramname{routeId}.
+	 * 
+	 * @pre A {@link Route} with the given \paramname{routeId}
+	 * exists in the Repository.
+	 * @post A {@link Route} with the given \paramname{routeId} is removed
+	 * from the Repository and is no longer available for retrieval.
 	 *
-	 * @param routId the rout id
+	 * @param routeId
 	 */
-	public void delete(String routId);
+	public void delete(String routeId);
 	
 	/**
-	 * Save.
+	 * Saves the {@link Route} to the Repository.
 	 *
-	 * @param route the route
+	 * @pre The {@link Route} has been validated with all appropriate
+	 * business rules. @see RouteSpecification
+	 * @post The {@link Route} is available for retrieval by id and
+	 * also by appropriate Queries.
+	 * 
+	 * @param route The {@link Route} to save.
 	 */
 	public void save(Route route);
 	
+	/**
+	 * Saves all of the {@link Route}s to the Repository.
+	 *
+	 * @pre The {@link Route}s have been validated with all appropriate
+	 * business rules. @see RouteSpecification
+	 * @post The {@link Routes} are available for retrieval by id and
+	 * also by appropriate Queries.
+	 * 
+	 * @param route The {@link Route} to save.
+	 */
 	public void save(Set<Route> routes);
 
 	/**
-	 * Read.
+	 * Read a single {@link Route} from the Repository by its identifier.
+	 * 
+	 * If no {@link Route} is found with the requested \paramname{routeId},
+	 * a null value is returned.
 	 *
-	 * @param routId the rout id
+	 * @param routeId The identifier of the requested {@link Route}
+	 * @return The requested {@link Route}
 	 */
-	public void read(String routId);
+	public Route read(String routeId);
 
 	/**
-	 * Gets the all.
+	 * Retrieves all available {@link Route}s in the Repository.
 	 *
-	 * @return the all
+	 * @return All available {@link Route}s.
 	 */
 	public Collection<Route> getAll();
 
