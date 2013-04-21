@@ -53,6 +53,26 @@ public interface UserLoginService {
 	 */
 	User getUser(String sessionToken) throws BusBuddyException;
 
+	/**
+	 * This method creates a new session to be used by an alert. Since creation of an alert requires an active user
+	 * session, this takes an active sessionToken as a parameter. It will then create a new alert session for the same
+	 * user as the active session. This "alert session" will be long-lived, so it won't expire like the main session.
+	 * This will allow the Alert module to use this sessionToken when the alert executes.
+	 * 
+	 * @pre The session token must be linked to an active and valid session, which must be linked to an active account.
+	 * @post The returned session token points to a valid alert session for this user, which will not expire. The base
+	 *       session's expiration time will be advanced based on this activity against the session.
+	 * @param sessionToken
+	 *            The session token identifying the session that is creating the new alert session.
+	 * @return Session token representing the new alert seession.
+	 * @throws BusBuddyBadRequestException
+	 *             This exception is thrown if the session token blank.
+	 * @throws BusBuddyForbiddenException
+	 *             This exception is thrown if the session token is invalid, linked to an expired session, or the user
+	 *             does not have permission to be signed in.
+	 * @throws BusBuddyInternalException
+	 *             This exception is thrown if an internal error prevents processing of the request.
+	 */
 	String createAlertSession(String sessionToken) throws BusBuddyException;
 
 	void sendUsername(String email) throws BusBuddyException;

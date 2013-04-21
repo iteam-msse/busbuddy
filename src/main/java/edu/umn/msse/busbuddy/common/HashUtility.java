@@ -2,9 +2,6 @@ package edu.umn.msse.busbuddy.common;
 
 /**
  * This is a utility class to handle secure hashes.
- * 
- * @author jawitthuhn
- * 
  */
 public class HashUtility {
 	private HashUtility() {
