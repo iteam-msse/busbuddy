@@ -19,7 +19,7 @@ class Session {
 
 	/**
 	 * Create a new session object. It is not visible to clients, as User objects should only be constructed through the
-	 * {@link UserRespository}. The parameters taken by the constructor cannot be changed once the session is created.
+	 * {@link UserRepository}. The parameters taken by the constructor cannot be changed once the session is created.
 	 * 
 	 * @param sessionToken
 	 *            unique session token

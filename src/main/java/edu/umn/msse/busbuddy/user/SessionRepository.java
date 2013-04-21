@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import edu.umn.msse.busbuddy.common.BusBuddyForbiddenException;
 import edu.umn.msse.busbuddy.common.BusBuddyInternalException;
+import edu.umn.msse.busbuddy.common.BusBuddyNotFoundException;
 
 /**
  * This class is responsible for handling database access for Sessions, and to construct, persist, and retrieve
@@ -46,10 +47,10 @@ public class SessionRepository {
 	 * will update the expiration date on the session.
 	 * 
 	 * @pre The sessionToken parameter must be a valid session identifier in the database.
-	 * @post The session's expiration date will have been pusehd back due to this activity in the session.
+	 * @post The session's expiration date will have been pushed back due to this activity in the session.
 	 * @param sessionToken
 	 *            This is the session token that identifies the session.
-	 * @return Session object represented by the session token that was pssed in.
+	 * @return Session object represented by the session token that was passed in.
 	 * @throws BusBuddyInternalException
 	 *             This exception is thrown when there is a database error.
 	 * @throws BusBuddyForbiddenException
@@ -67,8 +68,20 @@ public class SessionRepository {
 		return session;
 	}
 
-	void killSession(Session sessionToken) {
-
+	/**
+	 * This method invalidates a session in the database.
+	 * 
+	 * @pre The sessionToken parameter must be a valid session identifier in the database.
+	 * @post The session will be invalidated and future calls using that sessionToken will fail.
+	 * @param sessionToken
+	 *            This is the session token that identifies the session.
+	 * @throws BusBuddyInternalException
+	 *             This exception is thrown when there is a database error.
+	 * @throws BusBuddyNotFoundException
+	 *             This exception is thrown if the session token is invalid.
+	 */
+	void killSession(String sessionToken) throws BusBuddyInternalException, BusBuddyNotFoundException {
+		/* TODO */
 	}
 
 	void killAllSessions(String userId) {

@@ -53,11 +53,41 @@ class UserRepository {
 		return user;
 	}
 
-	User getUserByEmail(String email) {
+	/**
+	 * This method attempts to retrieve a user by e-mail address. It is not case sensitive. The method will take an
+	 * e-mail address, read the details from the database, and construct a user object with the given details.
+	 * 
+	 * @pre A user with the supplied e-mail address exists within the database.
+	 * @post A user will be returned whose e-mail address matches the supplied e-mail address parameter.
+	 * @param email
+	 *            This is the e-mail address to look up.
+	 * @return The user with the given e-mail address.
+	 * @throws BusBuddyInternalException
+	 *             This exception is thrown when there is a database error.
+	 * @throws BusBuddyNotFoundException
+	 *             This exception is thrown when the requested user record could not be found.
+	 */
+	User getUserByEmail(String email) throws BusBuddyInternalException, BusBuddyNotFoundException {
 		return new User(1, email);
 	}
 
-	User getUserByMobile(short countryCode, String mobile) {
+	/**
+	 * This method attempts to retrieve a user by mobile phone number. The method will take a mobile phone number, read
+	 * the details from the database, and construct a user object with the given details.
+	 * 
+	 * @pre A user with the supplied mobile phone number exists within the database.
+	 * @post A user will be returned whose mobile phone details match the supplied parameters.
+	 * @param countryCode
+	 *            This is the country code of the user's mobile phone number.
+	 * @param mobile
+	 *            This is the remainder of the user's mobile phone numer. This string should consist entirely of digits.
+	 * @return The user with the given mobile phone details.
+	 * @throws BusBuddyInternalException
+	 *             This exception is thrown when there is a database error.
+	 * @throws BusBuddyNotFoundException
+	 *             This exception is thrown when the requested user record could not be found.
+	 */
+	User getUserByMobile(short countryCode, String mobile) throws BusBuddyInternalException, BusBuddyNotFoundException {
 		return new User(1, mobile);
 	}
 

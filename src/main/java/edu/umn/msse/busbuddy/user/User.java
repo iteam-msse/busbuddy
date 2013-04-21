@@ -19,7 +19,7 @@ public class User {
 
 	/**
 	 * This constructs a new User object.  It is not visible to clients, as User objects should only be constructed
-	 * through the {@link UserRespository}.
+	 * through the {@link UserRepository}.
 	 * @param userId This is the user's unique identifier, which should match the database.
 	 * @param username This is the user's username.  It cannot be changed.
 	 */

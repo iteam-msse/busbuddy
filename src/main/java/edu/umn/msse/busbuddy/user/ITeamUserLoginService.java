@@ -8,6 +8,7 @@ import edu.umn.msse.busbuddy.common.BusBuddyException;
 import edu.umn.msse.busbuddy.common.BusBuddyForbiddenException;
 import edu.umn.msse.busbuddy.common.BusBuddyNotFoundException;
 import edu.umn.msse.busbuddy.common.HashUtility;
+import edu.umn.msse.busbuddy.common.MessageDeliveryUtility;
 
 /**
  * This is the iTeam's implementation of {@link UserLoginService}.
@@ -50,8 +51,16 @@ public class ITeamUserLoginService implements UserLoginService {
 		return session.getSessionToken();
 	}
 
+	/**
+	 * @see UserLoginService.logout 
+	 */
 	@Override
-	public void logout(String sessionToken) {
+	public void logout(String sessionToken) throws BusBuddyException {
+		if (sessionToken == null || sessionToken.length() == 0) {
+			throw new BusBuddyBadRequestException();
+		}
+
+		this.sessionRepository.killSession(sessionToken);
 	}
 
 	/**
@@ -84,12 +93,43 @@ public class ITeamUserLoginService implements UserLoginService {
 		return session.getSessionToken();
 	}
 
+	/**
+	 * @see UserLoginService.sendUsername(String) 
+	 */
 	@Override
-	public void sendUsername(String email) {
+	public void sendUsername(String email) throws BusBuddyException {
+		if (email == null || !email.contains("@")) {
+			throw new BusBuddyBadRequestException();
+		}
+		
+		User user = this.userRepository.getUserByEmail(email);
+		
+		UserType userType = user.getUserType();
+		if (userType != UserType.NORMAL_USER && userType != UserType.SYSTEM_ADMINISTRATOR) {
+			throw new BusBuddyForbiddenException();
+		}
+		
+		MessageDeliveryUtility.sendEmail(email, "busbuddy@msse.umn.edu", "Your Username", user.getUsername());
 	}
 
+	/**
+	 * @see UserLoginService.sendUsername(short, String) 
+	 */
 	@Override
-	public void sendUsername(short countryCode, String mobile) {
+	public void sendUsername(short countryCode, String mobile) throws BusBuddyException {
+		if (mobile == null) {
+			/* TODO: Also if non numeric mobile. */
+			throw new BusBuddyBadRequestException();
+		}
+		
+		User user = this.userRepository.getUserByMobile(countryCode, mobile);
+		
+		UserType userType = user.getUserType();
+		if (userType != UserType.NORMAL_USER && userType != UserType.SYSTEM_ADMINISTRATOR) {
+			throw new BusBuddyForbiddenException();
+		}
+
+		MessageDeliveryUtility.sendSms(countryCode, mobile, user.getUsername());
 	}
 
 	@Override
