@@ -64,12 +64,24 @@ public class ITeamUserLoginService implements UserLoginService {
 		}
 
 		Session session = this.sessionRepository.getSession(sessionToken);
-		return this.userRepository.getUserById(session.getUserId());
+		User user =  this.userRepository.getUserById(session.getUserId());
+		
+		UserType userType = user.getUserType();
+		if (userType != UserType.NORMAL_USER && userType != UserType.SYSTEM_ADMINISTRATOR) {
+			throw new BusBuddyForbiddenException();
+		}
+		
+		return user;
 	}
 
+	/**
+	 * @see UserLoginService.createAlertSession 
+	 */
 	@Override
-	public String createAlertSession(String sessionToken) {
-		return "SESSION_TOKEN";
+	public String createAlertSession(String sessionToken) throws BusBuddyException {
+		User user = this.getUser(sessionToken);
+		Session session = this.sessionRepository.createSession(user, true);
+		return session.getSessionToken();
 	}
 
 	@Override
