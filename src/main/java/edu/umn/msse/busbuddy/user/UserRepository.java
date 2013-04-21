@@ -15,7 +15,21 @@ class UserRepository {
 		return new User(1, username);
 	}
 
-	User getUserById(int userId) {
+	/**
+	 * This method attempts to retrieve a user by id number. The method will take a user id, read the details from the
+	 * database, and construct a user object with the given details.
+	 * 
+	 * @pre A user with the supplied user id exists within the database.
+	 * @post A user will be returned whose user id matches the supplied userId parameter.
+	 * @param userId
+	 *            This is the user ID to look up.
+	 * @return The user with the given ID.
+	 * @throws BusBuddyInternalException
+	 *             This exception is thrown when there is a database error.
+	 * @throws BusBuddyNotFoundException
+	 *             This exception is thrown when the requested user record could not be found.
+	 */
+	User getUserById(int userId) throws BusBuddyInternalException, BusBuddyNotFoundException {
 		return new User(userId, String.valueOf(userId));
 	}
 
@@ -23,10 +37,11 @@ class UserRepository {
 	 * This method attempts to retrieve a user by username. It is not case sensitive. The method will take a username,
 	 * read the details from the database, and construct a user object with the given details.
 	 * 
+	 * @pre A user with the supplied username exists within the database.
+	 * @post A user will be returned whose username matches the supplied username parameter.
 	 * @param username
 	 *            This is the username to look up.
 	 * @return The user with the given username.
-	 * @post A user will be returned whose username matches the supplied username parameter.
 	 * @throws BusBuddyInternalException
 	 *             This exception is thrown when there is a database error.
 	 * @throws BusBuddyNotFoundException

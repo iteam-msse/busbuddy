@@ -54,9 +54,17 @@ public class ITeamUserLoginService implements UserLoginService {
 	public void logout(String sessionToken) {
 	}
 
+	/**
+	 * @see UserLoginService.getUser 
+	 */
 	@Override
-	public User getUser(String sessionToken) {
-		return new User(1, sessionToken);
+	public User getUser(String sessionToken) throws BusBuddyException {
+		if (sessionToken == null || sessionToken.length() == 0) {
+			throw new BusBuddyBadRequestException();
+		}
+
+		Session session = this.sessionRepository.getSession(sessionToken);
+		return this.userRepository.getUserById(session.getUserId());
 	}
 
 	@Override
