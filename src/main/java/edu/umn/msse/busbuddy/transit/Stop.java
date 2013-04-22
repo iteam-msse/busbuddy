@@ -17,7 +17,16 @@ import edu.umn.msse.busbuddy.tracking.TransitVehicle;
 public class Stop {
 	
 	/**
+	 * A short text-based description of describing the Stop and its location.
 	 * 
+	 * This could be an intersection: 
+	 * 	- "18th Ave and 58th St."
+	 * or a landmark/park/attraction:
+	 *  - "Como Zoo North Entrance"
+	 * or other identifying text.
+	 * 
+	 * This description should be sufficient enough to allow a user to to find
+	 * the given Stop without necessarily needing the {@link Location} information.
 	 */
 	private String description;
 	
