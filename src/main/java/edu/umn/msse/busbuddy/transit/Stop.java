@@ -17,6 +17,11 @@ import edu.umn.msse.busbuddy.tracking.TransitVehicle;
 public class Stop {
 	
 	/**
+	 * 
+	 */
+	private String description;
+	
+	/**
 	 * The physical location of the Stop.
 	 */
 	private Location location;
@@ -46,6 +51,14 @@ public class Stop {
 
 	public void setLocation(Location location) {
 		this.location = location;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 }
