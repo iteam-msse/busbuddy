@@ -5,7 +5,7 @@ package edu.umn.msse.busbuddy.tracking;
  * The necessary values for an alert will be entered by a registered user from the BusBuddy User Interface.  See {@link UserTrackingAlertObject} for input parameter details.
  *
  */
-public class AlertFactory {
+public class TrackingAlertFactory {
 
 	/***
 	 * Create an alert for a registered user.  The factory determines what type of an alert to create based on user inputs.
@@ -23,7 +23,7 @@ public class AlertFactory {
 		 * 2. Determine what rules are needed and add an Alert Specification to this alert.  
 		 *    Configuration for alert logic will be obtained based on a configuration file.
 		 */
-		alert.setSpec(new AlertZoneLogic());
+		alert.setSpec(new AlertRangeLogic());
 		
 		return alert;
 		

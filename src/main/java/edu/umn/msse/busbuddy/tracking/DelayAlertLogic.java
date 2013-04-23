@@ -1,6 +1,5 @@
 package edu.umn.msse.busbuddy.tracking;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 import edu.umn.msse.busbuddy.transit.Location;
@@ -12,11 +11,11 @@ import edu.umn.msse.busbuddy.transit.Location;
 public class DelayAlertLogic implements AlertSpecification {
 
 	/**
-	 * Implements Subject {@link GPS Location Tracking} for retrieving GPS location updates 
+	 * Implements Subject {@link GPSLocationTracking} for retrieving GPS location updates 
 	 * from outside commercial tracking services.
 	 *
 	 */
-	public boolean inAlertZone(Date lastUpdateTime, Location vehicleLocation) {
+	public boolean inAlertRange(Date lastUpdateTime, Location vehicleLocation) {
 		return false;
 	}
 

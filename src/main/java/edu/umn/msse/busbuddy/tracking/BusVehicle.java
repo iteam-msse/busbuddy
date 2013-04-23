@@ -1,7 +1,10 @@
 package edu.umn.msse.busbuddy.tracking;
 
 import java.util.ArrayList;
-
+/**
+ * Bus Vehicle is a concrete implementation of the abstract Transit Vehicle.  Contains data and functionality specific to buses.
+ *
+ */
 public class BusVehicle extends TransitVehicle {
 	
 	private ArrayList<TrackingAlertObserver> alertList; /**< List of alerts registered for this vehicle. Note alerts may be tracking or delay alerts */

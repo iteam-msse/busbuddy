@@ -4,12 +4,15 @@ import java.net.URL;
 import java.util.ArrayList;
 
 import edu.umn.msse.busbuddy.transit.Location;
-import edu.umn.msse.busbuddy.utility.UserTrackingAlertObject;
-
+/**
+ * Tracking service controller is the concrete implementation of the tracking service interface.
+ * Provides the tracking functionality to other Bus Buddy modules and ties vehicle location to registered user alerts.
+ *
+ */
 public class TrackingServiceController implements ITrackingService {
 	 
-	TransitVehicleFactory transitFactory = new TransitVehicleFactory();
-	AlertFactory alertFactory = new AlertFactory();                    
+	TransitVehicleFactory transitFactory = new TransitVehicleFactory(); /**< Logic for creating transit vehicles */
+	TrackingAlertFactory alertFactory = new TrackingAlertFactory();                     /**< Logic for creating new user alerts */               
 	
 	/**
 	 * Create a vehicle when a user registers a vehicle on a route through the user interface.
@@ -33,7 +36,7 @@ public class TrackingServiceController implements ITrackingService {
 		 * 1. Verify that there is a vehicle registered on the routed requested by the user.
 		 * 2. Get a list of vehicles on the route from the vehicle repository 
 		 * 3. Create a new Tracking Alert Observer
-		 * 4. Add an alert specification containing the business rules to determine if bus is in alert zone.
+		 * 4. Add an alert specification containing the business rules to determine if bus is in alert range.
 		 * 5. Register the user alert observer to the vehicles
 		 */
 		

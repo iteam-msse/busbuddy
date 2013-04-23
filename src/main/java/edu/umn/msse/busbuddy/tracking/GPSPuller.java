@@ -2,7 +2,7 @@ package edu.umn.msse.busbuddy.tracking;
 
 import java.util.ArrayList;
 /**
- * GPS Puller is a concrete implementation of GPS Location tracker for obtaining coordinates directly from a GPS device installed in a registered vehicle.
+ * GPS Puller is a concrete implementation of {@link GPSLocationTracking} for obtaining coordinates directly from a GPS device installed in a registered vehicle.
  * GPS Puller is implemented as a singleton to limit the number of system resources consumed. 
  * GPS Puller uses the system infrastructure to establish a wireless network connection to the physical GPS device and retrieve update coordinates.
  * The necessary information to contact the device is provided through the user interface when a vehicle is registered to a route.

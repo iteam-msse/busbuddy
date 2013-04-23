@@ -11,7 +11,12 @@ import edu.umn.msse.busbuddy.transit.Location;
  *
  */
 public interface AlertSpecification {
-	
-	public boolean inAlertZone(Date lastUpdateTime, Location vehicleLocation);
+	/**
+	 * Compare GPS location and time with alert information to determine if vehicle is within range of a stop and user(s) need to be notified.
+	 * @param lastUpdateTime - Time GPS information was last updated
+	 * @param vehicleLocation - Latest GPS coordinates obtained from a vehicle
+	 * @return true if vehicle is in alert range, false if vehicle is not in alert range
+	 */
+	public boolean inAlertRange(Date lastUpdateTime, Location vehicleLocation);
 
 }

@@ -21,10 +21,19 @@ public abstract class GPSLocationObserver {
 	 */
 	public abstract void gpsUpdate(int gpsID, Location newLocation);
 
+	/**
+	 * Return current GPS location received from a vehicle. 
+	 * This is the state of the observer pattern.
+	 * @return - Location
+	 */
 	public Location getGPSLocation() {
 		return gpsLocation;
 	}
 
+	/**
+	 * Set the current GPS location of a vehicle (state).
+	 * @param gpsLocation - Location latest latitude and longitude of vehicle
+	 */
 	protected void setGPSLocation(Location gpsLocation) {
 		this.gpsLocation = gpsLocation;
 	}

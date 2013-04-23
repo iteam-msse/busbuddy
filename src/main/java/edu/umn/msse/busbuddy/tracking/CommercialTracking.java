@@ -3,7 +3,7 @@ package edu.umn.msse.busbuddy.tracking;
 import java.util.ArrayList;
 
 /**
- * Implements Subject {@link GPS Location Tracking} for retrieving GPS location updates 
+ * Implements Subject {@link GPSLocationTracking} for retrieving GPS location updates 
  * from outside commercial tracking services.
  *
  */
@@ -27,6 +27,10 @@ public class CommercialTracking extends GPSLocationTracking {
 	    public static final CommercialTracking INSTANCE = new CommercialTracking();
 	}
 
+	/**
+	 * Instantiates a single Commercial Tracking service to the caller.
+	 * @return - CommercialTracking instance
+	 */
 	public static CommercialTracking getInstance() {
 		return CommercialTrackingHolder.INSTANCE;
 	}

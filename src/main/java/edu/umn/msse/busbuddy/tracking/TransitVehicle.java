@@ -11,16 +11,16 @@ public abstract class TransitVehicle {
 	
 	private VehicleObject vehicle;                   /**< Value Object holding vehicle details */
     private GPSLocationObserver gpsObserver;         /**< Observer that update the GPS coordinates of the vehicle as they are received  */
-    private ArrayList<AlertSpecification> alertSpecification;  /**< Rules to determine if this vehicle is in an alert zone */
+    private ArrayList<AlertSpecification> alertSpecification;  /**< Rules to determine if this vehicle is in an alert range */
     
     /**
-     * Transit Vehicle is also the subject for tracking user subscribed alerts
+     * Transit Vehicle is also the subject for tracking user subscribed alerts.
      */
     public abstract void registerTrackingAlert(TrackingAlertObserver ao);
     public abstract void unregisterTrackingAlert(TrackingAlertObserver ao);
     /**
      * The Observer Pattern Subject notify method extended to limit the number of alerts issued by check conditions prior to actually triggering an alert.
-     * The checkForAlerts method uses {@link AlertSpecification} to determine if the observing vehicle should be notified. Calls {@link triggerAlert}.
+     * The checkForAlerts method uses {@link AlertSpecification} to determine if the observing vehicle should be notified.
      */
     public void checkForAlerts() { 
     	
@@ -34,8 +34,8 @@ public abstract class TransitVehicle {
     /**
      * Add an alert specification {@link AlertSpecification} to this vehicle.
      * A vehicle may have these alerts:
-     *     - one or more users registered for location based alerts
-     *     - transit company registered for delay alerts, or loss of GPS signal alerts
+     *     -# one or more users registered for location based alerts
+     *     -# transit company registered for delay alerts, or loss of GPS signal alerts
      */
     public void addAlertSpecification() {}
     /**
