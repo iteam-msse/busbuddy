@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['or',['or',['../interfacecommon_1_1_specification_3_01_t_01_4.html#a09080f76784aaa8384d4a948a110574e',1,'common::Specification&lt; T &gt;']]]
+];
