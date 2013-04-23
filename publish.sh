@@ -11,7 +11,7 @@ cp -r $tmpDir/* downloads/
 
 rm -rf $tmpDir
 
-#git add .
-#git commit -m "Updated documentation."
+git add .
+git commit -m "Updated documentation."
 
-#git checkout master
+git checkout master
