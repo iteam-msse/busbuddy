@@ -12,7 +12,7 @@ import edu.umn.msse.busbuddy.common.BaseController;
  * data via a REST Service.
  */
 @Controller
-public class ITeamTransitService extends BaseController implements TransitService {
+public class ITeamTransitServiceController extends BaseController implements TransitService {
 
 	/** 
 	 * The {@link TransitFeed} used to provide data to this {@link TransitService}

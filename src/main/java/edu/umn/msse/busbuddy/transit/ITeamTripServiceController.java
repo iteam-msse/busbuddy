@@ -12,7 +12,7 @@ import edu.umn.msse.busbuddy.common.BaseController;
  * and is beyond the scope of this project.
  */
 @Controller
-public class ITeamTripService extends BaseController implements TripService {
+public class ITeamTripServiceController extends BaseController implements TripService {
 
 	/** 
 	 * The {@link TransitService} used to provide the {@link Route} data
