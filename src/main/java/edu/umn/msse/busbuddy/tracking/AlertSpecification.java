@@ -1,9 +1,5 @@
 package edu.umn.msse.busbuddy.tracking;
 
-import java.util.Date;
-
-import edu.umn.msse.busbuddy.transit.Location;
-
 /**
  * Interface for Alert Specifications which contain the business logic used to determine if an alert should be triggered for a vehicle.  
  * Alert specifications are referenced in the vehicle tracking observer and used by the subject to determine when to send an alert.  
@@ -17,6 +13,6 @@ public interface AlertSpecification {
 	 * @param vehicleLocation - Latest GPS coordinates obtained from a vehicle
 	 * @return true if vehicle is in alert range, false if vehicle is not in alert range
 	 */
-	public boolean inAlertRange(Date lastUpdateTime, Location vehicleLocation);
+	public boolean inAlertRange(GPSLocationObject vehicleLocation);
 
 }

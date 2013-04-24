@@ -10,7 +10,7 @@ public abstract class TrackingAlertObserver {
 
 	private UserTrackingAlertObject userAlertTrackingObject; /**< Value Object containing the items necessary for an alert */
 	private AlertSpecification specification;      /**< The business logic specification of how to determine if an alert needs to be sent for a vehicle */
-	private AlertRequestController arc = new AlertRequestController(); /**< Alert Module Controller will be used for processUserAlertRequest() */
+	private AlertRequestController arc = new AlertRequestController(); /**< Alert Module Controller called via a REST API processUserAlertRequest() */
 
 	/**
 	 * Return the specification to use to determine if a vehicle is in an alert range.

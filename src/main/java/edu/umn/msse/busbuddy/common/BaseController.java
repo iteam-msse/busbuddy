@@ -23,7 +23,7 @@ public abstract class BaseController {
 		/* TODO : Write real code to extract exception data, and not this prototype. */
 		String exceptionJson = "{ \"error\" : \"" + e.getMessage() + "\" }";
 
-		ResponseEntity<String> response = new ResponseEntity<>(exceptionJson, e.getHttpCode());
+		ResponseEntity<String> response = new ResponseEntity<String>(exceptionJson, e.getHttpCode());
 		return response;
 	}
 
@@ -42,7 +42,7 @@ public abstract class BaseController {
 		/* TODO : Write real code to extract exception data, and not this prototype. */
 		String exceptionJson = "{ \"error\" : \"" + e.getMessage() + "\" }";
 
-		ResponseEntity<String> response = new ResponseEntity<>(exceptionJson, HttpStatus.INTERNAL_SERVER_ERROR);
+		ResponseEntity<String> response = new ResponseEntity<String>(exceptionJson, HttpStatus.INTERNAL_SERVER_ERROR);
 		return response;
 	}
 }

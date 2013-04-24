@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Implements Subject {@link GPSLocationTracking} for retrieving GPS location updates from registered vehicles.
  * GPSPusher uses system infrastructure resources to set up a network listener to receive updates directly from the GPS device.
  * GPS Pusher is implemented as a singleton to limit the number of system resources consumed.
- * GPS Puser receives the necessary configuration information (e.g. port) from the user interface when the GPS device is registered.
+ * GPS Pusher receives the necessary configuration information (e.g. port) from the user interface when the GPS device is registered.
  */
 public class GPSPusher extends GPSLocationTracking {
 	

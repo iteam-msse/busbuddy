@@ -2,6 +2,7 @@ package edu.umn.msse.busbuddy.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+
 /**
  * This class represents a single user of the system, and all of the state data associated with that user.  The user
  * should already exist in the database before instantiating this object.

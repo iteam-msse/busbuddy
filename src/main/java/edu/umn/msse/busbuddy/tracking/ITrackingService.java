@@ -1,8 +1,6 @@
 package edu.umn.msse.busbuddy.tracking;
 
 import java.net.URL;
-
-import edu.umn.msse.busbuddy.transit.Location;
 /**
  * Interface for the Tracking Service Controller. 
  * The tracking service purpose is to allow vehicles to register on routes and to 
@@ -39,6 +37,6 @@ public interface ITrackingService {
 	 * @param gpsDeviceID - unique hardware GPS device
 	 * @return - Location current latitude and longitude of vehicle
 	 */
-	public Location getTransitVehicleLocation(int gpsDeviceID);
+	public GPSLocationObject getTransitVehicleLocation(int gpsDeviceID);
 
 }
