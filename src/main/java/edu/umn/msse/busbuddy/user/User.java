@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class User {
 	private final int userId;
 	private final String username;
+	private String password;
 	private String passwordHash;
 	private boolean forcePasswordChange;
 	private String firstName;
