@@ -15,21 +15,14 @@ public class OneTimeAlert extends Alert {
 	private static final long serialVersionUID = 8851691556082123516L;
 
 	/**
-	 * Date when it was executed.
+	 * Date when it was executed. If absent, then the alert hasn't been executed.
 	 */
 	private Date dateExecuted;
 
-	/**
-	 * @return the dateExecuted
-	 */
 	public Date getDateExecuted() {
 		return dateExecuted;
 	}
 
-	/**
-	 * @param dateExecuted
-	 *            the dateExecuted to set
-	 */
 	public void setDateExecuted(Date dateExecuted) {
 		this.dateExecuted = dateExecuted;
 	}

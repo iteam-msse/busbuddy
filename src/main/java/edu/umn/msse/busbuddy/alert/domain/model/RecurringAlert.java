@@ -50,100 +50,51 @@ public class RecurringAlert extends Alert {
 	 */
 	private AlertRecurringType alertRecurringType;
 
-	/**
-	 * @return the suspendDateTime
-	 */
 	public Date getSuspendDateTime() {
 		return suspendDateTime;
 	}
 
-	/**
-	 * @param suspendDateTime
-	 *            the suspendDateTime to set
-	 */
 	public void setSuspendDateTime(Date suspendDateTime) {
 		this.suspendDateTime = suspendDateTime;
 	}
 
-	/**
-	 * @return the resumeDateTime
-	 */
 	public Date getResumeDateTime() {
 		return resumeDateTime;
 	}
 
-	/**
-	 * @param resumeDateTime
-	 *            the resumeDateTime to set
-	 */
 	public void setResumeDateTime(Date resumeDateTime) {
 		this.resumeDateTime = resumeDateTime;
 	}
 
-	/**
-	 * @return the lastSuccessfullyRanOnDateTime
-	 */
 	public Date getLastSuccessfullyRanOnDateTime() {
 		return lastSuccessfullyRanOnDateTime;
 	}
 
-	/**
-	 * @param lastSuccessfullyRanOnDateTime
-	 *            the lastSuccessfullyRanOnDateTime to set
-	 */
 	public void setLastSuccessfullyRanOnDateTime(
 			Date lastSuccessfullyRanOnDateTime) {
 		this.lastSuccessfullyRanOnDateTime = lastSuccessfullyRanOnDateTime;
 	}
 
-	/**
-	 * @return the recurringData
-	 */
 	public List<RecurringData> getRecurringData() {
 		return recurringData;
 	}
 
-	/**
-	 * @param recurringData
-	 *            the recurringData to set
-	 */
 	public void setRecurringData(List<RecurringData> recurringData) {
 		this.recurringData = recurringData;
 	}
 
-	/**
-	 * @return the serialversionuid
-	 */
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
-	/**
-	 * @return the repeatEvery
-	 */
 	public int getRepeatEvery() {
 		return repeatEvery;
 	}
 
-	/**
-	 * @param repeatEvery
-	 *            the repeatEvery to set
-	 */
 	public void setRepeatEvery(int repeatEvery) {
 		this.repeatEvery = repeatEvery;
 	}
 
-	/**
-	 * @return the alertRecurringType
-	 */
 	public AlertRecurringType getAlertRecurringType() {
 		return alertRecurringType;
 	}
 
-	/**
-	 * @param alertRecurringType
-	 *            the alertRecurringType to set
-	 */
 	public void setAlertRecurringType(AlertRecurringType alertRecurringType) {
 		this.alertRecurringType = alertRecurringType;
 	}

@@ -1,7 +1,5 @@
 package edu.umn.msse.busbuddy.alert.domain.model;
 
-import edu.umn.msse.busbuddy.alert.enums.AlertRecurringType;
-
 public class RecurringData {
 
 	/**
@@ -29,80 +27,44 @@ public class RecurringData {
 	 */
 	private int startMinute;
 
-	// Getter and Setter
-
-	/**
-	 * @return the dayOfYear
-	 */
 	public int getDayOfYear() {
 		return dayOfYear;
 	}
 
-	/**
-	 * @param dayOfYear
-	 *            the dayOfYear to set
-	 */
 	public void setDayOfYear(int dayOfYear) {
 		this.dayOfYear = dayOfYear;
 	}
 
-	/**
-	 * @return the dayOfMonth
-	 */
 	public int getDayOfMonth() {
 		return dayOfMonth;
 	}
 
-	/**
-	 * @param dayOfMonth
-	 *            the dayOfMonth to set
-	 */
 	public void setDayOfMonth(int dayOfMonth) {
 		this.dayOfMonth = dayOfMonth;
 	}
 
-	/**
-	 * @return the dayOfWeek
-	 */
 	public int getDayOfWeek() {
 		return dayOfWeek;
 	}
 
-	/**
-	 * @param dayOfWeek
-	 *            the dayOfWeek to set
-	 */
 	public void setDayOfWeek(int dayOfWeek) {
 		this.dayOfWeek = dayOfWeek;
 	}
 
-	/**
-	 * @return the startMinute
-	 */
-	public int getStartMinute() {
-		return startMinute;
-	}
-
-	/**
-	 * @param startMinute
-	 *            the startMinute to set
-	 */
-	public void setStartMinute(int startMinute) {
-		this.startMinute = startMinute;
-	}
-
-	/**
-	 * @return the startHour
-	 */
 	public int getStartHour() {
 		return startHour;
 	}
 
-	/**
-	 * @param startHour
-	 *            the startHour to set
-	 */
 	public void setStartHour(int startHour) {
 		this.startHour = startHour;
 	}
+
+	public int getStartMinute() {
+		return startMinute;
+	}
+
+	public void setStartMinute(int startMinute) {
+		this.startMinute = startMinute;
+	}
+
 }

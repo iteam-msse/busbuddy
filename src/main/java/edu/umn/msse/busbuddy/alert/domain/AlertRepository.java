@@ -6,6 +6,9 @@ import java.util.List;
 
 import edu.umn.msse.busbuddy.alert.domain.model.Alert;
 
+/**
+ * 
+ */
 public class AlertRepository {
 
 	/**
@@ -65,11 +68,25 @@ public class AlertRepository {
 		return new ArrayList<Alert>();
 	}
 
+	/**
+	 * This method fetches all the alerts that is linked to the routeId.
+	 * 
+	 * @param routeId
+	 *            The route ID that is being affected.
+	 * @return A list of AlertModels.
+	 */
 	public List<Alert> getAlertByRoute(String routeId) {
 
 		return new ArrayList<Alert>();
 	}
 
+	/**
+	 * This method fetches all the alerts that is tied to a user.
+	 * 
+	 * @param userId
+	 *            userId that is being affected
+	 * @return A list of AlertModels.
+	 */
 	public List<Alert> getAlertByUserId(String userId) {
 
 		return new ArrayList<Alert>();
