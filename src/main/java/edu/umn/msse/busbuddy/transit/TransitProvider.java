@@ -2,8 +2,6 @@ package edu.umn.msse.busbuddy.transit;
 
 import java.util.Set;
 
-import edu.umn.msse.busbuddy.alert.controller.AlertRequestController;
-
 /**
  * A TransitProvider is a description of a company or organization that is the
  * producer of public transportation services.
@@ -21,14 +19,7 @@ public abstract class TransitProvider {
 	 * uniqueness.
 	 */
 	private String providerId;
-	
-	/**
-	 * The inter-module dependency to the Alert Module. The {@link AlertRequestController}
-	 * accepts requests from the TransitProvicer to inform the Alert Module of a
-	 * {@link RouteDisruptionAlert}.
-	 */
-	private AlertRequestController alertRequestController;
-	
+
 	/**
 	 * An Observer Pattern mechanism to alert @{link TransitProviderObserver}s of
 	 * changes in {@link Route} service;
@@ -50,13 +41,11 @@ public abstract class TransitProvider {
 	 * mechanical breakdown.
 	 * 
 	 * After a {@link RouteDisruptionAlert} is fired, this class will perform
-	 * the following steps in order:
+	 * the following:
 	 * 
 	 * - Notify all {@link TransitProviderObserver}s of the disruption with the updated
 	 * {@link Route}. This updated {@link Route} should include all necessary {@link Detour}
 	 * information.
-	 * - Send the {@link RouteDisruptionAlert} to the {@link AlertRequestController} 
-	 * to register the Alert to the system as a whole.
 	 */
 	protected abstract RouteDisruptionAlert fireRouteDisruptionAlert();
 	
@@ -74,14 +63,6 @@ public abstract class TransitProvider {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public AlertRequestController getAlertRequestController() {
-		return alertRequestController;
-	}
-
-	public void setAlertRequestController(AlertRequestController alertRequestController) {
-		this.alertRequestController = alertRequestController;
 	}
 
 	public void registerObserver(TransitProviderObserver transitProviderObserver) {

@@ -5,6 +5,10 @@ package edu.umn.msse.busbuddy.transit;
  * or service. This event will be initiated by a {@link TransitProvider}
  * in cases of mechanical failure, scheduled maintenance, infrastructure
  * delays such as construction or road closures, etc.
+ * 
+ * Note that a RouteDisruptionEvent can signal that a {@link Route} is
+ * returning back to normal service after the disruption has cleared. This
+ * is done by sending a {@link Route} with no {@link Detour}s.
  */
 public class RouteDisruptionEvent {
 	
