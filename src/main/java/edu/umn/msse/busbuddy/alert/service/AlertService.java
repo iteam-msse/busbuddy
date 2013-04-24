@@ -14,8 +14,7 @@ public abstract class AlertService {
 	@Autowired
 	AlertRepository alertRepository;
 
-	public abstract AlertResponseModel createAlert(
-			AlertRequestModel requestModel);
+	public abstract AlertResponseModel createAlert(AlertRequestModel requestModel);
 
 	public AlertResponseModel saveAlert(Alert alertModel) {
 		return null;

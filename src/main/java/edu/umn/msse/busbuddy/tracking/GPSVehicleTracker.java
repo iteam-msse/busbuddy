@@ -1,7 +1,5 @@
 package edu.umn.msse.busbuddy.tracking;
 
-import edu.umn.msse.busbuddy.transit.Location;
-
 /**
  * Implementation of the Observer, update the transit vehicle GPS location.
  *
@@ -21,7 +19,7 @@ public class GPSVehicleTracker extends GPSLocationObserver {
 	/**
 	 * Notify method to get the new GPS coordinates from GPS location tracking
 	 */
-	public void gpsUpdate(int gpsID, Location newLocation) {
+	public void gpsUpdate(int gpsID, GPSLocationObject newLocation) {
 		this.setGPSLocation(newLocation);
 	}
 
