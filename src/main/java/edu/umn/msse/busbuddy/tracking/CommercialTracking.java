@@ -5,6 +5,7 @@ import java.util.ArrayList;
 /**
  * Implements Subject {@link GPSLocationTracking} for retrieving GPS location updates 
  * from outside commercial tracking services.
+ * Post Condition: New GPS commercial tracker created or existing one returned.
  *
  */
 public class CommercialTracking extends GPSLocationTracking {

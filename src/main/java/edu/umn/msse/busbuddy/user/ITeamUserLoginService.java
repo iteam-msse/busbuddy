@@ -132,11 +132,68 @@ public class ITeamUserLoginService implements UserLoginService {
 		MessageDeliveryUtility.sendSms(countryCode, mobile, user.getUsername());
 	}
 
+	/**
+	 * @see UserLoginService.resetPassword(String, String) 
+	 */
 	@Override
-	public void resetPassword(String username, String email) {
+	public void resetPassword(String username, String email) throws BusBuddyException {
+		if (username == null || username.length() == 0 || email == null || email.length() == 0) {
+			throw new BusBuddyBadRequestException();
+		}
+		
+		User user;
+		try {
+			user = this.userRepository.getUserByUsername(username);
+		} catch (BusBuddyNotFoundException e) {
+			throw new BusBuddyForbiddenException();
+		}
+		
+		UserType userType = user.getUserType();
+		if (userType != UserType.NORMAL_USER && userType != UserType.SYSTEM_ADMINISTRATOR) {
+			throw new BusBuddyForbiddenException();
+		}
+		
+		if (!email.equals(user.getEmail())) {
+			throw new BusBuddyForbiddenException();
+		}
+		
+		String newPassword = "SAMPLE"; // TODO: Generate real password
+		user.setPasswordHash(HashUtility.hash(newPassword));
+		this.userRepository.updateUser(user);
+		
+		MessageDeliveryUtility.sendEmail(email, "busbuddy@msse.umn.edu", "Your Password", newPassword);
 	}
 
+	/**
+	 * @see UserLoginService.resetPassword(String, short, String) 
+	 */
 	@Override
-	public void resetPassword(String username, short countryCode, String mobile) {
+	public void resetPassword(String username, short countryCode, String mobile) throws BusBuddyException {
+		if (username == null || username.length() == 0 || mobile == null || mobile.length() == 0) {
+			/* TODO: Also if mobile is not numeric. */
+			throw new BusBuddyBadRequestException();
+		}
+		
+		User user;
+		try {
+			user = this.userRepository.getUserByUsername(username);
+		} catch (BusBuddyNotFoundException e) {
+			throw new BusBuddyForbiddenException();
+		}
+		
+		UserType userType = user.getUserType();
+		if (userType != UserType.NORMAL_USER && userType != UserType.SYSTEM_ADMINISTRATOR) {
+			throw new BusBuddyForbiddenException();
+		}
+		
+		if (!mobile.equals(user.getMobile()) || countryCode != user.getCountryCode().shortValue()) {
+			throw new BusBuddyForbiddenException();
+		}
+		
+		String newPassword = "SAMPLE"; // TODO: Generate real password
+		user.setPasswordHash(HashUtility.hash(newPassword));
+		this.userRepository.updateUser(user);
+		
+		MessageDeliveryUtility.sendSms(countryCode, mobile, newPassword);
 	}
 }

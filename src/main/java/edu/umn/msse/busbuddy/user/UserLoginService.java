@@ -117,21 +117,58 @@ public interface UserLoginService {
 	 * This method sends a user his or her username via SMS.
 	 * 
 	 * @pre The mobile details provided must be linked to a valid and active account.
-	 * @post An e-mail has been sent to the user, containing the user's username.
+	 * @post An SMS has been sent to the user, containing the user's username.
 	 * @param email
 	 *            E-mail address of the account to send to.
 	 * @throws BusBuddyBadRequestException
-	 *             This exception is thrown if the e-mail address is blank or invalid.
+	 *             This exception is thrown if the mobile is blank or non-numeric.
 	 * @throws BusBuddyForbiddenException
-	 *             This exception is thrown if the e-mail address is linked to an account that is suspended or deleted.
+	 *             This exception is thrown if the mobile information is linked to an account that is suspended or
+	 *             deleted.
 	 * @throws BusBuddyNotFoundException
-	 *             This exception is thrown if the e-mail address doesn't link to a valid user.
+	 *             This exception is thrown if the mobile information doesn't link to a valid user.
 	 * @throws BusBuddyInternalException
 	 *             This exception is thrown if an internal error prevents processing of the request.
 	 */
 	void sendUsername(short countryCode, String mobile) throws BusBuddyException;
 
+	/**
+	 * This method resets a user's password and sends them their new password via e-mail.
+	 * 
+	 * @pre The username and e-mail address provided both link to the same user in the database.
+	 * @post The user's password is reset and sent to the user via e-mail.
+	 * @param username
+	 *            Username of the User to reset the password for.
+	 * @param email
+	 *            E-mail address of the User to reset the password for.
+	 * @throws BusBuddyBadRequestException
+	 *             This exception is thrown if the username or e-mail address is blank.
+	 * @throws BusBuddyForbiddenException
+	 *             This exception is thrown if the username and e-mail address combination don't link to a valid user.
+	 *             Also thrown if the account is suspended or deleted.
+	 * @throws BusBuddyInternalException
+	 *             This exception is thrown if an internal error prevents processing of the request.
+	 */
 	void resetPassword(String username, String email) throws BusBuddyException;
 
+	/**
+	 * This method resets a user's password and sends them their new password via SMS.
+	 * 
+	 * @pre The username and mobile information provided both link to the same user in the database.
+	 * @post The user's password is reset and sent to the user via SMS.
+	 * @param username
+	 *            Username of the User to reset the password for.
+	 * @param countryCode
+	 *            country code of the user's mobile phone number
+	 * @param mobile
+	 *            String representing the user's mobile phone number (String should consist entirely of digits)
+	 * @throws BusBuddyBadRequestException
+	 *             This exception is thrown if the username or mobile number is blank (or non numeric).
+	 * @throws BusBuddyForbiddenException
+	 *             This exception is thrown if the username and mobile information combination don't link to a valid
+	 *             user. Also thrown if the account is suspended or deleted.
+	 * @throws BusBuddyInternalException
+	 *             This exception is thrown if an internal error prevents processing of the request.
+	 */
 	void resetPassword(String username, short countryCode, String mobile) throws BusBuddyException;
 }
