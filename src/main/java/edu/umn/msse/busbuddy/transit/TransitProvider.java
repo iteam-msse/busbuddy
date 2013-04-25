@@ -35,19 +35,19 @@ public abstract class TransitProvider {
 
 	/**
 	 * This method is called internally by the TransitProvider to fire a
-	 * {@link RouteDisruptionAlert} to the Alert Module. TransitProvider subclasses
-	 * will determine when these Alerts are fired -- for example, if a
+	 * {@link RouteDisruptionEvent}. TransitProvider subclasses
+	 * will determine when these Events are fired -- for example, if a
 	 * TransitProvider has scheduled maintenance days, or known outages due to
 	 * mechanical breakdown.
 	 * 
-	 * After a {@link RouteDisruptionAlert} is fired, this class will perform
+	 * After a {@link RouteDisruptionEvent} is fired, this class will perform
 	 * the following:
 	 * 
 	 * - Notify all {@link TransitProviderObserver}s of the disruption with the updated
 	 * {@link Route}. This updated {@link Route} should include all necessary {@link Detour}
 	 * information.
 	 */
-	protected abstract RouteDisruptionAlert fireRouteDisruptionAlert();
+	protected abstract void fireRouteDistruptionEvent();
 	
 	public String getProviderId() {
 		return providerId;
