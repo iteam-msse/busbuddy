@@ -29,6 +29,12 @@ public class ITeamTransitServiceController
 	 * The inter-module dependency to the Alert Module. The {@link AlertRequestController}
 	 * accepts requests from this class to inform the Alert Module of a
 	 * {@link RouteDisruptionAlert}.
+	 * 
+	 * NOTE: This represents a conceptual dependency to the {@link AlertRequestController}.
+	 * During implementation phase, actual communication with the {@link AlertRequestController}
+	 * will happen via some client object or service. Implementation of the actual client and
+	 * its link to the {@link AlertRequestController} (to include REST URLS and JSON structure)
+	 * will be left to the next phase, or as design details for the development team.
 	 */
 	private AlertRequestController alertRequestController;
 	
