@@ -2,6 +2,7 @@ package edu.umn.msse.busbuddy.tracking;
 /**
  * This is a basic tracking response model that is returned for every tracking related request. 
  * Additional parameters can be added as needed during implementation phase.
+ * This model is responsible for verify that all data received is within range before returning local object.
  */
 public abstract class TrackingResponseModel {
 		/**

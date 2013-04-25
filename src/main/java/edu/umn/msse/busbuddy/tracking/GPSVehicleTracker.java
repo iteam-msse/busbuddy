@@ -3,7 +3,7 @@ package edu.umn.msse.busbuddy.tracking;
 /**
  * Implementation of the Observer, update transit vehicle GPS location and time
  * GPS Vehicle Tracker gets the state as new GPS coordinates and time from GPS Location Tracking and updates the transit vehicle.
- * Post Condition: Transit Vehicle GPS location updated.  
+ * @post Transit Vehicle GPS location updated.  
  */
 public class GPSVehicleTracker extends GPSLocationObserver {
 

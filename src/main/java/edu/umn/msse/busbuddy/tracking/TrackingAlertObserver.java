@@ -4,8 +4,12 @@ import edu.umn.msse.busbuddy.alert.controller.AlertRequestController;
 
 /**
  * Abstract class defining the methods for the tracking alert observer.
- *
+ * @pre Vehicle is determined by {@link AlertSpecification} to within range
+ * @post Alert request is sent to the {@link AlertService}
+ * Abstract class defining the methods for the tracking alert observer.
+ * This class calls alert module’s alert controller via REST call to fetch necessary information. 
  */
+
 public abstract class TrackingAlertObserver {
 
 	private UserTrackingAlertObject userAlertTrackingObject; /**< Value Object containing the items necessary for an alert */
