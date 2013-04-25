@@ -83,8 +83,4 @@ public class SessionRepository {
 	void killSession(String sessionToken) throws BusBuddyInternalException, BusBuddyNotFoundException {
 		/* TODO */
 	}
-
-	void killAllSessions(String userId) {
-
-	}
 }

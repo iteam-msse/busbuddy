@@ -160,6 +160,7 @@ public class ITeamUserLoginService implements UserLoginService {
 
 		String newPassword = "SAMPLE"; // TODO: Generate real password
 		user.setPasswordHash(HashUtility.hash(newPassword));
+		user.setForcePasswordChange(true);
 		this.userRepository.updateUser(user);
 
 		MessageDeliveryUtility.sendEmail(email, "busbuddy@msse.umn.edu", "Your Password", newPassword);
@@ -193,6 +194,7 @@ public class ITeamUserLoginService implements UserLoginService {
 
 		String newPassword = "SAMPLE"; // TODO: Generate real password
 		user.setPasswordHash(HashUtility.hash(newPassword));
+		user.setForcePasswordChange(true);
 		this.userRepository.updateUser(user);
 
 		MessageDeliveryUtility.sendSms(countryCode, mobile, newPassword);
