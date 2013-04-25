@@ -12,35 +12,32 @@ public interface TransitService {
 
 	/**
 	 * Gets a {@link Route} by its unique identifier.
-	 * 
-	 * @pre \paramname{routeId} is not null or blank.
-	 * @post The {@link Route} is returned if 
-	 * the \paramname{routeId} is found, else null.
 	 *
 	 * @param routeId The unique identifier of the {@link Route}
 	 * @return The matching {@link Route}, or null if not found
+	 * @pre \paramname{routeId} is not null or blank.
+	 * @post The {@link Route} is returned if
+	 * the \paramname{routeId} is found, else null.
 	 */
 	public Route getRoute(String routeId);
 	
 	/**
-	 * Gets all available {@link Route}s that match a \paramname{pickup} 
+	 * Gets all available {@link Route}s that match a \paramname{pickup}
 	 * or \paramname{dropoff} {@link Location} by not more than a given
 	 * \paramname{distance}.
-	 * 
+	 *
+	 * @param pickup The requested dropoff {@link Location}
+	 * @param dropoff the dropoff
+	 * @param distance The distance (in miles) that each {@link Route}
+	 * can deviate from the requested \paramname{pickup} or \paramname{dropoff}
+	 * @return The matching {@link Route}s
 	 * @pre \paramname{pickup} is not null or blank.
 	 * @pre \paramname{dropoff} is not null or blank.
 	 * @pre \paramname{distance} is non-negative.
-	 * 
-	 * @param pickup The requested pickup {@link Location}
-	 * @param pickup The requested dropoff {@link Location}
-	 * @param distance The distance (in miles) that each {@link Route}
-	 * can deviate from the requested \paramname{pickup} or \paramname{dropoff}
 	 * {@link Location}. For each {@link Route} returned, neither its start
 	 * or end {@link Location} can differ from the requested
 	 * \paramname{pickup} or \paramname{dropoff} {@link Location} by more than
 	 * the value of the \paramname{distance} parameter.
-	 * 
-	 * @return The matching {@link Route}s
 	 */
 	public Set<Route> getRoutes(Location pickup, Location dropoff, int distance);
 	
@@ -54,10 +51,10 @@ public interface TransitService {
 	
 	/**
 	 * The URL that uniquely identifies this TransitService. In a REST environment,
-	 * this might be the root of the REST API path. In a SOAP environment, it could
-	 * represent a SOAP endpoint.
+	 * this might be the root of the REST API path.
 	 * 
 	 * @return The URL of this service
 	 */
 	public URL getServiceURL();
+	
 }

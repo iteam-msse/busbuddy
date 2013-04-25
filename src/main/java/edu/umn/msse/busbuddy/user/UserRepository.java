@@ -2,6 +2,7 @@ package edu.umn.msse.busbuddy.user;
 
 import org.springframework.stereotype.Service;
 
+import edu.umn.msse.busbuddy.common.BusBuddyConflictException;
 import edu.umn.msse.busbuddy.common.BusBuddyInternalException;
 import edu.umn.msse.busbuddy.common.BusBuddyNotFoundException;
 
@@ -30,6 +31,7 @@ class UserRepository {
 	 *             This exception is thrown when the requested user record could not be found.
 	 */
 	User getUserById(int userId) throws BusBuddyInternalException, BusBuddyNotFoundException {
+		/* TODO */
 		return new User(userId, String.valueOf(userId));
 	}
 
@@ -68,6 +70,7 @@ class UserRepository {
 	 *             This exception is thrown when the requested user record could not be found.
 	 */
 	User getUserByEmail(String email) throws BusBuddyInternalException, BusBuddyNotFoundException {
+		/* TODO */
 		return new User(1, email);
 	}
 
@@ -88,11 +91,28 @@ class UserRepository {
 	 *             This exception is thrown when the requested user record could not be found.
 	 */
 	User getUserByMobile(short countryCode, String mobile) throws BusBuddyInternalException, BusBuddyNotFoundException {
+		/* TODO */
 		return new User(1, mobile);
 	}
 
-	void updateUser(User newUserData) {
-
+	/**
+	 * This method updates a user in the database. It will update the user with the same ID as the user passed in as a
+	 * parameter. The username will not be updated, but all other fields will be.
+	 * 
+	 * @pre A user with the specified user ID on the {@link User} object must already exist.
+	 * @param newUserData
+	 *            {@link User} object with the new user data on it
+	 * @throws BusBuddyInternalException
+	 *             This exception is thrown when there is a database error.
+	 * @throws BusBuddyNotFoundException
+	 *             This exception is thrown when the requested user record could not be found.
+	 * @throws BusBuddyConflictException
+	 *             This exception is thrown when the requested user record would create a duplicate mobile phone or
+	 *             e-mail address in the database.
+	 */
+	void updateUser(User newUserData) throws BusBuddyInternalException, BusBuddyNotFoundException,
+			BusBuddyConflictException {
+		/* TODO */
 	}
 
 	void deleteUser(User userToDelete) {
