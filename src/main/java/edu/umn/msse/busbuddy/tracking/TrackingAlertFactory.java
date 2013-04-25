@@ -3,6 +3,7 @@ package edu.umn.msse.busbuddy.tracking;
 /**
  * The Alert Factory handles the creation of a user alert.  
  * The necessary values for an alert will be entered by a registered user from the BusBuddy User Interface.  See {@link UserTrackingAlertObject} for input parameter details.
+ * Post Condition: New user alert registered with a transit vehicle in the array list.
  *
  */
 public class TrackingAlertFactory {
