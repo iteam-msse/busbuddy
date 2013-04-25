@@ -13,7 +13,7 @@ import edu.umn.msse.busbuddy.common.BusBuddyNotFoundException;
  * {@link Session} objects.
  */
 @Service
-public class SessionRepository {
+class SessionRepository {
 	/**
 	 * This creates a new session for the given user.
 	 * 
