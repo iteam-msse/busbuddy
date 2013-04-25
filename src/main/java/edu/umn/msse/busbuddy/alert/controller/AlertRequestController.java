@@ -1,6 +1,7 @@
 package edu.umn.msse.busbuddy.alert.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
 import edu.umn.msse.busbuddy.alert.controller.model.AlertRequestModel;
 import edu.umn.msse.busbuddy.alert.controller.model.AlertResponseModel;
@@ -19,6 +20,7 @@ import edu.umn.msse.busbuddy.common.BusBuddyForbiddenException;
  * alert.
  * 
  */
+@Controller
 public class AlertRequestController {
 
 	/**

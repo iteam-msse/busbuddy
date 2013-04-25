@@ -7,6 +7,10 @@ import edu.umn.msse.busbuddy.alert.controller.model.AlertResponseModel;
 import edu.umn.msse.busbuddy.alert.domain.AlertRepository;
 import edu.umn.msse.busbuddy.alert.domain.model.Alert;
 
+/**
+ * Alert Service is a base class that is extended by other module specific
+ * services. This abstract class defines signature for basic CRUD operation.
+ */
 public abstract class AlertService {
 	@Autowired
 	IAlertExecuteStrategy alertExecuteStrategy;
