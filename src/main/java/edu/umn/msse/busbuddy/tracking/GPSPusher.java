@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * GPSPusher uses system infrastructure resources to set up a network listener to receive updates directly from the GPS device.
  * GPS Pusher is implemented as a singleton to limit the number of system resources consumed.
  * GPS Pusher receives the necessary configuration information (e.g. port) from the user interface when the GPS device is registered.
- * Post Condition: New GPS Listener created if none existed previously.
+ * @post New GPS Listener created if none existed previously.
  */
 public class GPSPusher extends GPSLocationTracking {
 	

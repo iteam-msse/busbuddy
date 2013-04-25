@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * GPS Puller is implemented as a singleton to limit the number of system resources consumed. 
  * GPS Puller uses the system infrastructure to establish a wireless network connection to the physical GPS device and retrieve update coordinates.
  * The necessary information to contact the device is provided through the user interface when a vehicle is registered to a route.
- * Post Condition: New GPS Puller created if one did not previously exist.
+ * @post New GPS Puller created if one did not previously exist.
  */
 public class GPSPuller extends GPSLocationTracking {
 	
