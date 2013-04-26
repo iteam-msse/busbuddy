@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * The necessary information to contact the device is provided through the user interface when a vehicle is registered to a route.
  * @post New GPS Puller created if one did not previously exist.
  */
-public class GPSPuller extends GPSLocationTracking {
+class GPSPuller extends GPSLocationTracking {
 	
 	private ArrayList<GPSLocationObserver> gpsObserver; /**< Array list of GPS devices registered for updates*/
 	
@@ -28,28 +28,28 @@ public class GPSPuller extends GPSLocationTracking {
 	    public static final GPSPuller INSTANCE = new GPSPuller();
 	}
 
-	public static GPSPuller getInstance() {
+	static GPSPuller getInstance() {
 		return GPSPullerHolder.INSTANCE;
 	}
 	
 	/**
 	 * Register a GPS Device to the list to poll for updates.
 	 */
-	public void registerGPSDevice(GPSLocationObserver gpsObs) {	
+	void registerGPSDevice(GPSLocationObserver gpsObs) {	
 		
 	}
 
 	/**
 	 * Remove a GPS device from the list currently being polled for updates.
 	 */
-	public void unregisterGPSDevice(GPSLocationObserver gpsObs) {
+	void unregisterGPSDevice(GPSLocationObserver gpsObs) {
 		
 	}
 
 	/**
 	 * Continuously poll the registered GPS devices for location updates.
 	 */
-	public void pollGPSDevice() {
+	void pollGPSDevice() {
 
 	}
 }

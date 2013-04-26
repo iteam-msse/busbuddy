@@ -7,7 +7,7 @@ package edu.umn.msse.busbuddy.tracking;
  * An alert range is a distance range before the stop when the user should be notified.
  *
  */
-public class AlertRangeLogic implements AlertSpecification {
+class AlertRangeLogic implements AlertSpecification {
 
 	/**
 	 * Provides the logic necessary to determine from the GPS coordinates if the registered user should be alerted.

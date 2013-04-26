@@ -5,7 +5,7 @@ package edu.umn.msse.busbuddy.tracking;
  *
  */
 
-public abstract class GPSLocationObserver {
+abstract class GPSLocationObserver {
 	
 	protected GPSLocationTracking gpsDevice; /**< Observer Pattern Subject  */
 	protected int gpsID;                     /**< GPS Device ID being tracked*/
@@ -17,14 +17,14 @@ public abstract class GPSLocationObserver {
 	 * @param latitude - double new latitude from GPS device
 	 * @param longitude - double new longitude from GPS device
 	 */
-	public abstract void gpsUpdate(int gpsID, GPSLocationObject newLocation);
+	abstract void gpsUpdate(int gpsID, GPSLocationObject newLocation);
 
 	/**
 	 * Return current GPS location received from a vehicle. 
 	 * This is the state of the observer pattern.
 	 * @return - Location
 	 */
-	public GPSLocationObject getGPSLocation() {
+	GPSLocationObject getGPSLocation() {
 		return gpsLocation;
 	}
 

@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @post New GPS commercial tracker created or existing one returned.
  *
  */
-public class CommercialTracking extends GPSLocationTracking {
+class CommercialTracking extends GPSLocationTracking {
 	
 	private ArrayList<GPSLocationObserver> gpsObserver; /**< Array list of GPS devices registered for updates*/
 	
@@ -32,28 +32,28 @@ public class CommercialTracking extends GPSLocationTracking {
 	 * Instantiates a single Commercial Tracking service to the caller.
 	 * @return - CommercialTracking instance
 	 */
-	public static CommercialTracking getInstance() {
+	protected static CommercialTracking getInstance() {
 		return CommercialTrackingHolder.INSTANCE;
 	}
 	
 	/**
 	 * Register a GPS Device to the list to poll for updates.
 	 */
-	public void registerGPSDevice(GPSLocationObserver gpsObs) {	
+	protected void registerGPSDevice(GPSLocationObserver gpsObs) {	
 		
 	}
 
 	/**
 	 * Remove a GPS device from the list currently being polled for updates.
 	 */
-	public void unregisterGPSDevice(GPSLocationObserver gpsObs) {
+	protected void unregisterGPSDevice(GPSLocationObserver gpsObs) {
 		
 	}
 
 	/**
 	 * Continuously poll the registered GPS devices for location updates.
 	 */
-	public void pollGPSDevice() {
+	protected void pollGPSDevice() {
 
 	}
 }

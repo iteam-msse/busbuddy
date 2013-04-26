@@ -13,6 +13,6 @@ public interface AlertSpecification {
 	 * @param vehicleLocation - Latest GPS coordinates obtained from a vehicle
 	 * @return true if vehicle is in alert range, false if vehicle is not in alert range
 	 */
-	 public boolean inAlertRange(GPSLocationObject vehicleLocation);
+	 boolean inAlertRange(GPSLocationObject vehicleLocation);
 
 }

@@ -10,7 +10,7 @@ import edu.umn.msse.busbuddy.alert.controller.AlertRequestController;
  * This class calls alert module’s alert controller via REST call to fetch necessary information. 
  */
 
-public abstract class TrackingAlertObserver {
+abstract class TrackingAlertObserver {
 
 	private UserTrackingAlertObject userAlertTrackingObject; /**< Value Object containing the items necessary for an alert */
 	private AlertSpecification specification;      /**< The business logic specification of how to determine if an alert needs to be sent for a vehicle */
@@ -20,7 +20,7 @@ public abstract class TrackingAlertObserver {
 	 * Return the specification to use to determine if a vehicle is in an alert range.
 	 * @retval AlertSpecification 
 	 */
-	public AlertSpecification getSpec() {
+	AlertSpecification getSpec() {
 		return specification;
 	}
 
@@ -28,7 +28,7 @@ public abstract class TrackingAlertObserver {
 	 * Set the alert specification
 	 * @param spec AlertSpecification - the rules used by the subject to determine if an alert is necessary.
 	 */
-	protected void setSpec(AlertSpecification spec) {
+	 void setSpec(AlertSpecification spec) {
 		this.specification = spec;
 	}
 
@@ -36,6 +36,6 @@ public abstract class TrackingAlertObserver {
 	 * The observer pattern update method called from the subject {@link TransitVehicle} when a vehicle is determined to be in an alert range and a user needs to be notified.  
 	 * Alert notifications are actually sent using the {@link IAlertService}
 	 */
-	public abstract void updateAlert(); 
+	abstract void updateAlert(); 
 	
 	}
