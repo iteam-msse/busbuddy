@@ -42,7 +42,7 @@ class UserFavoritesRepository {
 	 * @throws BusBuddyNotFoundException
 	 *             This exception is thrown if no such user exists.
 	 */
-	public void updateFavorites(int userId, UserFavoritesList favorites) throws BusBuddyInternalException,
+	protected void updateFavorites(int userId, UserFavoritesList favorites) throws BusBuddyInternalException,
 			BusBuddyNotFoundException {
 		/* TODO */
 	}
