@@ -46,7 +46,7 @@ public class Route {
 	/**
 	 * Instantiates a new Route with all required fields.
 	 *
-	 * @pre \paramname{stops}.size() > 0
+	 * @pre \paramname{stops}.size() >= 2
 	 *
 	 * @param routeId The Route id
 	 * @param routeName The Route name
@@ -63,6 +63,14 @@ public class Route {
 		return stops;
 	}
 
+
+	/**
+	 * Sets the {@link Stop}s of this Route.
+	 * 
+	 * Note that there must be 2 or more {@link Stop}s in a Route.
+	 *
+	 * @pre \paramname{stops}.size() >= 2
+	 */
 	public void setStops(List<Stop> stops) {
 		this.stops = stops;
 	}
