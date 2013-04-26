@@ -9,13 +9,13 @@ import java.util.Set;
 public class GoogleTransitServiceAdapter implements TransitFeed {
 
 	/** 
-	 * The {@GoogleTransitServiceAPI} to adapt as a {@link TransitService}.
+	 * The {@link GoogleTransitServiceAPI} to adapt as a {@link TransitService}.
 	 */
 	private GoogleTransitServiceAPI googleTransitServiceAPI;
 	
 	/**
 	 * Instantiates a new GoogleTransitServiceAdapter with a
-	 * {@GoogleTransitServiceAPI} to delegate calls to.
+	 * {@link GoogleTransitServiceAPI} to delegate calls to.
 	 *
 	 * @param googleTransitServiceAPI the google transit service api
 	 */
