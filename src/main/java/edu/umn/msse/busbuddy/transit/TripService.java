@@ -7,7 +7,6 @@ package edu.umn.msse.busbuddy.transit;
  */
 public interface TripService {
 	
-	
 	/**
 	 * Calculate an optimal Trip given a \paramname{start} {@link Location} 
 	 * and an \paramname{end} {@link Location}.
