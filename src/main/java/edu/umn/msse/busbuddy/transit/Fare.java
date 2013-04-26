@@ -36,7 +36,7 @@ public class Fare {
 	}
 
 	/**
-	 * @pre \discountedFare{regularFare} >= 0
+	 * @pre \paramname{discountedFare} >= 0
 	 */
 	public void setDiscountedFare(BigDecimal discountedFare) {
 		this.discountedFare = discountedFare;
