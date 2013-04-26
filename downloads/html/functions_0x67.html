@@ -71,6 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -103,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -119,17 +120,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getAlertByDateTime()
 : <a class="el" href="classalert_1_1domain_1_1_alert_repository.html#aaf851618866ba98b628e234243d5d83b">AlertRepository</a>
 </li>
-<li>getAlertGuid()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#a31438cf435bae2ee5765257ef02ff3a0">Alert</a>
+<li>getAlertByRoute()
+: <a class="el" href="classalert_1_1domain_1_1_alert_repository.html#a65b3b69f36e4fb19e11a7b148a4ac458">AlertRepository</a>
 </li>
-<li>getAlertRecurringType()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_alert.html#a9ce1c47c94692266abe8fafeb0d2c6a9">RecurringAlert</a>
+<li>getAlertByUserId()
+: <a class="el" href="classalert_1_1domain_1_1_alert_repository.html#abd6451d7dfe2d04164d306aa758ed386">AlertRepository</a>
 </li>
-<li>getAlertRunType()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#ae047d452d215289e87d46281b1643b33">Alert</a>
-</li>
-<li>getAlertType()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#a04f4dd61cc7c6809eb93fe87cfae9d8c">Alert</a>
+<li>getAlertService()
+: <a class="el" href="classalert_1_1service_1_1_alert_execute_strategy_factory.html#a502eec15521c2203aa758c071e2992c5">AlertExecuteStrategyFactory</a>
+, <a class="el" href="classalert_1_1service_1_1_alert_service_factory.html#a7b351ca1cf05fdd905bbcb97f4d280ad">AlertServiceFactory</a>
 </li>
 <li>getAll()
 : <a class="el" href="interfacetransit_1_1_route_repository.html#ab575e9e0d4af3e3bb803192e24b6d810">RouteRepository</a>
@@ -137,50 +136,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getCountryCode()
 : <a class="el" href="classuser_1_1_user.html#a6335534a9990e8a8aa0b610790de8e86">User</a>
 </li>
-<li>getCreatedDateTime()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#a7fc051f20cd7df62ef8469d96eda7c9c">Alert</a>
-</li>
 <li>getCreationTime()
 : <a class="el" href="classuser_1_1_session.html#a11597a6bc1c12193202324457a9af135">Session</a>
-</li>
-<li>getDateExecuted()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_one_time_alert.html#a00df1b0957b6f7f217f778cab1cb273e">OneTimeAlert</a>
-</li>
-<li>getDayOfMonth()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_data.html#a721811c413da0075f78ed38c9cda4722">RecurringData</a>
-</li>
-<li>getDayOfWeek()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_data.html#a7baec3f802536e337d5bf420a6520ca3">RecurringData</a>
-</li>
-<li>getDayOfYear()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_data.html#a7751dc491c671eec914417199c6dbb90">RecurringData</a>
-</li>
-<li>getDescription()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#ac7feffb7a33f63504ff1f87f19e2d2d8">Alert</a>
 </li>
 <li>getEmail()
 : <a class="el" href="classuser_1_1_user.html#af650efc67273666efa38d5c55eea2b97">User</a>
 </li>
-<li>getErrorCount()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#ad5e9a9a276f1d98add727ea3eb6e2fdf">Alert</a>
-</li>
 <li>getExpirationTime()
 : <a class="el" href="classuser_1_1_session.html#a8d2a747d8fffb63da624ef55923ff7e6">Session</a>
 </li>
-<li>getExpireDateTime()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#a38bc07fcbcdda5e35288aff66ab60c49">Alert</a>
+<li>getFavoriteRouteIds()
+: <a class="el" href="classuser_1_1_favorite_transit_service.html#a00a2d458d4dadba7dab85c16f350d5d9">FavoriteTransitService</a>
+</li>
+<li>getFavorites()
+: <a class="el" href="classuser_1_1_user_favorites_repository.html#a265f52677a16bd7407a4f01539f9ae90">UserFavoritesRepository</a>
+</li>
+<li>getFavoriteTransitServices()
+: <a class="el" href="classuser_1_1_user_favorites_list.html#a947dde63219394c3bc817f6c12ebdcc2">UserFavoritesList</a>
 </li>
 <li>getFirstName()
 : <a class="el" href="classuser_1_1_user.html#abd56bbfddb220582ac598ef0c6024f08">User</a>
 </li>
 <li>getGPSLocation()
-: <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#abaa62afcf95d26e3baacc33673742e5b">GPSLocationObserver</a>
+: <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a2fb71e905edca8f31c67f7933db602f8">GPSLocationObserver</a>
 </li>
 <li>getGPSTypeFromURL()
 : <a class="el" href="classtracking_1_1_transit_vehicle_factory.html#a4217e5ad6443b33a6d3c270bf188bc23">TransitVehicleFactory</a>
 </li>
 <li>getHttpCode()
 : <a class="el" href="classcommon_1_1_bus_buddy_bad_request_exception.html#ae739003faaac404725cf9de64a69e2a0">BusBuddyBadRequestException</a>
+, <a class="el" href="classcommon_1_1_bus_buddy_conflict_exception.html#ae739003faaac404725cf9de64a69e2a0">BusBuddyConflictException</a>
 , <a class="el" href="classcommon_1_1_bus_buddy_exception.html#a98d84534fef242ed233e83df137d422e">BusBuddyException</a>
 , <a class="el" href="classcommon_1_1_bus_buddy_forbidden_exception.html#ae739003faaac404725cf9de64a69e2a0">BusBuddyForbiddenException</a>
 , <a class="el" href="classcommon_1_1_bus_buddy_internal_exception.html#ae739003faaac404725cf9de64a69e2a0">BusBuddyInternalException</a>
@@ -190,43 +175,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classtracking_1_1_commercial_tracking.html#a22c145b0b0ba5713bf670bbb57ec4e89">CommercialTracking</a>
 , <a class="el" href="classtracking_1_1_g_p_s_pusher.html#a154c6c0ce942d0c0adbdff4bcf2878e8">GPSPusher</a>
 </li>
-<li>getLastSuccessfullyRanOnDateTime()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_alert.html#a515572eb9676ac98293e3a6cd9df3430">RecurringAlert</a>
-</li>
 <li>getMobile()
 : <a class="el" href="classuser_1_1_user.html#a9382f28ccc2703849a9f6131da656bd5">User</a>
 </li>
 <li>getPasswordHash()
 : <a class="el" href="classuser_1_1_user.html#a57fe8d0a853227af5c07e25d380b0103">User</a>
 </li>
-<li>getRecurringData()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_alert.html#ad844c1d92c77b2b7acfce8608500db12">RecurringAlert</a>
-</li>
-<li>getRepeatEvery()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_alert.html#ade8ec7c3728f35f6cb7a01b9f726ae3b">RecurringAlert</a>
-</li>
-<li>getResumeDateTime()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_alert.html#ab6c5987ba029b7ff9f64ccad44e307cd">RecurringAlert</a>
-</li>
 <li>getRoute()
 : <a class="el" href="classtransit_1_1_google_transit_service_adapter.html#a5d93801c60b116410e94085defdf7a70">GoogleTransitServiceAdapter</a>
-, <a class="el" href="classtransit_1_1_i_team_transit_service.html#a5d93801c60b116410e94085defdf7a70">ITeamTransitService</a>
+, <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#a5d93801c60b116410e94085defdf7a70">ITeamTransitServiceController</a>
 , <a class="el" href="classtransit_1_1_persisted_transit_feed.html#a5d93801c60b116410e94085defdf7a70">PersistedTransitFeed</a>
 , <a class="el" href="interfacetransit_1_1_transit_feed.html#a5d93801c60b116410e94085defdf7a70">TransitFeed</a>
 , <a class="el" href="interfacetransit_1_1_transit_service.html#a5d93801c60b116410e94085defdf7a70">TransitService</a>
 </li>
+<li>getRouteIds()
+: <a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html#acc6464001bb6e7270cc5272e8dc08e20">TripInformation</a>
+</li>
 <li>getRoutes()
 : <a class="el" href="classtransit_1_1_google_transit_service_adapter.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">GoogleTransitServiceAdapter</a>
-, <a class="el" href="classtransit_1_1_i_team_transit_service.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">ITeamTransitService</a>
+, <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">ITeamTransitServiceController</a>
 , <a class="el" href="classtransit_1_1_persisted_transit_feed.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">PersistedTransitFeed</a>
 , <a class="el" href="interfacetransit_1_1_transit_feed.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">TransitFeed</a>
 , <a class="el" href="interfacetransit_1_1_transit_service.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">TransitService</a>
 </li>
-<li>getSerialversionuid()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_alert.html#af4ec96d7de556b492e0c32622756e0c9">RecurringAlert</a>
-</li>
 <li>getServiceURL()
-: <a class="el" href="classtransit_1_1_i_team_transit_service.html#a840b0f525f17b40bf103bc8871f99d83">ITeamTransitService</a>
+: <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#a840b0f525f17b40bf103bc8871f99d83">ITeamTransitServiceController</a>
 , <a class="el" href="interfacetransit_1_1_transit_service.html#a840b0f525f17b40bf103bc8871f99d83">TransitService</a>
 </li>
 <li>getSession()
@@ -235,34 +208,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getSessionToken()
 : <a class="el" href="classuser_1_1_session.html#aef67bd1aae1a865e9b75d569facfd82c">Session</a>
 </li>
+<li>getSessionTokenVerificationStrategy()
+: <a class="el" href="classalert_1_1controller_1_1_session_verification_factory.html#a92de66aa900dcade97f790e85df1fee5">SessionVerificationFactory</a>
+</li>
 <li>getSpec()
 : <a class="el" href="classtracking_1_1_tracking_alert_observer.html#aa5d0d3339469d9ea8fbe37e15deb63dd">TrackingAlertObserver</a>
-</li>
-<li>getStartDateTime()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#af30f848efe49e5a11b0f7d44db6457c0">Alert</a>
-</li>
-<li>getStartHour()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_data.html#ae4397c837a90b1ff50b18e24b0fad092">RecurringData</a>
-</li>
-<li>getStartMinute()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_data.html#aeb6782e01570bca4e4a02418324a591f">RecurringData</a>
-</li>
-<li>getStatus()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html#afd3348fcb830117bb5fd5645d3601788">Alert</a>
 </li>
 <li>getStopTimes()
 : <a class="el" href="classtransit_1_1_stop.html#a9b48f04713d7331352847b261e2c7fb2">Stop</a>
 </li>
-<li>getSuspendDateTime()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_recurring_alert.html#ac1d7a771910ca576e8d88e820e7feb0e">RecurringAlert</a>
-</li>
 <li>getTransitlnfo()
-: <a class="el" href="classtransit_1_1_i_team_transit_service.html#aa4819e59c9861ed3166265e0d0bcd945">ITeamTransitService</a>
+: <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#aa4819e59c9861ed3166265e0d0bcd945">ITeamTransitServiceController</a>
 , <a class="el" href="interfacetransit_1_1_transit_service.html#aa4819e59c9861ed3166265e0d0bcd945">TransitService</a>
 </li>
+<li>getTransitServiceUrl()
+: <a class="el" href="classuser_1_1_favorite_transit_service.html#a7045ca2bf8b2616e39c2c61c9e1e0884">FavoriteTransitService</a>
+</li>
 <li>getTransitVehicleLocation()
-: <a class="el" href="interfacetracking_1_1_i_tracking_service.html#ace287db1771b990af8fe2f23ef0b580b">ITrackingService</a>
-, <a class="el" href="classtracking_1_1_tracking_service_controller.html#ace287db1771b990af8fe2f23ef0b580b">TrackingServiceController</a>
+: <a class="el" href="interfacetracking_1_1_i_tracking_service.html#ab959154471565f04742dd85f118dc565">ITrackingService</a>
+, <a class="el" href="classtracking_1_1_tracking_service_controller.html#ab959154471565f04742dd85f118dc565">TrackingServiceController</a>
 </li>
 <li>getUser()
 : <a class="el" href="classuser_1_1_i_team_user_login_service.html#afe3207a6c588e6597778ce801283a3be">ITeamUserLoginService</a>
@@ -281,15 +245,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classuser_1_1_user_repository.html#a222ea4298cf94230c21c1c07a12a49c9">UserRepository</a>
 </li>
 <li>getUserId()
-: <a class="el" href="classuser_1_1_session.html#acc351a64fe46205c8b0ae3b9942f6ccf">Session</a>
-, <a class="el" href="classalert_1_1domain_1_1model_1_1_user_session_information.html#a1a86b0102452494152fce9535952e4f4">UserSessionInformation</a>
-, <a class="el" href="classuser_1_1_user.html#acc351a64fe46205c8b0ae3b9942f6ccf">User</a>
+: <a class="el" href="classuser_1_1_user.html#acc351a64fe46205c8b0ae3b9942f6ccf">User</a>
+, <a class="el" href="classuser_1_1_user_favorites_list.html#acc351a64fe46205c8b0ae3b9942f6ccf">UserFavoritesList</a>
+, <a class="el" href="classuser_1_1_session.html#acc351a64fe46205c8b0ae3b9942f6ccf">Session</a>
+</li>
+<li>getuserInformation()
+: <a class="el" href="classalert_1_1client_1_1_alert_user_client.html#a9fbf8350ff500bb7893a6194773ee8cd">AlertUserClient</a>
 </li>
 <li>getUsername()
 : <a class="el" href="classuser_1_1_user.html#ae051c19b1814b51d46420e69d4382765">User</a>
-</li>
-<li>getUserSessionToken()
-: <a class="el" href="classalert_1_1domain_1_1model_1_1_user_session_information.html#a042edd8ef42c66146a0a3e9fae72bac5">UserSessionInformation</a>
 </li>
 <li>getUserType()
 : <a class="el" href="classuser_1_1_user.html#a0013ccce7c4097870400f8108a5f783e">User</a>
@@ -316,13 +280,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a1e7d42cd688057bf91a739055b3afd8e">GPSLocationObserver</a>
 </li>
 <li>gpsLocation
-: <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a123c6ceab82dd8ab57a4a550b8f78b40">GPSLocationObserver</a>
+: <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a1b5eddbca023916b664f7147cb94730e">GPSLocationObserver</a>
 </li>
 <li>gpsObserver
-: <a class="el" href="classtracking_1_1_g_p_s_puller.html#a19cbdef5a9548c3c37a5528731b7093a">GPSPuller</a>
-, <a class="el" href="classtracking_1_1_commercial_tracking.html#a19cbdef5a9548c3c37a5528731b7093a">CommercialTracking</a>
-, <a class="el" href="classtracking_1_1_transit_vehicle.html#a5ef7d4c7addf9eaf60f843f6d9be5f74">TransitVehicle</a>
+: <a class="el" href="classtracking_1_1_commercial_tracking.html#a19cbdef5a9548c3c37a5528731b7093a">CommercialTracking</a>
 , <a class="el" href="classtracking_1_1_g_p_s_pusher.html#a19cbdef5a9548c3c37a5528731b7093a">GPSPusher</a>
+, <a class="el" href="classtracking_1_1_transit_vehicle.html#a5ef7d4c7addf9eaf60f843f6d9be5f74">TransitVehicle</a>
+, <a class="el" href="classtracking_1_1_g_p_s_puller.html#a19cbdef5a9548c3c37a5528731b7093a">GPSPuller</a>
 </li>
 <li>GPSPuller()
 : <a class="el" href="classtracking_1_1_g_p_s_puller.html#aeb3e0aa10111feb571c7bd725e1ed138">GPSPuller</a>
@@ -331,8 +295,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classtracking_1_1_g_p_s_pusher.html#a100dffc233a6154c9e534e098850131d">GPSPusher</a>
 </li>
 <li>gpsUpdate()
-: <a class="el" href="classtracking_1_1_g_p_s_vehicle_tracker.html#a6cca80ded29ace8f7d71349b88ee76dd">GPSVehicleTracker</a>
-, <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#acdbd0238e5ff288ff0a06d5348cb193c">GPSLocationObserver</a>
+: <a class="el" href="classtracking_1_1_g_p_s_vehicle_tracker.html#a8dd363cef3e90c9f3ac1bd5423d1a991">GPSVehicleTracker</a>
+, <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#ac6faa5c8327c26b43d3fb1230425ae37">GPSLocationObserver</a>
 </li>
 <li>GPSVehicleTracker()
 : <a class="el" href="classtracking_1_1_g_p_s_vehicle_tracker.html#a8f766f72a1bbbb3dcece4b83b6100084">GPSVehicleTracker</a>
@@ -341,7 +305,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:21 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:04 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

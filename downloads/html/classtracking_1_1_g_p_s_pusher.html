@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -152,7 +152,8 @@ ArrayList&lt; <a class="el" href="classtracking_1_1_g_p_s_location_observer.html
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements Subject <a class="el" href="classtracking_1_1_g_p_s_location_tracking.html">GPSLocationTracking</a> for retrieving GPS location updates from registered vehicles. </p>
-<p><a class="el" href="classtracking_1_1_g_p_s_pusher.html" title="Implements Subject GPSLocationTracking for retrieving GPS location updates from registered vehicles...">GPSPusher</a> uses system infrastructure resources to set up a network listener to receive updates directly from the GPS device. GPS Pusher is implemented as a singleton to limit the number of system resources consumed. GPS Puser receives the necessary configuration information (e.g. port) from the user interface when the GPS device is registered. </p>
+<p><a class="el" href="classtracking_1_1_g_p_s_pusher.html" title="Implements Subject GPSLocationTracking for retrieving GPS location updates from registered vehicles...">GPSPusher</a> uses system infrastructure resources to set up a network listener to receive updates directly from the GPS device. GPS Pusher is implemented as a singleton to limit the number of system resources consumed. GPS Pusher receives the necessary configuration information (e.g. port) from the user interface when the GPS device is registered. </p>
+<dl class="section post"><dt>Postcondition</dt><dd>New GPS Listener created if none existed previously. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a100dffc233a6154c9e534e098850131d"></a>
 <div class="memitem">
@@ -211,7 +212,7 @@ ArrayList&lt; <a class="el" href="classtracking_1_1_g_p_s_location_observer.html
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:17 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:00 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

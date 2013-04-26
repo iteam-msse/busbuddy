@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>controller</b></li><li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1controller.html">controller</a></li><li class="navelem"><a class="el" href="namespacealert_1_1controller_1_1model.html">model</a></li><li class="navelem"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,20 +93,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">AlertResponseModel Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is a basic alert response model that is returned for every alert related requested.  
+ <a href="classalert_1_1controller_1_1model_1_1_alert_response_model.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aa57cd415842c27e8397c4a9e019627dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa57cd415842c27e8397c4a9e019627dd"></a>
-String&#160;</td><td class="memItemRight" valign="bottom"><b>requestCompete</b></td></tr>
-<tr class="separator:aa57cd415842c27e8397c4a9e019627dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e531c185af848083db0808335a78168"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e531c185af848083db0808335a78168"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html#a4e531c185af848083db0808335a78168">status</a></td></tr>
+<tr class="memdesc:a4e531c185af848083db0808335a78168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status message for the alert process job. <br/></td></tr>
+<tr class="separator:a4e531c185af848083db0808335a78168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0121fdee23cc2709b872002250397c2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0121fdee23cc2709b872002250397c2c"></a>
-String&#160;</td><td class="memItemRight" valign="bottom"><b>errorMessage</b></td></tr>
+String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html#a0121fdee23cc2709b872002250397c2c">errorMessage</a></td></tr>
+<tr class="memdesc:a0121fdee23cc2709b872002250397c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any error message if the alert request fails. <br/></td></tr>
 <tr class="separator:a0121fdee23cc2709b872002250397c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is a basic alert response model that is returned for every alert related requested. </p>
+<p>Additional fields can be added as needed during implementation phase. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:12 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:55 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

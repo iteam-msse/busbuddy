@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,18 +82,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>controller</b></li><li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1controller.html">controller</a></li><li class="navelem"><a class="el" href="namespacealert_1_1controller_1_1model.html">model</a></li><li class="navelem"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classalert_1_1controller_1_1model_1_1_alert_request_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AlertRequestModel Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A base model that contains bare minimum information about the alert request.  
+ <a href="classalert_1_1controller_1_1model_1_1_alert_request_model.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for AlertRequestModel:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classalert_1_1controller_1_1model_1_1_alert_request_model.png" usemap="#AlertRequestModel_map" alt=""/>
+  <map id="AlertRequestModel_map" name="AlertRequestModel_map">
+<area href="classalert_1_1controller_1_1model_1_1_tracking_alert_request_model.html" title="This model is a JSON representation of the request from Tracking module." alt="TrackingAlertRequestModel" shape="rect" coords="0,56,167,80"/>
+<area href="classalert_1_1controller_1_1model_1_1_transit_alert_request_model.html" title="This model is a JSON representation of the request from Transit module." alt="TransitAlertRequestModel" shape="rect" coords="177,56,344,80"/>
+<area href="classalert_1_1controller_1_1model_1_1_user_alert_request_model.html" title="This model is a JSON representation of the request from User module." alt="UserAlertRequestModel" shape="rect" coords="354,56,521,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad3cdaaef90eecc65be867d183d890b2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3cdaaef90eecc65be867d183d890b2d"></a>
+<a class="el" href="enumalert_1_1enums_1_1_alert_initiator.html">AlertInitiator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getAlertInitiator</b> ()</td></tr>
+<tr class="separator:ad3cdaaef90eecc65be867d183d890b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4716f210f67b16c71e78e298ec5e8e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4716f210f67b16c71e78e298ec5e8e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlertInitiator</b> (<a class="el" href="enumalert_1_1enums_1_1_alert_initiator.html">AlertInitiator</a> <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html#a12ac62ca570b6daeccc921d237dabef0">alertInitiator</a>)</td></tr>
+<tr class="separator:af4716f210f67b16c71e78e298ec5e8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a12ac62ca570b6daeccc921d237dabef0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumalert_1_1enums_1_1_alert_initiator.html">AlertInitiator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html#a12ac62ca570b6daeccc921d237dabef0">alertInitiator</a></td></tr>
+<tr class="memdesc:a12ac62ca570b6daeccc921d237dabef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alert Initiator {.  <a href="#a12ac62ca570b6daeccc921d237dabef0">More...</a><br/></td></tr>
+<tr class="separator:a12ac62ca570b6daeccc921d237dabef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A base model that contains bare minimum information about the alert request. </p>
+<p>Any model that extends this class can add additional data that is needed. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a12ac62ca570b6daeccc921d237dabef0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumalert_1_1enums_1_1_alert_initiator.html">AlertInitiator</a> alertInitiator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Alert Initiator {. </p>
+<dl class="section see"><dt>See Also</dt><dd>AlertInitiator}. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:12 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:55 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,13 +88,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classuser_1_1_i_team_user_management_service-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ITeamUserManagementService Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is the iTeam's implementation of <a class="el" href="interfaceuser_1_1_user_management_service.html">UserManagementService</a>.  
+ <a href="classuser_1_1_i_team_user_management_service.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ITeamUserManagementService:</div>
 <div class="dyncontent">
@@ -107,41 +109,221 @@ Inheritance diagram for ITeamUserManagementService:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a09aa67d1358bcca068c65b1a53c130bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09aa67d1358bcca068c65b1a53c130bd"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createUser</b> (<a class="el" href="classuser_1_1_user.html">User</a> userToCreate, String password)</td></tr>
+<tr class="memitem:a09aa67d1358bcca068c65b1a53c130bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_i_team_user_management_service.html#a09aa67d1358bcca068c65b1a53c130bd">createUser</a> (<a class="el" href="classuser_1_1_user.html">User</a> userToCreate, String password)  throws BusBuddyException </td></tr>
 <tr class="separator:a09aa67d1358bcca068c65b1a53c130bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ce939d73832de0209a790b53fe658c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20ce939d73832de0209a790b53fe658c"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>findUserByUsername</b> (String sessionToken, String username)</td></tr>
+<tr class="memitem:a20ce939d73832de0209a790b53fe658c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_i_team_user_management_service.html#a20ce939d73832de0209a790b53fe658c">findUserByUsername</a> (String sessionToken, String username)  throws BusBuddyException </td></tr>
 <tr class="separator:a20ce939d73832de0209a790b53fe658c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab97629f691e62aac8159b567bb7b7136"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab97629f691e62aac8159b567bb7b7136"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>findUserByEmail</b> (String sessionToken, String email)</td></tr>
+<tr class="memitem:ab97629f691e62aac8159b567bb7b7136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_i_team_user_management_service.html#ab97629f691e62aac8159b567bb7b7136">findUserByEmail</a> (String sessionToken, String email)  throws BusBuddyException </td></tr>
 <tr class="separator:ab97629f691e62aac8159b567bb7b7136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af72759f8d2da631ec6194a17ab903de7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af72759f8d2da631ec6194a17ab903de7"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>findUserByMobile</b> (String sessionToken, short countryCode, String mobile)</td></tr>
+<tr class="memitem:af72759f8d2da631ec6194a17ab903de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_i_team_user_management_service.html#af72759f8d2da631ec6194a17ab903de7">findUserByMobile</a> (String sessionToken, short countryCode, String mobile)  throws BusBuddyException </td></tr>
 <tr class="separator:af72759f8d2da631ec6194a17ab903de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4a723dda79faa1fa7a315d0befc56eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4a723dda79faa1fa7a315d0befc56eb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateUser</b> (String sessionToken, <a class="el" href="classuser_1_1_user.html">User</a> newUserData, String password)</td></tr>
+<tr class="memitem:af4a723dda79faa1fa7a315d0befc56eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_i_team_user_management_service.html#af4a723dda79faa1fa7a315d0befc56eb">updateUser</a> (String sessionToken, <a class="el" href="classuser_1_1_user.html">User</a> newUserData, String password)  throws BusBuddyException </td></tr>
 <tr class="separator:af4a723dda79faa1fa7a315d0befc56eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a238f78989c9b93d88aee4952b9eb21e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a238f78989c9b93d88aee4952b9eb21e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteUser</b> (String sessionToken, <a class="el" href="classuser_1_1_user.html">User</a> userToDelete)</td></tr>
+<tr class="memitem:a238f78989c9b93d88aee4952b9eb21e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_i_team_user_management_service.html#a238f78989c9b93d88aee4952b9eb21e4">deleteUser</a> (String sessionToken, <a class="el" href="classuser_1_1_user.html">User</a> userToDelete)  throws BusBuddyException </td></tr>
 <tr class="separator:a238f78989c9b93d88aee4952b9eb21e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4476d012d0c7373c5a57465492fe9d53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4476d012d0c7373c5a57465492fe9d53"></a>
-boolean&#160;</td><td class="memItemRight" valign="bottom"><b>checkPermissions</b> (String sessionToken)</td></tr>
-<tr class="separator:a4476d012d0c7373c5a57465492fe9d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a88802682b84facd674842156e702b0e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88802682b84facd674842156e702b0e4"></a>
+<a class="el" href="classuser_1_1_i_team_user_login_service.html">ITeamUserLoginService</a>&#160;</td><td class="memItemRight" valign="bottom"><b>userLoginService</b></td></tr>
+<tr class="separator:a88802682b84facd674842156e702b0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ba034e3be5cbb46ed280f603ea2675f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ba034e3be5cbb46ed280f603ea2675f"></a>
 <a class="el" href="classuser_1_1_user_repository.html">UserRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><b>userRepository</b></td></tr>
 <tr class="separator:a4ba034e3be5cbb46ed280f603ea2675f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is the iTeam's implementation of <a class="el" href="interfaceuser_1_1_user_management_service.html">UserManagementService</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a09aa67d1358bcca068c65b1a53c130bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> createUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>userToCreate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a> </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interfaceuser_1_1_user_management_service.html#a09aa67d1358bcca068c65b1a53c130bd" title="This method creates a user in the database.">UserManagementService.createUser</a> </dd></dl>
+
+<p>Implements <a class="el" href="interfaceuser_1_1_user_management_service.html#a09aa67d1358bcca068c65b1a53c130bd">UserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a238f78989c9b93d88aee4952b9eb21e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteUser </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>userToDelete</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a> </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See Also</dt><dd>UserManagementService.delete </dd></dl>
+
+<p>Implements <a class="el" href="interfaceuser_1_1_user_management_service.html#a238f78989c9b93d88aee4952b9eb21e4">UserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab97629f691e62aac8159b567bb7b7136"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> findUserByEmail </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>email</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a> </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interfaceuser_1_1_user_management_service.html#ab97629f691e62aac8159b567bb7b7136" title="This method attempts to retrieve a user by e-mail address.">UserManagementService.findUserByEmail</a> </dd></dl>
+
+<p>Implements <a class="el" href="interfaceuser_1_1_user_management_service.html#ab97629f691e62aac8159b567bb7b7136">UserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af72759f8d2da631ec6194a17ab903de7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> findUserByMobile </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>countryCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>mobile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a> </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interfaceuser_1_1_user_management_service.html#af72759f8d2da631ec6194a17ab903de7" title="This method attempts to retrieve a user by mobile phone number.">UserManagementService.findUserByMobile</a> </dd></dl>
+
+<p>Implements <a class="el" href="interfaceuser_1_1_user_management_service.html#af72759f8d2da631ec6194a17ab903de7">UserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20ce939d73832de0209a790b53fe658c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> findUserByUsername </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a> </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interfaceuser_1_1_user_management_service.html#a20ce939d73832de0209a790b53fe658c" title="This method attempts to retrieve a user by username.">UserManagementService.findUserByUsername</a> </dd></dl>
+
+<p>Implements <a class="el" href="interfaceuser_1_1_user_management_service.html#a20ce939d73832de0209a790b53fe658c">UserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4a723dda79faa1fa7a315d0befc56eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateUser </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>newUserData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a> </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interfaceuser_1_1_user_management_service.html#af4a723dda79faa1fa7a315d0befc56eb" title="This method updates a user in the database.">UserManagementService.updateUser</a> </dd></dl>
+
+<p>Implements <a class="el" href="interfaceuser_1_1_user_management_service.html#af4a723dda79faa1fa7a315d0befc56eb">UserManagementService</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:20 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:04 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

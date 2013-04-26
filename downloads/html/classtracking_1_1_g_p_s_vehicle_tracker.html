@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of the Observer, update the transit vehicle GPS location.  
+<p>Implementation of the Observer, update transit vehicle GPS location and time GPS Vehicle Tracker gets the state as new GPS coordinates and time from GPS Location Tracking and updates the transit vehicle.  
  <a href="classtracking_1_1_g_p_s_vehicle_tracker.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for GPSVehicleTracker:</div>
@@ -111,21 +111,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f766f72a1bbbb3dcece4b83b6100084"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_vehicle_tracker.html#a8f766f72a1bbbb3dcece4b83b6100084">GPSVehicleTracker</a> (<a class="el" href="classtracking_1_1_g_p_s_location_tracking.html">GPSLocationTracking</a> <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#aaef5d2c3a7c07e0db2714b77e14bbd12">gpsDevice</a>)</td></tr>
 <tr class="memdesc:a8f766f72a1bbbb3dcece4b83b6100084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the Transit Vehicle GPS device with GPS location tracking.  <a href="#a8f766f72a1bbbb3dcece4b83b6100084">More...</a><br/></td></tr>
 <tr class="separator:a8f766f72a1bbbb3dcece4b83b6100084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cca80ded29ace8f7d71349b88ee76dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cca80ded29ace8f7d71349b88ee76dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_vehicle_tracker.html#a6cca80ded29ace8f7d71349b88ee76dd">gpsUpdate</a> (int <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a1e7d42cd688057bf91a739055b3afd8e">gpsID</a>, <a class="el" href="classtransit_1_1_location.html">Location</a> newLocation)</td></tr>
-<tr class="memdesc:a6cca80ded29ace8f7d71349b88ee76dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify method to get the new GPS coordinates from GPS location tracking. <br/></td></tr>
-<tr class="separator:a6cca80ded29ace8f7d71349b88ee76dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd363cef3e90c9f3ac1bd5423d1a991"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dd363cef3e90c9f3ac1bd5423d1a991"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_vehicle_tracker.html#a8dd363cef3e90c9f3ac1bd5423d1a991">gpsUpdate</a> (int <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a1e7d42cd688057bf91a739055b3afd8e">gpsID</a>, <a class="el" href="classtracking_1_1_g_p_s_location_object.html">GPSLocationObject</a> newLocation)</td></tr>
+<tr class="memdesc:a8dd363cef3e90c9f3ac1bd5423d1a991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify method to get the new GPS coordinates from GPS location tracking. <br/></td></tr>
+<tr class="separator:a8dd363cef3e90c9f3ac1bd5423d1a991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtracking_1_1_g_p_s_location_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtracking_1_1_g_p_s_location_observer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtracking_1_1_g_p_s_location_observer.html">GPSLocationObserver</a></td></tr>
-<tr class="memitem:abaa62afcf95d26e3baacc33673742e5b inherit pub_methods_classtracking_1_1_g_p_s_location_observer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtransit_1_1_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_location_observer.html#abaa62afcf95d26e3baacc33673742e5b">getGPSLocation</a> ()</td></tr>
-<tr class="memdesc:abaa62afcf95d26e3baacc33673742e5b inherit pub_methods_classtracking_1_1_g_p_s_location_observer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current GPS location received from a vehicle.  <a href="#abaa62afcf95d26e3baacc33673742e5b">More...</a><br/></td></tr>
-<tr class="separator:abaa62afcf95d26e3baacc33673742e5b inherit pub_methods_classtracking_1_1_g_p_s_location_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb71e905edca8f31c67f7933db602f8 inherit pub_methods_classtracking_1_1_g_p_s_location_observer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtracking_1_1_g_p_s_location_object.html">GPSLocationObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a2fb71e905edca8f31c67f7933db602f8">getGPSLocation</a> ()</td></tr>
+<tr class="memdesc:a2fb71e905edca8f31c67f7933db602f8 inherit pub_methods_classtracking_1_1_g_p_s_location_observer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current GPS location received from a vehicle.  <a href="#a2fb71e905edca8f31c67f7933db602f8">More...</a><br/></td></tr>
+<tr class="separator:a2fb71e905edca8f31c67f7933db602f8 inherit pub_methods_classtracking_1_1_g_p_s_location_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classtracking_1_1_g_p_s_location_observer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classtracking_1_1_g_p_s_location_observer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classtracking_1_1_g_p_s_location_observer.html">GPSLocationObserver</a></td></tr>
-<tr class="memitem:ab7d0c469a0de05693cd6b27ed517a304 inherit pro_methods_classtracking_1_1_g_p_s_location_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_location_observer.html#ab7d0c469a0de05693cd6b27ed517a304">setGPSLocation</a> (<a class="el" href="classtransit_1_1_location.html">Location</a> <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a123c6ceab82dd8ab57a4a550b8f78b40">gpsLocation</a>)</td></tr>
-<tr class="memdesc:ab7d0c469a0de05693cd6b27ed517a304 inherit pro_methods_classtracking_1_1_g_p_s_location_observer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current GPS location of a vehicle (state).  <a href="#ab7d0c469a0de05693cd6b27ed517a304">More...</a><br/></td></tr>
-<tr class="separator:ab7d0c469a0de05693cd6b27ed517a304 inherit pro_methods_classtracking_1_1_g_p_s_location_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0eeabea59a946a8b15bc8aa390d2a5 inherit pro_methods_classtracking_1_1_g_p_s_location_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a4f0eeabea59a946a8b15bc8aa390d2a5">setGPSLocation</a> (<a class="el" href="classtracking_1_1_g_p_s_location_object.html">GPSLocationObject</a> <a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a1b5eddbca023916b664f7147cb94730e">gpsLocation</a>)</td></tr>
+<tr class="memdesc:a4f0eeabea59a946a8b15bc8aa390d2a5 inherit pro_methods_classtracking_1_1_g_p_s_location_observer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current GPS location of a vehicle (state).  <a href="#a4f0eeabea59a946a8b15bc8aa390d2a5">More...</a><br/></td></tr>
+<tr class="separator:a4f0eeabea59a946a8b15bc8aa390d2a5 inherit pro_methods_classtracking_1_1_g_p_s_location_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classtracking_1_1_g_p_s_location_observer"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classtracking_1_1_g_p_s_location_observer')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classtracking_1_1_g_p_s_location_observer.html">GPSLocationObserver</a></td></tr>
 <tr class="memitem:aaef5d2c3a7c07e0db2714b77e14bbd12 inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaef5d2c3a7c07e0db2714b77e14bbd12"></a>
 <a class="el" href="classtracking_1_1_g_p_s_location_tracking.html">GPSLocationTracking</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_location_observer.html#aaef5d2c3a7c07e0db2714b77e14bbd12">gpsDevice</a></td></tr>
@@ -135,13 +135,14 @@ Additional Inherited Members</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a1e7d42cd688057bf91a739055b3afd8e">gpsID</a></td></tr>
 <tr class="memdesc:a1e7d42cd688057bf91a739055b3afd8e inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPS Device ID being tracked. <br/></td></tr>
 <tr class="separator:a1e7d42cd688057bf91a739055b3afd8e inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a123c6ceab82dd8ab57a4a550b8f78b40 inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a123c6ceab82dd8ab57a4a550b8f78b40"></a>
-<a class="el" href="classtransit_1_1_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a123c6ceab82dd8ab57a4a550b8f78b40">gpsLocation</a></td></tr>
-<tr class="memdesc:a123c6ceab82dd8ab57a4a550b8f78b40 inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current GPS latitude and longitude from GPS tracker. <br/></td></tr>
-<tr class="separator:a123c6ceab82dd8ab57a4a550b8f78b40 inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5eddbca023916b664f7147cb94730e inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b5eddbca023916b664f7147cb94730e"></a>
+<a class="el" href="classtracking_1_1_g_p_s_location_object.html">GPSLocationObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_g_p_s_location_observer.html#a1b5eddbca023916b664f7147cb94730e">gpsLocation</a></td></tr>
+<tr class="memdesc:a1b5eddbca023916b664f7147cb94730e inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current GPS latitude and longitude from GPS tracker. <br/></td></tr>
+<tr class="separator:a1b5eddbca023916b664f7147cb94730e inherit pro_attribs_classtracking_1_1_g_p_s_location_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of the Observer, update the transit vehicle GPS location. </p>
+<div class="textblock"><p>Implementation of the Observer, update transit vehicle GPS location and time GPS Vehicle Tracker gets the state as new GPS coordinates and time from GPS Location Tracking and updates the transit vehicle. </p>
+<dl class="section post"><dt>Postcondition</dt><dd>Transit Vehicle GPS location updated. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8f766f72a1bbbb3dcece4b83b6100084"></a>
 <div class="memitem">
@@ -170,7 +171,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:17 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:00 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -136,11 +136,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae69d703b6e8cd655924d676a034c7fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adef3024a10ddffbfcd1fd65b57df0c62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adef3024a10ddffbfcd1fd65b57df0c62"></a>
 <a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html">AlertRequestController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_tracking_alert_observer.html#adef3024a10ddffbfcd1fd65b57df0c62">arc</a> = new <a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html">AlertRequestController</a>()</td></tr>
-<tr class="memdesc:adef3024a10ddffbfcd1fd65b57df0c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alert Module Controller will be used for processUserAlertRequest() <br/></td></tr>
+<tr class="memdesc:adef3024a10ddffbfcd1fd65b57df0c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alert Module Controller called via a REST API processUserAlertRequest() <br/></td></tr>
 <tr class="separator:adef3024a10ddffbfcd1fd65b57df0c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract class defining the methods for the tracking alert observer. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Vehicle is determined by <a class="el" href="interfacetracking_1_1_alert_specification.html">AlertSpecification</a> to within range </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Alert request is sent to the <a class="el" href="">AlertService</a> Abstract class defining the methods for the tracking alert observer. This class calls alert module’s alert controller via REST call to fetch necessary information. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aa5d0d3339469d9ea8fbe37e15deb63dd"></a>
 <div class="memitem">
@@ -228,7 +230,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:17 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:00 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

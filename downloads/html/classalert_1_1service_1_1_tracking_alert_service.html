@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html">TrackingAlertService</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1service.html">service</a></li><li class="navelem"><a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html">TrackingAlertService</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,55 +93,142 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">TrackingAlertService Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Extends <a class="el" href="classalert_1_1service_1_1_alert_service.html">AlertService</a> and provides CRUD methods to operate on alerts as well as sends alerts to execute via appropriate strategy.  
+ <a href="classalert_1_1service_1_1_tracking_alert_service.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TrackingAlertService:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classalert_1_1service_1_1_tracking_alert_service.png" usemap="#TrackingAlertService_map" alt=""/>
   <map id="TrackingAlertService_map" name="TrackingAlertService_map">
-<area href="classalert_1_1service_1_1_alert_service.html" alt="AlertService" shape="rect" coords="0,0,132,24"/>
+<area href="classalert_1_1service_1_1_alert_service.html" title="Alert Service is a base class that is extended by other module specific services." alt="AlertService" shape="rect" coords="0,0,132,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac68f91048bb29048e970fdf3ed7ffa6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac68f91048bb29048e970fdf3ed7ffa6d"></a>
-<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createAlert</b> (<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a> requestModel)</td></tr>
+<tr class="memitem:ac68f91048bb29048e970fdf3ed7ffa6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html#ac68f91048bb29048e970fdf3ed7ffa6d">createAlert</a> (<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a> requestModel)</td></tr>
+<tr class="memdesc:ac68f91048bb29048e970fdf3ed7ffa6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#ac68f91048bb29048e970fdf3ed7ffa6d">More...</a><br/></td></tr>
 <tr class="separator:ac68f91048bb29048e970fdf3ed7ffa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a349f75ee677a85ac0c555c0b4ca938e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a349f75ee677a85ac0c555c0b4ca938e1"></a>
-<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>saveAlert</b> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
-<tr class="separator:a349f75ee677a85ac0c555c0b4ca938e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6ae915fab337ffcbed5d8e8a4f6ad0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6ae915fab337ffcbed5d8e8a4f6ad0e"></a>
-<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>deleteAlert</b> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
-<tr class="separator:ad6ae915fab337ffcbed5d8e8a4f6ad0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9ea19f3c1c4232e81f6a272b25a3aab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9ea19f3c1c4232e81f6a272b25a3aab"></a>
-<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>updateAlert</b> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
+<tr class="memitem:af9ea19f3c1c4232e81f6a272b25a3aab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html#af9ea19f3c1c4232e81f6a272b25a3aab">updateAlert</a> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
+<tr class="memdesc:af9ea19f3c1c4232e81f6a272b25a3aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#af9ea19f3c1c4232e81f6a272b25a3aab">More...</a><br/></td></tr>
 <tr class="separator:af9ea19f3c1c4232e81f6a272b25a3aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e7bfdec534740853bbdbbce8210caf"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html#a16e7bfdec534740853bbdbbce8210caf">sendAlert</a> ()</td></tr>
+<tr class="memdesc:a16e7bfdec534740853bbdbbce8210caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#a16e7bfdec534740853bbdbbce8210caf">More...</a><br/></td></tr>
+<tr class="separator:a16e7bfdec534740853bbdbbce8210caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classalert_1_1service_1_1_alert_service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalert_1_1service_1_1_alert_service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classalert_1_1service_1_1_alert_service.html">AlertService</a></td></tr>
-<tr class="memitem:a349f75ee677a85ac0c555c0b4ca938e1 inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a349f75ee677a85ac0c555c0b4ca938e1"></a>
-<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>saveAlert</b> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
+<tr class="memitem:a349f75ee677a85ac0c555c0b4ca938e1 inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a349f75ee677a85ac0c555c0b4ca938e1">saveAlert</a> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
+<tr class="memdesc:a349f75ee677a85ac0c555c0b4ca938e1 inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an <a class="el" href="">Alert</a> model to persist it into db.  <a href="#a349f75ee677a85ac0c555c0b4ca938e1">More...</a><br/></td></tr>
 <tr class="separator:a349f75ee677a85ac0c555c0b4ca938e1 inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6ae915fab337ffcbed5d8e8a4f6ad0e inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6ae915fab337ffcbed5d8e8a4f6ad0e"></a>
-<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>deleteAlert</b> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
+<tr class="memitem:ad6ae915fab337ffcbed5d8e8a4f6ad0e inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#ad6ae915fab337ffcbed5d8e8a4f6ad0e">deleteAlert</a> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
+<tr class="memdesc:ad6ae915fab337ffcbed5d8e8a4f6ad0e inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an Alert Model for deletion.  <a href="#ad6ae915fab337ffcbed5d8e8a4f6ad0e">More...</a><br/></td></tr>
 <tr class="separator:ad6ae915fab337ffcbed5d8e8a4f6ad0e inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9ea19f3c1c4232e81f6a272b25a3aab inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9ea19f3c1c4232e81f6a272b25a3aab"></a>
-<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>updateAlert</b> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
-<tr class="separator:af9ea19f3c1c4232e81f6a272b25a3aab inherit pub_methods_classalert_1_1service_1_1_alert_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pac_attribs_classalert_1_1service_1_1_alert_service"><td colspan="2" onclick="javascript:toggleInherit('pac_attribs_classalert_1_1service_1_1_alert_service')"><img src="closed.png" alt="-"/>&#160;Package Attributes inherited from <a class="el" href="classalert_1_1service_1_1_alert_service.html">AlertService</a></td></tr>
-<tr class="memitem:a00d7a6ab70a86840c964448d6d34602f inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00d7a6ab70a86840c964448d6d34602f"></a>
-<a class="el" href="interfacealert_1_1service_1_1_i_alert_execute_strategy.html">IAlertExecuteStrategy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>alertExecuteStrategy</b></td></tr>
-<tr class="separator:a00d7a6ab70a86840c964448d6d34602f inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234b64fa21554dc9b1acf3fa2080325f inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a234b64fa21554dc9b1acf3fa2080325f"></a>
-<a class="el" href="classalert_1_1domain_1_1_alert_repository.html">AlertRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><b>alertRepository</b></td></tr>
+<tr class="memitem:a4911088dc05a1d197203f9132f6d3148 inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1service_1_1_alert_execute_strategy_factory.html">AlertExecuteStrategyFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a4911088dc05a1d197203f9132f6d3148">alertExecuteStrategyFactory</a></td></tr>
+<tr class="memdesc:a4911088dc05a1d197203f9132f6d3148 inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#a4911088dc05a1d197203f9132f6d3148">More...</a><br/></td></tr>
+<tr class="separator:a4911088dc05a1d197203f9132f6d3148 inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234b64fa21554dc9b1acf3fa2080325f inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1domain_1_1_alert_repository.html">AlertRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a234b64fa21554dc9b1acf3fa2080325f">alertRepository</a></td></tr>
+<tr class="memdesc:a234b64fa21554dc9b1acf3fa2080325f inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#a234b64fa21554dc9b1acf3fa2080325f">More...</a><br/></td></tr>
 <tr class="separator:a234b64fa21554dc9b1acf3fa2080325f inherit pac_attribs_classalert_1_1service_1_1_alert_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Extends <a class="el" href="classalert_1_1service_1_1_alert_service.html">AlertService</a> and provides CRUD methods to operate on alerts as well as sends alerts to execute via appropriate strategy. </p>
+<p>This handles all the alerts initiated by Tracking module. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac68f91048bb29048e970fdf3ed7ffa6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a> createAlert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a>&#160;</td>
+          <td class="paramname"><em>requestModel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>{ </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classalert_1_1service_1_1_alert_service.html#a559ce5260e8b0b45660d9b2ecc3890b8" title="An abstract class that must be implemented by derived classes to create a new alert model...">AlertService::createAlert(AlertRequestModel)</a>} </dd></dl>
+
+<p>Implements <a class="el" href="classalert_1_1service_1_1_alert_service.html#a559ce5260e8b0b45660d9b2ecc3890b8">AlertService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16e7bfdec534740853bbdbbce8210caf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean sendAlert </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>{ </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classalert_1_1service_1_1_alert_service.html#a782186de312a78d01b583d7772a91bad" title="Finds all the alerts that are initiated by this service and calls AlertExecuteStrategyFactory to find...">AlertService::sendAlert()</a>} </dd></dl>
+
+<p>Implements <a class="el" href="classalert_1_1service_1_1_alert_service.html#a782186de312a78d01b583d7772a91bad">AlertService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9ea19f3c1c4232e81f6a272b25a3aab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a> updateAlert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a>&#160;</td>
+          <td class="paramname"><em>alertModel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>{ </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classalert_1_1service_1_1_alert_service.html#a9a3446a0da4ce9a980b171639bb2ab55" title="Takes in a final Alert Model that needs to be updated in db.">AlertService::updateAlert(Alert)</a>} </dd></dl>
+
+<p>Implements <a class="el" href="classalert_1_1service_1_1_alert_service.html#a9a3446a0da4ce9a980b171639bb2ab55">AlertService</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:13 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:57 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

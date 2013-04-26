@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,35 +82,229 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html">AlertRequestController</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1controller.html">controller</a></li><li class="navelem"><a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html">AlertRequestController</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classalert_1_1controller_1_1_alert_request_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AlertRequestController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is a front facing controller that takes in request from other module via REST call and returns a JSON representation data.  
+ <a href="classalert_1_1controller_1_1_alert_request_controller.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afa7dcfa2ec59b75ea2f356288ce22599"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa7dcfa2ec59b75ea2f356288ce22599"></a>
-<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>processUserAlertRequest</b> (<a class="el" href="classalert_1_1controller_1_1model_1_1_user_alert_request_model.html">UserAlertRequestModel</a> userAlertRequest)</td></tr>
-<tr class="separator:afa7dcfa2ec59b75ea2f356288ce22599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a8eaffb6417ffb8d028514780bd380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html#a79a8eaffb6417ffb8d028514780bd380">processUserAlertRequest</a> (<a class="el" href="classalert_1_1controller_1_1model_1_1_user_alert_request_model.html">UserAlertRequestModel</a> userAlertRequest, String encryptedToken)</td></tr>
+<tr class="memdesc:a79a8eaffb6417ffb8d028514780bd380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes Alert manipulation request from User module.  <a href="#a79a8eaffb6417ffb8d028514780bd380">More...</a><br/></td></tr>
+<tr class="separator:a79a8eaffb6417ffb8d028514780bd380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff98464b571d51a59f2a4207e01b7b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html#acff98464b571d51a59f2a4207e01b7b4">processTransitAlertRequest</a> (<a class="el" href="classalert_1_1controller_1_1model_1_1_transit_alert_request_model.html">TransitAlertRequestModel</a> transitAlertRequest, String encryptedToken)</td></tr>
+<tr class="memdesc:acff98464b571d51a59f2a4207e01b7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes Alert manipulation request from Transit module.  <a href="#acff98464b571d51a59f2a4207e01b7b4">More...</a><br/></td></tr>
+<tr class="separator:acff98464b571d51a59f2a4207e01b7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8e8f221eff7a2df8766da308075254"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html#a1c8e8f221eff7a2df8766da308075254">processTrackingAlertRequest</a> (<a class="el" href="classalert_1_1controller_1_1model_1_1_tracking_alert_request_model.html">TrackingAlertRequestModel</a> trackingAlertRequest, String encryptedToken)</td></tr>
+<tr class="memdesc:a1c8e8f221eff7a2df8766da308075254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes Alert manipulation request from Tracking module.  <a href="#a1c8e8f221eff7a2df8766da308075254">More...</a><br/></td></tr>
+<tr class="separator:a1c8e8f221eff7a2df8766da308075254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a327e9438d3ec9ce497802436c71aa34c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html#a327e9438d3ec9ce497802436c71aa34c">verifySession</a> (<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a> requestModel, String encryptedToken)</td></tr>
+<tr class="memdesc:a327e9438d3ec9ce497802436c71aa34c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to verify the validity of session token being passed.  <a href="#a327e9438d3ec9ce497802436c71aa34c">More...</a><br/></td></tr>
+<tr class="separator:a327e9438d3ec9ce497802436c71aa34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9156c572a46d3d17ce659bab49260845"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9156c572a46d3d17ce659bab49260845"></a>
-<a class="el" href="interfacealert_1_1controller_1_1_i_session_handler.html">ISessionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sessionHandler</b></td></tr>
-<tr class="separator:a9156c572a46d3d17ce659bab49260845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7c0dbeb1a246a6c2111e721fdda551"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae7c0dbeb1a246a6c2111e721fdda551"></a>
+<a class="el" href="classalert_1_1controller_1_1_session_verification_factory.html">SessionVerificationFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1_alert_request_controller.html#aae7c0dbeb1a246a6c2111e721fdda551">sessionVerificationFactory</a></td></tr>
+<tr class="memdesc:aae7c0dbeb1a246a6c2111e721fdda551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session Verification Factory picks the appropriate type of session verification strategy depending upon which module is initiating the call. <br/></td></tr>
+<tr class="separator:aae7c0dbeb1a246a6c2111e721fdda551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is a front facing controller that takes in request from other module via REST call and returns a JSON representation data. </p>
+<p>User module calls the alert module to create new alert, delete alert, update alert or to get a list of alert for a user. Transit module can call alert module to create, delete and update a new alert. Tracking module can call alert module to create a new alert. As far as public facing end points go, we have implemented one endpoint for each module. During implementation there might be different GET, POST, PUT and DELETE methods. But for now, we are putting only one method per module as a placeholder assuming that it can take different actions depending upon the information in the AlertRequestModel. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1c8e8f221eff7a2df8766da308075254"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a> processTrackingAlertRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalert_1_1controller_1_1model_1_1_tracking_alert_request_model.html">TrackingAlertRequestModel</a>&#160;</td>
+          <td class="paramname"><em>trackingAlertRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>encryptedToken</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes Alert manipulation request from Tracking module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trackingAlertRequest</td><td>{</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd>TrackingAlertRequestModel} </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryptedToken</td><td>An encrypted token that can be validated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="">AlertResponseModel</a> that has the success/error information. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acff98464b571d51a59f2a4207e01b7b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a> processTransitAlertRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalert_1_1controller_1_1model_1_1_transit_alert_request_model.html">TransitAlertRequestModel</a>&#160;</td>
+          <td class="paramname"><em>transitAlertRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>encryptedToken</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes Alert manipulation request from Transit module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transitAlertRequest</td><td>{</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd>TransitAlertRequestModel} </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryptedToken</td><td><ul>
+<li>An encrypted token that can be validated. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="">AlertResponseModel</a> that has the success/error information. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a79a8eaffb6417ffb8d028514780bd380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a> processUserAlertRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalert_1_1controller_1_1model_1_1_user_alert_request_model.html">UserAlertRequestModel</a>&#160;</td>
+          <td class="paramname"><em>userAlertRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>encryptedToken</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes Alert manipulation request from User module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userAlertRequest</td><td>An alertRequestModel that has the necessary information regarding creation of an alert. {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See Also</dt><dd>UserAlertRequestModel} </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryptedToken</td><td>An encrypted token that can be validated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="">AlertResponseModel</a> that has the success/error information. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a327e9438d3ec9ce497802436c71aa34c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void verifySession </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a>&#160;</td>
+          <td class="paramname"><em>requestModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>encryptedToken</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method to verify the validity of session token being passed. </p>
+<p>If token verification fails, it automatically throws an error the request is terminated.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">requestModel</td><td>An object representation of JSON that has the request. </td></tr>
+    <tr><td class="paramname">encryptedToken</td><td>An encrypted token that can be validated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:11 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:54 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

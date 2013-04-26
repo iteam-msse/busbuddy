@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,7 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classuser_1_1_user-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -144,6 +143,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0e12fb41fddb964de500ebeb6dfe9ecc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_user.html#a0e12fb41fddb964de500ebeb6dfe9ecc">User</a> (int userId, String username)</td></tr>
+<tr class="memdesc:a0e12fb41fddb964de500ebeb6dfe9ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructs a new <a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> object.  <a href="#a0e12fb41fddb964de500ebeb6dfe9ecc">More...</a><br/></td></tr>
+<tr class="separator:a0e12fb41fddb964de500ebeb6dfe9ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57fe8d0a853227af5c07e25d380b0103"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_user.html#a57fe8d0a853227af5c07e25d380b0103">getPasswordHash</a> ()</td></tr>
 <tr class="memdesc:a57fe8d0a853227af5c07e25d380b0103"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the password hash for this user.  <a href="#a57fe8d0a853227af5c07e25d380b0103">More...</a><br/></td></tr>
 <tr class="separator:a57fe8d0a853227af5c07e25d380b0103"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,12 +156,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:ab9f24ca9a2fcb9b8f31fe49be677543b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This sets the state indicating if the password is in a state where it needs to be changed.  <a href="#ab9f24ca9a2fcb9b8f31fe49be677543b">More...</a><br/></td></tr>
 <tr class="separator:ab9f24ca9a2fcb9b8f31fe49be677543b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a0e12fb41fddb964de500ebeb6dfe9ecc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_user.html#a0e12fb41fddb964de500ebeb6dfe9ecc">User</a> (int userId, String username)</td></tr>
-<tr class="memdesc:a0e12fb41fddb964de500ebeb6dfe9ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructs a new <a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> object.  <a href="#a0e12fb41fddb964de500ebeb6dfe9ecc">More...</a><br/></td></tr>
-<tr class="separator:a0e12fb41fddb964de500ebeb6dfe9ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2b1a7053564ddca9f96ab482a41f802f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b1a7053564ddca9f96ab482a41f802f"></a>
@@ -168,6 +164,9 @@ final int&#160;</td><td class="memItemRight" valign="bottom"><b>userId</b></td><
 <tr class="memitem:a0865c98e0c15ad585b7d451842ab7227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0865c98e0c15ad585b7d451842ab7227"></a>
 final String&#160;</td><td class="memItemRight" valign="bottom"><b>username</b></td></tr>
 <tr class="separator:a0865c98e0c15ad585b7d451842ab7227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd76b816d055b7a642c219fd9751020"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbd76b816d055b7a642c219fd9751020"></a>
+String&#160;</td><td class="memItemRight" valign="bottom"><b>password</b></td></tr>
+<tr class="separator:acbd76b816d055b7a642c219fd9751020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42f8a350b213ced8514c27bb622e2bc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42f8a350b213ced8514c27bb622e2bc8"></a>
 String&#160;</td><td class="memItemRight" valign="bottom"><b>passwordHash</b></td></tr>
 <tr class="separator:a42f8a350b213ced8514c27bb622e2bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,7 +220,7 @@ String&#160;</td><td class="memItemRight" valign="bottom"><b>mobile</b></td></tr
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -601,7 +600,7 @@ String&#160;</td><td class="memItemRight" valign="bottom"><b>mobile</b></td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:20 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:04 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6edaf9211b8dca5e842a3f32c1a4b7bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacetracking_1_1_i_tracking_service.html#a6edaf9211b8dca5e842a3f32c1a4b7bf">startTrackingController</a> ()</td></tr>
 <tr class="memdesc:a6edaf9211b8dca5e842a3f32c1a4b7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logic necessary when the tracking controller is cold started.  <a href="#a6edaf9211b8dca5e842a3f32c1a4b7bf">More...</a><br/></td></tr>
 <tr class="separator:a6edaf9211b8dca5e842a3f32c1a4b7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace287db1771b990af8fe2f23ef0b580b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtransit_1_1_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacetracking_1_1_i_tracking_service.html#ace287db1771b990af8fe2f23ef0b580b">getTransitVehicleLocation</a> (int gpsDeviceID)</td></tr>
-<tr class="memdesc:ace287db1771b990af8fe2f23ef0b580b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows users and modules outside of the tracking package to query for the current location of a registered vehicle.  <a href="#ace287db1771b990af8fe2f23ef0b580b">More...</a><br/></td></tr>
-<tr class="separator:ace287db1771b990af8fe2f23ef0b580b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab959154471565f04742dd85f118dc565"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtracking_1_1_g_p_s_location_object.html">GPSLocationObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacetracking_1_1_i_tracking_service.html#ab959154471565f04742dd85f118dc565">getTransitVehicleLocation</a> (int gpsDeviceID)</td></tr>
+<tr class="memdesc:ab959154471565f04742dd85f118dc565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows users and modules outside of the tracking package to query for the current location of a registered vehicle.  <a href="#ab959154471565f04742dd85f118dc565">More...</a><br/></td></tr>
+<tr class="separator:ab959154471565f04742dd85f118dc565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for the Tracking Service Controller. </p>
@@ -154,12 +154,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ace287db1771b990af8fe2f23ef0b580b"></a>
+<a class="anchor" id="ab959154471565f04742dd85f118dc565"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtransit_1_1_location.html">Location</a> getTransitVehicleLocation </td>
+          <td class="memname"><a class="el" href="classtracking_1_1_g_p_s_location_object.html">GPSLocationObject</a> getTransitVehicleLocation </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>gpsDeviceID</em></td><td>)</td>
@@ -177,7 +177,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- Location current latitude and longitude of vehicle </dd></dl>
 
-<p>Implemented in <a class="el" href="classtracking_1_1_tracking_service_controller.html#ace287db1771b990af8fe2f23ef0b580b">TrackingServiceController</a>.</p>
+<p>Implemented in <a class="el" href="classtracking_1_1_tracking_service_controller.html#ab959154471565f04742dd85f118dc565">TrackingServiceController</a>.</p>
 
 </div>
 </div>
@@ -278,7 +278,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:17 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:00 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

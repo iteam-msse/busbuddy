@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>domain</b></li><li class="navelem"><a class="el" href="classalert_1_1domain_1_1_alert_factory.html">AlertFactory</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1domain.html">domain</a></li><li class="navelem"><a class="el" href="classalert_1_1domain_1_1_alert_factory.html">AlertFactory</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,17 +93,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">AlertFactory Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An alert factory that can create different types of semi-populated alert models depending upon the information.  
+ <a href="classalert_1_1domain_1_1_alert_factory.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb057c5f7885d52fe349155c1d36fded"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb057c5f7885d52fe349155c1d36fded"></a>
-<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createAlert</b> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alert)</td></tr>
-<tr class="separator:adb057c5f7885d52fe349155c1d36fded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07eb38836239cf297855412f8c6eb437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1domain_1_1_alert_factory.html#a07eb38836239cf297855412f8c6eb437">createAlert</a> (<a class="el" href="enumalert_1_1enums_1_1_alert_run_type.html">AlertRunType</a> runType)</td></tr>
+<tr class="memdesc:a07eb38836239cf297855412f8c6eb437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an alert model depending upon the run Type.  <a href="#a07eb38836239cf297855412f8c6eb437">More...</a><br/></td></tr>
+<tr class="separator:a07eb38836239cf297855412f8c6eb437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197f0d90b233d4cb0e6782cd21ab531c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1domain_1_1_alert_factory.html#a197f0d90b233d4cb0e6782cd21ab531c">createAlert</a> (<a class="el" href="enumalert_1_1enums_1_1_alert_recurring_type.html">AlertRecurringType</a> recurringType)</td></tr>
+<tr class="memdesc:a197f0d90b233d4cb0e6782cd21ab531c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created alert model depending upon the recurringType.  <a href="#a197f0d90b233d4cb0e6782cd21ab531c">More...</a><br/></td></tr>
+<tr class="separator:a197f0d90b233d4cb0e6782cd21ab531c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An alert factory that can create different types of semi-populated alert models depending upon the information. </p>
+<p>Any additional create method can be created during implementation phase. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a07eb38836239cf297855412f8c6eb437"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> createAlert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumalert_1_1enums_1_1_alert_run_type.html">AlertRunType</a>&#160;</td>
+          <td class="paramname"><em>runType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an alert model depending upon the run Type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">runType</td><td><a class="el" href="">AlertRunType</a> enum. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Either a Onetime or Recurring alert Model. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a197f0d90b233d4cb0e6782cd21ab531c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> createAlert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumalert_1_1enums_1_1_alert_recurring_type.html">AlertRecurringType</a>&#160;</td>
+          <td class="paramname"><em>recurringType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Created alert model depending upon the recurringType. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">recurringType</td><td><a class="el" href="">AlertRecurringType</a> enum </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A recurring alert Model </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:12 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:55 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

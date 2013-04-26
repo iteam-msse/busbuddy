@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,7 +122,7 @@ Specification&lt; <a class="el" href="classtransit_1_1_route.html">Route</a> &gt
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Specification Pattern class for validating a <a class="el" href="classtransit_1_1_route.html">Route</a>. </p>
-<p>Validation can happen in this class, or business rules can be combined using the <a class="el" href="">and(Specification)</a>, <a class="el" href="">or  #not(Specification) methods and separate Specifications. A  Route</a></p>
+<p>Validation can happen in this class, or business rules can be combined using the and, or, or not methods of separate <a class="el" href="">Specification</a>s.</p>
 <p>This Specification is necessary because <a class="el" href="classtransit_1_1_route.html">Route</a>s aren't necessarily created by a controlled Factory, but as a result of parsing of input files via subclasses of the <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html">AbstractFeedParserTemplate</a>. Because creation of <a class="el" href="classtransit_1_1_route.html">Route</a>s isn't centralized, it is necessary to centralize the validation rules so that subclasses of <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html">AbstractFeedParserTemplate</a> have access to it.</p>
 <p>This Specification must validate the following conditions:</p>
 <ol type="1">
@@ -159,7 +159,7 @@ Specification&lt; <a class="el" href="classtransit_1_1_route.html">Route</a> &gt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:19 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:02 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

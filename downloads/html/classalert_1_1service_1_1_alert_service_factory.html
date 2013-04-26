@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,18 +82,144 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="classalert_1_1service_1_1_alert_service_factory.html">AlertServiceFactory</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1service.html">service</a></li><li class="navelem"><a class="el" href="classalert_1_1service_1_1_alert_service_factory.html">AlertServiceFactory</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classalert_1_1service_1_1_alert_service_factory-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AlertServiceFactory Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classalert_1_1service_1_1_alert_service_factory.html" title="AlertServiceFactory initializes appropriate alert service depending upon the parameter being passed...">AlertServiceFactory</a> initializes appropriate alert service depending upon the parameter being passed.  
+ <a href="classalert_1_1service_1_1_alert_service_factory.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7b351ca1cf05fdd905bbcb97f4d280ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1service_1_1_alert_service.html">AlertService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service_factory.html#a7b351ca1cf05fdd905bbcb97f4d280ad">getAlertService</a> (<a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a> requestModel)</td></tr>
+<tr class="memdesc:a7b351ca1cf05fdd905bbcb97f4d280ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns a concrete implementation of the alert service.  <a href="#a7b351ca1cf05fdd905bbcb97f4d280ad">More...</a><br/></td></tr>
+<tr class="separator:a7b351ca1cf05fdd905bbcb97f4d280ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ace68008d4854b9de5c8369c2a3a88154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1service_1_1_user_alert_service.html">UserAlertService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service_factory.html#ace68008d4854b9de5c8369c2a3a88154">userAlertService</a></td></tr>
+<tr class="memdesc:ace68008d4854b9de5c8369c2a3a88154"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#ace68008d4854b9de5c8369c2a3a88154">More...</a><br/></td></tr>
+<tr class="separator:ace68008d4854b9de5c8369c2a3a88154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf0536cb0642c2b06a2752bd375aa8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html">TrackingAlertService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service_factory.html#aeaf0536cb0642c2b06a2752bd375aa8f">trackingAlertService</a></td></tr>
+<tr class="memdesc:aeaf0536cb0642c2b06a2752bd375aa8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#aeaf0536cb0642c2b06a2752bd375aa8f">More...</a><br/></td></tr>
+<tr class="separator:aeaf0536cb0642c2b06a2752bd375aa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb4b4c4f15427a3785c2b9c1e6f7fdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1service_1_1_transit_alert_service.html">TransitAlertService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service_factory.html#adeb4b4c4f15427a3785c2b9c1e6f7fdc">transitAlertService</a></td></tr>
+<tr class="memdesc:adeb4b4c4f15427a3785c2b9c1e6f7fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#adeb4b4c4f15427a3785c2b9c1e6f7fdc">More...</a><br/></td></tr>
+<tr class="separator:adeb4b4c4f15427a3785c2b9c1e6f7fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classalert_1_1service_1_1_alert_service_factory.html" title="AlertServiceFactory initializes appropriate alert service depending upon the parameter being passed...">AlertServiceFactory</a> initializes appropriate alert service depending upon the parameter being passed. </p>
+<p>Currently, each module is aligned to each service but in the future it could change such that 2 module can use same service. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7b351ca1cf05fdd905bbcb97f4d280ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1service_1_1_alert_service.html">AlertService</a> getAlertService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a>&#160;</td>
+          <td class="paramname"><em>requestModel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method returns a concrete implementation of the alert service. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">requestModel</td><td>A JSON representation of the request from controller. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An extension of <a class="el" href="classalert_1_1service_1_1_alert_service.html" title="Alert Service is a base class that is extended by other module specific services.">AlertService</a>. </dd></dl>
+<p>thrown an error if applicable.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aeaf0536cb0642c2b06a2752bd375aa8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html">TrackingAlertService</a> trackingAlertService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>{ </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html" title="Extends AlertService and provides CRUD methods to operate on alerts as well as sends alerts to execut...">TrackingAlertService</a>}. This is autowired via Spring Framework. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adeb4b4c4f15427a3785c2b9c1e6f7fdc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1service_1_1_transit_alert_service.html">TransitAlertService</a> transitAlertService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>{ </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classalert_1_1service_1_1_transit_alert_service.html" title="Extends AlertService and provides CRUD methods to operate on alerts as well as sends alerts to execut...">TransitAlertService</a>}. This is autowired via Spring Framework. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ace68008d4854b9de5c8369c2a3a88154"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1service_1_1_user_alert_service.html">UserAlertService</a> userAlertService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>{ </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classalert_1_1service_1_1_user_alert_service.html" title="Extends AlertService and provides CRUD methods to operate on alerts as well as sends alerts to execut...">UserAlertService</a>}. This is autowired via Spring Framework. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:13 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:56 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

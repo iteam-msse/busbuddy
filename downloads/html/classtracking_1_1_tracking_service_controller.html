@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,9 +109,8 @@ Inheritance diagram for TrackingServiceController:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae6b6142ed226ab8cdd982efbd985294a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6b6142ed226ab8cdd982efbd985294a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_tracking_service_controller.html#ae6b6142ed226ab8cdd982efbd985294a">registerVehicleOnRoute</a> (URL url, int gpsDeviceID)</td></tr>
-<tr class="memdesc:ae6b6142ed226ab8cdd982efbd985294a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a vehicle when a user registers a vehicle on a route through the user interface. <br/></td></tr>
+<tr class="memitem:ae6b6142ed226ab8cdd982efbd985294a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_tracking_service_controller.html#ae6b6142ed226ab8cdd982efbd985294a">registerVehicleOnRoute</a> (URL url, int gpsDeviceID)</td></tr>
+<tr class="memdesc:ae6b6142ed226ab8cdd982efbd985294a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a vehicle when a user registers a vehicle on a route through the user interface.  <a href="#ae6b6142ed226ab8cdd982efbd985294a">More...</a><br/></td></tr>
 <tr class="separator:ae6b6142ed226ab8cdd982efbd985294a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8b8a409090a2e846c6e8bb64eec8df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_tracking_service_controller.html#afc8b8a409090a2e846c6e8bb64eec8df">unregisterVehicleFromRoute</a> (String url, int gpsDeviceID)</td></tr>
 <tr class="memdesc:afc8b8a409090a2e846c6e8bb64eec8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a vehicle from the vehicle repository when the vehicle is no longer in service.  <a href="#afc8b8a409090a2e846c6e8bb64eec8df">More...</a><br/></td></tr>
@@ -123,10 +122,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_tracking_service_controller.html#a6edaf9211b8dca5e842a3f32c1a4b7bf">startTrackingController</a> ()</td></tr>
 <tr class="memdesc:a6edaf9211b8dca5e842a3f32c1a4b7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of saved alerts from the <a class="el" href="">AlertService</a> and restores then on tracking module startup. <br/></td></tr>
 <tr class="separator:a6edaf9211b8dca5e842a3f32c1a4b7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace287db1771b990af8fe2f23ef0b580b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace287db1771b990af8fe2f23ef0b580b"></a>
-<a class="el" href="classtransit_1_1_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_tracking_service_controller.html#ace287db1771b990af8fe2f23ef0b580b">getTransitVehicleLocation</a> (int gpsDeviceID)</td></tr>
-<tr class="memdesc:ace287db1771b990af8fe2f23ef0b580b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find locations of the specified GPS device ID. <br/></td></tr>
-<tr class="separator:ace287db1771b990af8fe2f23ef0b580b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab959154471565f04742dd85f118dc565"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab959154471565f04742dd85f118dc565"></a>
+<a class="el" href="classtracking_1_1_g_p_s_location_object.html">GPSLocationObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtracking_1_1_tracking_service_controller.html#ab959154471565f04742dd85f118dc565">getTransitVehicleLocation</a> (int gpsDeviceID)</td></tr>
+<tr class="memdesc:ab959154471565f04742dd85f118dc565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find locations of the specified GPS device ID. <br/></td></tr>
+<tr class="separator:ab959154471565f04742dd85f118dc565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
 Package Attributes</h2></td></tr>
@@ -141,7 +140,7 @@ Package Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tracking service controller is the concrete implementation of the tracking service interface. </p>
-<p>Provides the tracking functionality to other Bus Buddy modules and ties vehicle location to registered user alerts. </p>
+<p>Provides the tracking functionality to other Bus Buddy modules and ties vehicle location to registered user alerts. The tracking service controller accepts REST requests from the User Interface module, the Alert Module </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac229f73629081e07e47ca4a51becf55b"></a>
 <div class="memitem">
@@ -170,6 +169,37 @@ Package Attributes</h2></td></tr>
 <p>Create an alert for this user request and register this alert with the vehicle(s) the user is watching.</p>
 
 <p>Implements <a class="el" href="interfacetracking_1_1_i_tracking_service.html#ac229f73629081e07e47ca4a51becf55b">ITrackingService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6b6142ed226ab8cdd982efbd985294a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registerVehicleOnRoute </td>
+          <td>(</td>
+          <td class="paramtype">URL&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gpsDeviceID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a vehicle when a user registers a vehicle on a route through the user interface. </p>
+<p>Accepts a <a class="el" href="classtracking_1_1_vehicle_object.html">VehicleObject</a> JSON </p>
+
+<p>Implements <a class="el" href="interfacetracking_1_1_i_tracking_service.html#ae6b6142ed226ab8cdd982efbd985294a">ITrackingService</a>.</p>
 
 </div>
 </div>
@@ -213,7 +243,7 @@ Package Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:18 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:01 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

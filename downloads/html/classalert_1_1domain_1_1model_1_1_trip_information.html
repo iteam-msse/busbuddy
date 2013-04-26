@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,18 +82,111 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>domain</b></li><li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html">TripInformation</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1domain.html">domain</a></li><li class="navelem"><a class="el" href="namespacealert_1_1domain_1_1model.html">model</a></li><li class="navelem"><a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html">TripInformation</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classalert_1_1domain_1_1model_1_1_trip_information-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">TripInformation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This model stores the information about a trip as a value object.  
+ <a href="classalert_1_1domain_1_1model_1_1_trip_information.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acc6464001bb6e7270cc5272e8dc08e20"><td class="memItemLeft" align="right" valign="top">List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html#acc6464001bb6e7270cc5272e8dc08e20">getRouteIds</a> ()</td></tr>
+<tr class="memdesc:acc6464001bb6e7270cc5272e8dc08e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of routeId in the <a class="el" href="">Trip</a> model.  <a href="#acc6464001bb6e7270cc5272e8dc08e20">More...</a><br/></td></tr>
+<tr class="separator:acc6464001bb6e7270cc5272e8dc08e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1b40e2dfe30bd54adf67f7a00e8e74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef1b40e2dfe30bd54adf67f7a00e8e74"></a>
+<a class="el" href="classtransit_1_1_trip.html">Trip</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getTripData</b> ()</td></tr>
+<tr class="separator:aef1b40e2dfe30bd54adf67f7a00e8e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e28c0d02a4ac51a21ee1a83eddd7c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19e28c0d02a4ac51a21ee1a83eddd7c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTripData</b> (<a class="el" href="classtransit_1_1_trip.html">Trip</a> <a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html#a12a18bab4f4ceaa2ac5859c332bd5f44">tripData</a>)</td></tr>
+<tr class="separator:a19e28c0d02a4ac51a21ee1a83eddd7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae414a3c95b2ed7ed9800897230cdb28c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae414a3c95b2ed7ed9800897230cdb28c"></a>
+Date&#160;</td><td class="memItemRight" valign="bottom"><b>getLastModifiedDate</b> ()</td></tr>
+<tr class="separator:ae414a3c95b2ed7ed9800897230cdb28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45699f9723add82addb2a7362b2045d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45699f9723add82addb2a7362b2045d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLastModifiedDate</b> (Date <a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html#a8a9c59d2779ba27a23a7a09558fbb792">lastModifiedDate</a>)</td></tr>
+<tr class="separator:a45699f9723add82addb2a7362b2045d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22baba753bbe3cbb28e8b4832f1e0263"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22baba753bbe3cbb28e8b4832f1e0263"></a>
+Date&#160;</td><td class="memItemRight" valign="bottom"><b>getCreatedDate</b> ()</td></tr>
+<tr class="separator:a22baba753bbe3cbb28e8b4832f1e0263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29fd79392657487bd6ca28dcd15eb6e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29fd79392657487bd6ca28dcd15eb6e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCreatedDate</b> (Date <a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html#a29146c2ca2d75d3590702df423893294">createdDate</a>)</td></tr>
+<tr class="separator:a29fd79392657487bd6ca28dcd15eb6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a12a18bab4f4ceaa2ac5859c332bd5f44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtransit_1_1_trip.html">Trip</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html#a12a18bab4f4ceaa2ac5859c332bd5f44">tripData</a></td></tr>
+<tr class="memdesc:a12a18bab4f4ceaa2ac5859c332bd5f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Necessary data about a trip.  <a href="#a12a18bab4f4ceaa2ac5859c332bd5f44">More...</a><br/></td></tr>
+<tr class="separator:a12a18bab4f4ceaa2ac5859c332bd5f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9c59d2779ba27a23a7a09558fbb792"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a9c59d2779ba27a23a7a09558fbb792"></a>
+Date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html#a8a9c59d2779ba27a23a7a09558fbb792">lastModifiedDate</a></td></tr>
+<tr class="memdesc:a8a9c59d2779ba27a23a7a09558fbb792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last date when the trip Information was modified or updated. <br/></td></tr>
+<tr class="separator:a8a9c59d2779ba27a23a7a09558fbb792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29146c2ca2d75d3590702df423893294"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29146c2ca2d75d3590702df423893294"></a>
+Date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1domain_1_1model_1_1_trip_information.html#a29146c2ca2d75d3590702df423893294">createdDate</a></td></tr>
+<tr class="memdesc:a29146c2ca2d75d3590702df423893294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Date when the actual trip was created. <br/></td></tr>
+<tr class="separator:a29146c2ca2d75d3590702df423893294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This model stores the information about a trip as a value object. </p>
+<p>Hence, we have created and last modified date to track the freshness of data. Currently, the <a class="el" href="">Trip</a> is referring to the model in Trip module. But we expect this to be stored as a value object and during implementation we can create a copy of its model for alert module. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="acc6464001bb6e7270cc5272e8dc08e20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;String&gt; getRouteIds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provides a list of routeId in the <a class="el" href="">Trip</a> model. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a12a18bab4f4ceaa2ac5859c332bd5f44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtransit_1_1_trip.html">Trip</a> tripData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Necessary data about a trip. </p>
+<p>This contains a collection of routes. {</p>
+<dl class="section see"><dt>See Also</dt><dd>Trip} </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:12 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:56 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

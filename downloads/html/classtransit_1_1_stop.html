@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,13 +95,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A point on a <a class="el" href="classtransit_1_1_route.html">Route</a> in which a <a class="el" href="">TransitVehicle</a> will stop to pick up and drop off passengers.  
+<p>A point on a <a class="el" href="classtransit_1_1_route.html">Route</a> in which a <a class="el" href="classtracking_1_1_transit_vehicle.html">TransitVehicle</a> will stop to pick up and drop off passengers.  
  <a href="classtransit_1_1_stop.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b48f04713d7331352847b261e2c7fb2"><td class="memItemLeft" align="right" valign="top">Set&lt; Date &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_stop.html#a9b48f04713d7331352847b261e2c7fb2">getStopTimes</a> (Date begin, Date end)</td></tr>
-<tr class="memdesc:a9b48f04713d7331352847b261e2c7fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the expected times in which a <a class="el" href="">TransitVehicle</a> will be at the given <a class="el" href="classtransit_1_1_stop.html" title="A point on a Route in which a TransitVehicle will stop to pick up and drop off passengers.">Stop</a> for a given time period.  <a href="#a9b48f04713d7331352847b261e2c7fb2">More...</a><br/></td></tr>
+<tr class="memdesc:a9b48f04713d7331352847b261e2c7fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the expected times in which a <a class="el" href="classtracking_1_1_transit_vehicle.html">TransitVehicle</a> will be at the given <a class="el" href="classtransit_1_1_stop.html" title="A point on a Route in which a TransitVehicle will stop to pick up and drop off passengers.">Stop</a> for a given time period.  <a href="#a9b48f04713d7331352847b261e2c7fb2">More...</a><br/></td></tr>
 <tr class="separator:a9b48f04713d7331352847b261e2c7fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb9839c31dd1c1558115f41658e5dfaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb9839c31dd1c1558115f41658e5dfaf"></a>
 <a class="el" href="classtransit_1_1_location.html">Location</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getLocation</b> ()</td></tr>
@@ -127,7 +127,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a260defa82d536dcea2aa22452b862110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A point on a <a class="el" href="classtransit_1_1_route.html">Route</a> in which a <a class="el" href="">TransitVehicle</a> will stop to pick up and drop off passengers. </p>
+<div class="textblock"><p>A point on a <a class="el" href="classtransit_1_1_route.html">Route</a> in which a <a class="el" href="classtracking_1_1_transit_vehicle.html">TransitVehicle</a> will stop to pick up and drop off passengers. </p>
 <p>A <a class="el" href="classtransit_1_1_stop.html" title="A point on a Route in which a TransitVehicle will stop to pick up and drop off passengers.">Stop</a> also is responsible for providing a set of the times in which the <a class="el" href="">TransitVehicle</a> will be at the <a class="el" href="classtransit_1_1_stop.html" title="A point on a Route in which a TransitVehicle will stop to pick up and drop off passengers.">Stop</a>.</p>
 <p>A <a class="el" href="classtransit_1_1_stop.html" title="A point on a Route in which a TransitVehicle will stop to pick up and drop off passengers.">Stop</a> is identified within the context of a single <a class="el" href="classtransit_1_1_route.html">Route</a>. This means that two <a class="el" href="classtransit_1_1_route.html">Route</a>s may share the same physical <a class="el" href="classtransit_1_1_stop.html" title="A point on a Route in which a TransitVehicle will stop to pick up and drop off passengers.">Stop</a> <a class="el" href="classtransit_1_1_stop.html#a260defa82d536dcea2aa22452b862110">location</a>, but maintain different schedules. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -155,7 +155,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reports the expected times in which a <a class="el" href="">TransitVehicle</a> will be at the given <a class="el" href="classtransit_1_1_stop.html" title="A point on a Route in which a TransitVehicle will stop to pick up and drop off passengers.">Stop</a> for a given time period. </p>
+<p>Reports the expected times in which a <a class="el" href="classtracking_1_1_transit_vehicle.html">TransitVehicle</a> will be at the given <a class="el" href="classtransit_1_1_stop.html" title="A point on a Route in which a TransitVehicle will stop to pick up and drop off passengers.">Stop</a> for a given time period. </p>
 <dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">begin</b> &lt; <b class="paramname">end</b>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -200,7 +200,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:19 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:02 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

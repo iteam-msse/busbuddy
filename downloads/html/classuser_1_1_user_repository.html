@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,9 +99,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
 Package Functions</h2></td></tr>
-<tr class="memitem:a72bf3924f6dd05b4af0ef62991e05b05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72bf3924f6dd05b4af0ef62991e05b05"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createUser</b> (String username, String password)</td></tr>
-<tr class="separator:a72bf3924f6dd05b4af0ef62991e05b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b2a8c3192b9ff8fce370a60637c4ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_user_repository.html#aa5b2a8c3192b9ff8fce370a60637c4ca">createUser</a> (<a class="el" href="classuser_1_1_user.html">User</a> user, String password)  throws BusBuddyConflictException, BusBuddyInternalException </td></tr>
+<tr class="memdesc:aa5b2a8c3192b9ff8fce370a60637c4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method creates a user in the database.  <a href="#aa5b2a8c3192b9ff8fce370a60637c4ca">More...</a><br/></td></tr>
+<tr class="separator:aa5b2a8c3192b9ff8fce370a60637c4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ab04c8de72f399c188d73afc0d0e5d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_user_repository.html#a9ab04c8de72f399c188d73afc0d0e5d8">getUserById</a> (int userId)  throws BusBuddyInternalException, BusBuddyNotFoundException </td></tr>
 <tr class="memdesc:a9ab04c8de72f399c188d73afc0d0e5d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method attempts to retrieve a user by id number.  <a href="#a9ab04c8de72f399c188d73afc0d0e5d8">More...</a><br/></td></tr>
 <tr class="separator:a9ab04c8de72f399c188d73afc0d0e5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,16 +114,105 @@ Package Functions</h2></td></tr>
 <tr class="memitem:a1a2726b348e91c7bfecb537adf28bbd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_user_repository.html#a1a2726b348e91c7bfecb537adf28bbd7">getUserByMobile</a> (short countryCode, String mobile)  throws BusBuddyInternalException, BusBuddyNotFoundException </td></tr>
 <tr class="memdesc:a1a2726b348e91c7bfecb537adf28bbd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method attempts to retrieve a user by mobile phone number.  <a href="#a1a2726b348e91c7bfecb537adf28bbd7">More...</a><br/></td></tr>
 <tr class="separator:a1a2726b348e91c7bfecb537adf28bbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a52c0dddb83915bb280df3612487c5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a52c0dddb83915bb280df3612487c5c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateUser</b> (<a class="el" href="classuser_1_1_user.html">User</a> newUserData)</td></tr>
+<tr class="memitem:a5a52c0dddb83915bb280df3612487c5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_user_repository.html#a5a52c0dddb83915bb280df3612487c5c">updateUser</a> (<a class="el" href="classuser_1_1_user.html">User</a> newUserData)  throws BusBuddyInternalException, BusBuddyNotFoundException, 			BusBuddyConflictException </td></tr>
+<tr class="memdesc:a5a52c0dddb83915bb280df3612487c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method updates a user in the database.  <a href="#a5a52c0dddb83915bb280df3612487c5c">More...</a><br/></td></tr>
 <tr class="separator:a5a52c0dddb83915bb280df3612487c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6975d19c999c2af84c4be5009a340c14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6975d19c999c2af84c4be5009a340c14"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteUser</b> (<a class="el" href="classuser_1_1_user.html">User</a> userToDelete)</td></tr>
+<tr class="memitem:a6975d19c999c2af84c4be5009a340c14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuser_1_1_user_repository.html#a6975d19c999c2af84c4be5009a340c14">deleteUser</a> (<a class="el" href="classuser_1_1_user.html">User</a> userToDelete)  throws BusBuddyInternalException, BusBuddyNotFoundException </td></tr>
+<tr class="memdesc:a6975d19c999c2af84c4be5009a340c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method deletes a user from the database.  <a href="#a6975d19c999c2af84c4be5009a340c14">More...</a><br/></td></tr>
 <tr class="separator:a6975d19c999c2af84c4be5009a340c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is responsible for handling database access for <a class="el" href="classuser_1_1_user.html">User</a> objects, and to construct, persist, and retrieve <a class="el" href="classuser_1_1_user.html">User</a> objects. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa5b2a8c3192b9ff8fce370a60637c4ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> createUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_conflict_exception.html">BusBuddyConflictException</a>, <a class="el" href="classcommon_1_1_bus_buddy_internal_exception.html">BusBuddyInternalException</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method creates a user in the database. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>No other user with this username, e-mail address, or mobile phone exists. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> is created with the given user data. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> data of the user to create (the ID will be ignored). </td></tr>
+    <tr><td class="paramname">password</td><td>Password of the user to create. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>new user object </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>This exception is thrown when there is a database error. </td></tr>
+    <tr><td class="paramname">BusBuddyConflictException</td><td>This exception is thrown when the requested user record would create a duplicate username, e-mail address, or mobile phone data in the database. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6975d19c999c2af84c4be5009a340c14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>userToDelete</em></td><td>)</td>
+          <td>  throws <a class="el" href="classcommon_1_1_bus_buddy_internal_exception.html">BusBuddyInternalException</a>, <a class="el" href="classcommon_1_1_bus_buddy_not_found_exception.html">BusBuddyNotFoundException</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method deletes a user from the database. </p>
+<p>It will delete the user with the same ID as the user passed in as a parameter.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>A user with the specified user ID on the <a class="el" href="classuser_1_1_user.html">User</a> object must already exist. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> object in database will be deleted. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>This exception is thrown when there is a database error. </td></tr>
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>This exception is thrown when the requested user record could not be found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="abca6c44aa3ff9c1d7ddef56d195c5220"></a>
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +338,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteUser</b> (<a cl
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">countryCode</td><td>This is the country code of the user's mobile phone number. </td></tr>
-    <tr><td class="paramname">mobile</td><td>This is the remainder of the user's mobile phone numer. This string should consist entirely of digits. </td></tr>
+    <tr><td class="paramname">mobile</td><td>This is the remainder of the user's mobile phone number. This string should consist entirely of digits. </td></tr>
   </table>
   </dd>
 </dl>
@@ -307,10 +396,53 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteUser</b> (<a cl
 
 </div>
 </div>
+<a class="anchor" id="a5a52c0dddb83915bb280df3612487c5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>newUserData</em></td><td>)</td>
+          <td>  throws <a class="el" href="classcommon_1_1_bus_buddy_internal_exception.html">BusBuddyInternalException</a>, <a class="el" href="classcommon_1_1_bus_buddy_not_found_exception.html">BusBuddyNotFoundException</a>, 			<a class="el" href="classcommon_1_1_bus_buddy_conflict_exception.html">BusBuddyConflictException</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method updates a user in the database. </p>
+<p>It will update the user with the same ID as the user passed in as a parameter. The username will not be updated, but all other fields will be.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>A user with the specified user ID on the <a class="el" href="classuser_1_1_user.html">User</a> object must already exist. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> object in database will be updated with the data from the parameter <a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> object. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newUserData</td><td><a class="el" href="classuser_1_1_user.html">User</a> object with the new user data on it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>This exception is thrown when there is a database error. </td></tr>
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>This exception is thrown when the requested user record could not be found. </td></tr>
+    <tr><td class="paramname">BusBuddyConflictException</td><td>This exception is thrown when the requested user record would create a duplicate mobile phone or e-mail address in the database. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:21 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:04 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

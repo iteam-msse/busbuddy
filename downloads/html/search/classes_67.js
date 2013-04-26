@@ -2,6 +2,7 @@ var searchData=
 [
   ['googletransitserviceadapter',['GoogleTransitServiceAdapter',['../classtransit_1_1_google_transit_service_adapter.html',1,'transit']]],
   ['googletransitserviceapi',['GoogleTransitServiceAPI',['../interfacetransit_1_1_google_transit_service_a_p_i.html',1,'transit']]],
+  ['gpslocationobject',['GPSLocationObject',['../classtracking_1_1_g_p_s_location_object.html',1,'tracking']]],
   ['gpslocationobserver',['GPSLocationObserver',['../classtracking_1_1_g_p_s_location_observer.html',1,'tracking']]],
   ['gpslocationtracking',['GPSLocationTracking',['../classtracking_1_1_g_p_s_location_tracking.html',1,'tracking']]],
   ['gpspuller',['GPSPuller',['../classtracking_1_1_g_p_s_puller.html',1,'tracking']]],

@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,38 +102,342 @@ Inheritance diagram for UserManagementService:</div>
  <div class="center">
   <img src="interfaceuser_1_1_user_management_service.png" usemap="#UserManagementService_map" alt=""/>
   <map id="UserManagementService_map" name="UserManagementService_map">
-<area href="classuser_1_1_i_team_user_management_service.html" alt="ITeamUserManagementService" shape="rect" coords="0,56,187,80"/>
+<area href="classuser_1_1_i_team_user_management_service.html" title="This is the iTeam&#39;s implementation of UserManagementService." alt="ITeamUserManagementService" shape="rect" coords="0,56,187,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a09aa67d1358bcca068c65b1a53c130bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09aa67d1358bcca068c65b1a53c130bd"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createUser</b> (<a class="el" href="classuser_1_1_user.html">User</a> userToCreate, String password)  throws BusBuddyException</td></tr>
+<tr class="memitem:a09aa67d1358bcca068c65b1a53c130bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceuser_1_1_user_management_service.html#a09aa67d1358bcca068c65b1a53c130bd">createUser</a> (<a class="el" href="classuser_1_1_user.html">User</a> userToCreate, String password)  throws BusBuddyException</td></tr>
+<tr class="memdesc:a09aa67d1358bcca068c65b1a53c130bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method creates a user in the database.  <a href="#a09aa67d1358bcca068c65b1a53c130bd">More...</a><br/></td></tr>
 <tr class="separator:a09aa67d1358bcca068c65b1a53c130bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ce939d73832de0209a790b53fe658c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20ce939d73832de0209a790b53fe658c"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>findUserByUsername</b> (String sessionToken, String username)  throws BusBuddyException</td></tr>
+<tr class="memitem:a20ce939d73832de0209a790b53fe658c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceuser_1_1_user_management_service.html#a20ce939d73832de0209a790b53fe658c">findUserByUsername</a> (String sessionToken, String username)  throws BusBuddyException</td></tr>
+<tr class="memdesc:a20ce939d73832de0209a790b53fe658c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method attempts to retrieve a user by username.  <a href="#a20ce939d73832de0209a790b53fe658c">More...</a><br/></td></tr>
 <tr class="separator:a20ce939d73832de0209a790b53fe658c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab97629f691e62aac8159b567bb7b7136"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab97629f691e62aac8159b567bb7b7136"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>findUserByEmail</b> (String sessionToken, String email)</td></tr>
+<tr class="memitem:ab97629f691e62aac8159b567bb7b7136"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceuser_1_1_user_management_service.html#ab97629f691e62aac8159b567bb7b7136">findUserByEmail</a> (String sessionToken, String email)  throws BusBuddyException</td></tr>
+<tr class="memdesc:ab97629f691e62aac8159b567bb7b7136"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method attempts to retrieve a user by e-mail address.  <a href="#ab97629f691e62aac8159b567bb7b7136">More...</a><br/></td></tr>
 <tr class="separator:ab97629f691e62aac8159b567bb7b7136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af72759f8d2da631ec6194a17ab903de7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af72759f8d2da631ec6194a17ab903de7"></a>
-<a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><b>findUserByMobile</b> (String sessionToken, short countryCode, String mobile)  throws BusBuddyException</td></tr>
+<tr class="memitem:af72759f8d2da631ec6194a17ab903de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceuser_1_1_user_management_service.html#af72759f8d2da631ec6194a17ab903de7">findUserByMobile</a> (String sessionToken, short countryCode, String mobile)  throws BusBuddyException</td></tr>
+<tr class="memdesc:af72759f8d2da631ec6194a17ab903de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method attempts to retrieve a user by mobile phone number.  <a href="#af72759f8d2da631ec6194a17ab903de7">More...</a><br/></td></tr>
 <tr class="separator:af72759f8d2da631ec6194a17ab903de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4a723dda79faa1fa7a315d0befc56eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4a723dda79faa1fa7a315d0befc56eb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateUser</b> (String sessionToken, <a class="el" href="classuser_1_1_user.html">User</a> newUserData, String password)  throws BusBuddyException</td></tr>
+<tr class="memitem:af4a723dda79faa1fa7a315d0befc56eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceuser_1_1_user_management_service.html#af4a723dda79faa1fa7a315d0befc56eb">updateUser</a> (String sessionToken, <a class="el" href="classuser_1_1_user.html">User</a> newUserData, String password)  throws BusBuddyException</td></tr>
+<tr class="memdesc:af4a723dda79faa1fa7a315d0befc56eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method updates a user in the database.  <a href="#af4a723dda79faa1fa7a315d0befc56eb">More...</a><br/></td></tr>
 <tr class="separator:af4a723dda79faa1fa7a315d0befc56eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a238f78989c9b93d88aee4952b9eb21e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a238f78989c9b93d88aee4952b9eb21e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteUser</b> (String sessionToken, <a class="el" href="classuser_1_1_user.html">User</a> userToDelete)  throws BusBuddyException</td></tr>
+<tr class="memitem:a238f78989c9b93d88aee4952b9eb21e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceuser_1_1_user_management_service.html#a238f78989c9b93d88aee4952b9eb21e4">deleteUser</a> (String sessionToken, <a class="el" href="classuser_1_1_user.html">User</a> userToDelete)  throws BusBuddyException</td></tr>
+<tr class="memdesc:a238f78989c9b93d88aee4952b9eb21e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method deletes a user from the database.  <a href="#a238f78989c9b93d88aee4952b9eb21e4">More...</a><br/></td></tr>
 <tr class="separator:a238f78989c9b93d88aee4952b9eb21e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the generic BusBuddy <a class="el" href="interfaceuser_1_1_user_management_service.html" title="This is the generic BusBuddy UserManagementService interface.">UserManagementService</a> interface. </p>
-<p>This interface contains methods dealing with user account management. It is one of three interfaces that a user module implementation must implement. It can be implemented as a service or as a service client. </p>
-</div></div><!-- contents -->
+<p>This interface contains methods dealing with user account management. It is one of three interfaces that a user module implementation must implement. It can be implemented as a service or as a service client.</p>
+<p>Every method call here will (besides createUser) will result in the session's expiration time being updated due to activity on the session. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a09aa67d1358bcca068c65b1a53c130bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> createUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>userToCreate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method creates a user in the database. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>No other user with this username, e-mail address, or mobile phone exists. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> is created with the given user data. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> data of the user to create (the ID will be ignored). </td></tr>
+    <tr><td class="paramname">password</td><td>Password of the user to create. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>new user object </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>This exception is thrown when an internal error prevents creation of the user. </td></tr>
+    <tr><td class="paramname">BusBuddyConflictException</td><td>This exception is thrown when the requested user record would create a duplicate username, e-mail address, or mobile phone data in the database. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classuser_1_1_i_team_user_management_service.html#a09aa67d1358bcca068c65b1a53c130bd">ITeamUserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a238f78989c9b93d88aee4952b9eb21e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deleteUser </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>userToDelete</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method deletes a user from the database. </p>
+<p>It will delete the user with the same ID as the user passed in as a parameter.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>A user with the specified user ID on the <a class="el" href="classuser_1_1_user.html">User</a> object must already exist. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> object in database will be deleted. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionToken</td><td>session token for the currently logged in user </td></tr>
+    <tr><td class="paramname">userToDelete</td><td>This user object should have the same ID as the user to be deleted. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>This exception is thrown when there is an internal error preventing execution of the request. </td></tr>
+    <tr><td class="paramname">BusBuddyForbiddenException</td><td>This exception is thrown if the session token is invalid, linked to an expired session, or the user does not have permission to make this change. </td></tr>
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>This exception is thrown if the targeted user is not found in the database. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classuser_1_1_i_team_user_management_service.html#a238f78989c9b93d88aee4952b9eb21e4">ITeamUserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab97629f691e62aac8159b567bb7b7136"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> findUserByEmail </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>email</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method attempts to retrieve a user by e-mail address. </p>
+<p>It is not case sensitive. The method will take an e-mail address, read the details from the database, and construct a user object with the given details.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>A user with the supplied e-mail address exists within the database. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>A user will be returned whose e-mail address matches the supplied e-mail address parameter. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">email</td><td>This is the e-mail address to look up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user with the given e-mail address. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>An internal error prevents execution of the request. </td></tr>
+    <tr><td class="paramname">BusBuddyForbiddenException</td><td>The currently logged in user does not have permission to view the result of this search. </td></tr>
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>This exception is thrown when the requested user record could not be found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classuser_1_1_i_team_user_management_service.html#ab97629f691e62aac8159b567bb7b7136">ITeamUserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af72759f8d2da631ec6194a17ab903de7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> findUserByMobile </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>countryCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>mobile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method attempts to retrieve a user by mobile phone number. </p>
+<p>The method will take a mobile phone number, read the details from the database, and construct a user object with the given details.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>A user with the supplied mobile phone number exists within the database. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>A user will be returned whose mobile phone details match the supplied parameters. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">countryCode</td><td>This is the country code of the user's mobile phone number. </td></tr>
+    <tr><td class="paramname">mobile</td><td>This is the remainder of the user's mobile phone number. This string should consist entirely of digits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user with the given mobile phone details. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>An internal error prevents execution of the request. </td></tr>
+    <tr><td class="paramname">BusBuddyForbiddenException</td><td>The currently logged in user does not have permission to view the result of this search. </td></tr>
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>This exception is thrown when the requested user record could not be found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classuser_1_1_i_team_user_management_service.html#af72759f8d2da631ec6194a17ab903de7">ITeamUserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20ce939d73832de0209a790b53fe658c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classuser_1_1_user.html">User</a> findUserByUsername </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method attempts to retrieve a user by username. </p>
+<p>It is not case sensitive. The method will take a username, read the details from the database, and construct a user object with the given details.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>A user with the supplied username exists within the database. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>A user will be returned whose username matches the supplied username parameter. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>This is the username to look up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user with the given username. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>An internal error prevents execution of the request. </td></tr>
+    <tr><td class="paramname">BusBuddyForbiddenException</td><td>The currently logged in user does not have permission to view the result of this search. </td></tr>
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>This exception is thrown when the requested user record could not be found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classuser_1_1_i_team_user_management_service.html#a20ce939d73832de0209a790b53fe658c">ITeamUserManagementService</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4a723dda79faa1fa7a315d0befc56eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateUser </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>sessionToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classuser_1_1_user.html">User</a>&#160;</td>
+          <td class="paramname"><em>newUserData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throws <a class="el" href="classcommon_1_1_bus_buddy_exception.html">BusBuddyException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method updates a user in the database. </p>
+<p>It will update the user with the same ID as the user passed in as a parameter. The username will not be updated, but all other fields will be.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>A user with the specified user ID on the <a class="el" href="classuser_1_1_user.html">User</a> object must already exist. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> object in database will be updated with the data from the parameter <a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> object. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sessionToken</td><td>session token for the currently logged in user </td></tr>
+    <tr><td class="paramname">newUserData</td><td><a class="el" href="classuser_1_1_user.html">User</a> object with the new user data on it </td></tr>
+    <tr><td class="paramname">password</td><td>New password to set on the user. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyInternalException</td><td>This exception is thrown when there is an internal error preventing execution of the request. </td></tr>
+    <tr><td class="paramname">BusBuddyForbiddenException</td><td>This exception is thrown if the session token is invalid, linked to an expired session, or the user does not have permission to make this change. </td></tr>
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>This exception is thrown when the targeted user to receive the update does not exist. </td></tr>
+    <tr><td class="paramname">BusBuddyConflictException</td><td>This exception is thrown when the requested change would create a duplicate mobile phone or e-mail address in the database. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classuser_1_1_i_team_user_management_service.html#af4a723dda79faa1fa7a315d0befc56eb">ITeamUserManagementService</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:21 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:04 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

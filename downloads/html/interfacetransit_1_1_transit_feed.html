@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,7 +102,7 @@ Inheritance diagram for TransitFeed:</div>
  <div class="center">
   <img src="interfacetransit_1_1_transit_feed.png" usemap="#TransitFeed_map" alt=""/>
   <map id="TransitFeed_map" name="TransitFeed_map">
-<area href="classtransit_1_1_google_transit_service_adapter.html" title="An Adapter Class to allow a {} service to appear as a TransitService." alt="GoogleTransitServiceAdapter" shape="rect" coords="0,56,179,80"/>
+<area href="classtransit_1_1_google_transit_service_adapter.html" title="An Adapter Class to allow a GoogleTransitServiceAPI service to appear as a TransitService." alt="GoogleTransitServiceAdapter" shape="rect" coords="0,56,179,80"/>
 <area href="classtransit_1_1_persisted_transit_feed.html" title="An implementation of the TransitFeed interface that communicates with a RouteRepository to retrieve i..." alt="PersistedTransitFeed" shape="rect" coords="189,56,368,80"/>
 </map>
  </div></div>
@@ -118,7 +118,8 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="interfacetransit_1_1_transit_feed.html" title="A TransitFeed is an abstraction over a service or set of services that provide information about Rout...">TransitFeed</a> is an abstraction over a service or set of services that provide information about <a class="el" href="classtransit_1_1_route.html">Route</a>s. </p>
-<p>This differs from the <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a> interface in that a <a class="el" href="interfacetransit_1_1_transit_feed.html" title="A TransitFeed is an abstraction over a service or set of services that provide information about Rout...">TransitFeed</a> does not expose provenance information such as the <a class="el" href="interfacetransit_1_1_transit_service.html#aa4819e59c9861ed3166265e0d0bcd945">method. Because of this, a single  TransitService</a> (or <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a>) could use more than one <a class="el" href="interfacetransit_1_1_transit_feed.html" title="A TransitFeed is an abstraction over a service or set of services that provide information about Rout...">TransitFeed</a> to expose their Transit data. For example, a <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a> could utilize two different database storage schemes, each one represented as a separate <a class="el" href="interfacetransit_1_1_transit_feed.html" title="A TransitFeed is an abstraction over a service or set of services that provide information about Rout...">TransitFeed</a>, and then aggregate the two into one <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>. </p>
+<p>This differs from the <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a> interface in that a <a class="el" href="interfacetransit_1_1_transit_feed.html" title="A TransitFeed is an abstraction over a service or set of services that provide information about Rout...">TransitFeed</a> does not expose provenance information such as the <a class="el" href="interfacetransit_1_1_transit_service.html#aa4819e59c9861ed3166265e0d0bcd945">TransitService#getTransitlnfo</a> method.</p>
+<p>Because of this, a single <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a> (or <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a>) could use more than one <a class="el" href="interfacetransit_1_1_transit_feed.html" title="A TransitFeed is an abstraction over a service or set of services that provide information about Rout...">TransitFeed</a> to expose their Transit data. For example, a <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a> could utilize two different database storage schemes, each one represented as a separate <a class="el" href="interfacetransit_1_1_transit_feed.html" title="A TransitFeed is an abstraction over a service or set of services that provide information about Rout...">TransitFeed</a>, and then aggregate the two into one <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a5d93801c60b116410e94085defdf7a70"></a>
 <div class="memitem">
@@ -202,7 +203,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:20 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:03 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

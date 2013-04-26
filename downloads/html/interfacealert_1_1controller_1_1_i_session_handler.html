@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="interfacealert_1_1controller_1_1_i_session_handler.html">ISessionHandler</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1controller.html">controller</a></li><li class="navelem"><a class="el" href="interfacealert_1_1controller_1_1_i_session_handler.html">ISessionHandler</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -93,28 +93,73 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ISessionHandler Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An interface to verify the validity of encrypted token being passed.  
+ <a href="interfacealert_1_1controller_1_1_i_session_handler.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ISessionHandler:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="interfacealert_1_1controller_1_1_i_session_handler.png" usemap="#ISessionHandler_map" alt=""/>
   <map id="ISessionHandler_map" name="ISessionHandler_map">
-<area href="classalert_1_1controller_1_1_tracking_session_handler.html" alt="TrackingSessionHandler" shape="rect" coords="0,56,150,80"/>
-<area href="classalert_1_1controller_1_1_transit_session_handler.html" alt="TransitSessionHandler" shape="rect" coords="160,56,310,80"/>
-<area href="classalert_1_1controller_1_1_user_session_handler.html" alt="UserSessionHandler" shape="rect" coords="320,56,470,80"/>
+<area href="classalert_1_1controller_1_1_certificate_handler.html" title="A concrete strategy implementation of ISessionHandler that can verify the certificate token being pas..." alt="CertificateHandler" shape="rect" coords="0,56,135,80"/>
+<area href="classalert_1_1controller_1_1_session_token_handler.html" title="A concrete strategy implementation of ISessionHandler that can verify the session token being passed..." alt="SessionTokenHandler" shape="rect" coords="145,56,280,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5f825e5b0959f4cc16855c2b0db28a40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f825e5b0959f4cc16855c2b0db28a40"></a>
-boolean&#160;</td><td class="memItemRight" valign="bottom"><b>verifySessionToken</b> (String sessionToken)</td></tr>
-<tr class="separator:a5f825e5b0959f4cc16855c2b0db28a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3015feb4d373c04f07ea6fdc4dc3de33"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacealert_1_1controller_1_1_i_session_handler.html#a3015feb4d373c04f07ea6fdc4dc3de33">verifySessionToken</a> (String encryptedToken)  throws BusBuddyForbiddenException</td></tr>
+<tr class="memdesc:a3015feb4d373c04f07ea6fdc4dc3de33"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method takes in an encrypted token in a form of string and then validates for its authenticity.  <a href="#a3015feb4d373c04f07ea6fdc4dc3de33">More...</a><br/></td></tr>
+<tr class="separator:a3015feb4d373c04f07ea6fdc4dc3de33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An interface to verify the validity of encrypted token being passed. </p>
+<p>The implementation of this interface must decrpyt the session token or certificate and then verify it. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3015feb4d373c04f07ea6fdc4dc3de33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean verifySessionToken </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>encryptedToken</em></td><td>)</td>
+          <td>  throws <a class="el" href="classcommon_1_1_bus_buddy_forbidden_exception.html">BusBuddyForbiddenException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method takes in an encrypted token in a form of string and then validates for its authenticity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryptedToken</td><td><ul>
+<li>An encrypted string. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A boolean indicating whether the token was valid or not. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyForbiddenException</td><td><ul>
+<li>Throws an exception when the token is not valid. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classalert_1_1controller_1_1_certificate_handler.html#a5f825e5b0959f4cc16855c2b0db28a40">CertificateHandler</a>, and <a class="el" href="classalert_1_1controller_1_1_session_token_handler.html#a5f825e5b0959f4cc16855c2b0db28a40">SessionTokenHandler</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:11 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:54 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

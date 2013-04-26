@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>An Adapter Class to allow a {} service to appear as a <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>.  
+<p>An Adapter Class to allow a <a class="el" href="interfacetransit_1_1_google_transit_service_a_p_i.html">GoogleTransitServiceAPI</a> service to appear as a <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>.  
  <a href="classtransit_1_1_google_transit_service_adapter.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for GoogleTransitServiceAdapter:</div>
@@ -110,7 +110,7 @@ Inheritance diagram for GoogleTransitServiceAdapter:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aab2bb5e9eefc47ff36b6e4b607387820"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_google_transit_service_adapter.html#aab2bb5e9eefc47ff36b6e4b607387820">GoogleTransitServiceAdapter</a> (<a class="el" href="interfacetransit_1_1_google_transit_service_a_p_i.html">GoogleTransitServiceAPI</a> <a class="el" href="classtransit_1_1_google_transit_service_adapter.html#a7a5f601729e502cca840412bcd5a55a9">googleTransitServiceAPI</a>)</td></tr>
-<tr class="memdesc:aab2bb5e9eefc47ff36b6e4b607387820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates a new <a class="el" href="classtransit_1_1_google_transit_service_adapter.html" title="An Adapter Class to allow a {} service to appear as a TransitService.">GoogleTransitServiceAdapter</a> with a {} to delegate calls to.  <a href="#aab2bb5e9eefc47ff36b6e4b607387820">More...</a><br/></td></tr>
+<tr class="memdesc:aab2bb5e9eefc47ff36b6e4b607387820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates a new <a class="el" href="classtransit_1_1_google_transit_service_adapter.html" title="An Adapter Class to allow a GoogleTransitServiceAPI service to appear as a TransitService.">GoogleTransitServiceAdapter</a> with a <a class="el" href="interfacetransit_1_1_google_transit_service_a_p_i.html">GoogleTransitServiceAPI</a> to delegate calls to.  <a href="#aab2bb5e9eefc47ff36b6e4b607387820">More...</a><br/></td></tr>
 <tr class="separator:aab2bb5e9eefc47ff36b6e4b607387820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d93801c60b116410e94085defdf7a70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtransit_1_1_route.html">Route</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_google_transit_service_adapter.html#a5d93801c60b116410e94085defdf7a70">getRoute</a> (String routeId)</td></tr>
 <tr class="memdesc:a5d93801c60b116410e94085defdf7a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="classtransit_1_1_route.html">Route</a> by its unique identifier.  <a href="#a5d93801c60b116410e94085defdf7a70">More...</a><br/></td></tr>
@@ -129,11 +129,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setGoogleTransitServi
 Private Attributes</h2></td></tr>
 <tr class="memitem:a7a5f601729e502cca840412bcd5a55a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a5f601729e502cca840412bcd5a55a9"></a>
 <a class="el" href="interfacetransit_1_1_google_transit_service_a_p_i.html">GoogleTransitServiceAPI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_google_transit_service_adapter.html#a7a5f601729e502cca840412bcd5a55a9">googleTransitServiceAPI</a></td></tr>
-<tr class="memdesc:a7a5f601729e502cca840412bcd5a55a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The {} to adapt as a <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>. <br/></td></tr>
+<tr class="memdesc:a7a5f601729e502cca840412bcd5a55a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="interfacetransit_1_1_google_transit_service_a_p_i.html">GoogleTransitServiceAPI</a> to adapt as a <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>. <br/></td></tr>
 <tr class="separator:a7a5f601729e502cca840412bcd5a55a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An Adapter Class to allow a {} service to appear as a <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>. </p>
+<div class="textblock"><p>An Adapter Class to allow a <a class="el" href="interfacetransit_1_1_google_transit_service_a_p_i.html">GoogleTransitServiceAPI</a> service to appear as a <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aab2bb5e9eefc47ff36b6e4b607387820"></a>
 <div class="memitem">
@@ -149,7 +149,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Instantiates a new <a class="el" href="classtransit_1_1_google_transit_service_adapter.html" title="An Adapter Class to allow a {} service to appear as a TransitService.">GoogleTransitServiceAdapter</a> with a {} to delegate calls to. </p>
+<p>Instantiates a new <a class="el" href="classtransit_1_1_google_transit_service_adapter.html" title="An Adapter Class to allow a GoogleTransitServiceAPI service to appear as a TransitService.">GoogleTransitServiceAdapter</a> with a <a class="el" href="interfacetransit_1_1_google_transit_service_a_p_i.html">GoogleTransitServiceAPI</a> to delegate calls to. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">googleTransitServiceAPI</td><td>the google transit service api </td></tr>
@@ -242,7 +242,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:18 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:01 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

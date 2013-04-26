@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,7 +102,7 @@ Inheritance diagram for TransitService:</div>
  <div class="center">
   <img src="interfacetransit_1_1_transit_service.png" usemap="#TransitService_map" alt=""/>
   <map id="TransitService_map" name="TransitService_map">
-<area href="classtransit_1_1_i_team_transit_service.html" title="The iTeam implementation of the TransitService that exposes Transit data via a REST Service..." alt="ITeamTransitService" shape="rect" coords="0,56,127,80"/>
+<area href="classtransit_1_1_i_team_transit_service_controller.html" title="The iTeam implementation of the TransitService that exposes Transit data via a REST Service..." alt="ITeamTransitServiceController" shape="rect" coords="0,56,183,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -140,8 +140,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets a <a class="el" href="classtransit_1_1_route.html">Route</a> by its unique identifier. </p>
-<dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">routeId</b> is not null or blank. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>The <a class="el" href="classtransit_1_1_route.html">Route</a> is returned if the <b class="paramname">routeId</b> is found, else null.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">routeId</td><td>The unique identifier of the <a class="el" href="classtransit_1_1_route.html">Route</a> </td></tr>
@@ -149,8 +147,10 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The matching <a class="el" href="classtransit_1_1_route.html">Route</a>, or null if not found </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">routeId</b> is not null or blank. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>The <a class="el" href="classtransit_1_1_route.html">Route</a> is returned if the <b class="paramname">routeId</b> is found, else null. </dd></dl>
 
-<p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service.html#a5d93801c60b116410e94085defdf7a70">ITeamTransitService</a>.</p>
+<p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#a5d93801c60b116410e94085defdf7a70">ITeamTransitServiceController</a>.</p>
 
 </div>
 </div>
@@ -185,22 +185,22 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets all available <a class="el" href="classtransit_1_1_route.html">Route</a>s that match a <b class="paramname">pickup</b> or <b class="paramname">dropoff</b> <a class="el" href="classtransit_1_1_location.html">Location</a> by not more than a given <b class="paramname">distance</b>. </p>
-<dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">pickup</b> is not null or blank. </dd>
-<dd>
-<b class="paramname">dropoff</b> is not null or blank. </dd>
-<dd>
-<b class="paramname">distance</b> is non-negative.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pickup</td><td>The requested pickup <a class="el" href="classtransit_1_1_location.html">Location</a> </td></tr>
     <tr><td class="paramname">pickup</td><td>The requested dropoff <a class="el" href="classtransit_1_1_location.html">Location</a> </td></tr>
-    <tr><td class="paramname">distance</td><td>The distance (in miles) that each <a class="el" href="classtransit_1_1_route.html">Route</a> can deviate from the requested <b class="paramname">pickup</b> or <b class="paramname">dropoff</b> <a class="el" href="classtransit_1_1_location.html">Location</a>. For each <a class="el" href="classtransit_1_1_route.html">Route</a> returned, neither its start or end <a class="el" href="classtransit_1_1_location.html">Location</a> can differ from the requested <b class="paramname">pickup</b> or <b class="paramname">dropoff</b> <a class="el" href="classtransit_1_1_location.html">Location</a> by more than the value of the <b class="paramname">distance</b> parameter.</td></tr>
+    <tr><td class="paramname">dropoff</td><td>the dropoff </td></tr>
+    <tr><td class="paramname">distance</td><td>The distance (in miles) that each <a class="el" href="classtransit_1_1_route.html">Route</a> can deviate from the requested <b class="paramname">pickup</b> or <b class="paramname">dropoff</b> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The matching <a class="el" href="classtransit_1_1_route.html">Route</a>s </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">pickup</b> is not null or blank. </dd>
+<dd>
+<b class="paramname">dropoff</b> is not null or blank. </dd>
+<dd>
+<b class="paramname">distance</b> is non-negative. <a class="el" href="classtransit_1_1_location.html">Location</a>. For each <a class="el" href="classtransit_1_1_route.html">Route</a> returned, neither its start or end <a class="el" href="classtransit_1_1_location.html">Location</a> can differ from the requested <b class="paramname">pickup</b> or <b class="paramname">dropoff</b> <a class="el" href="classtransit_1_1_location.html">Location</a> by more than the value of the <b class="paramname">distance</b> parameter. </dd></dl>
 
-<p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">ITeamTransitService</a>.</p>
+<p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">ITeamTransitServiceController</a>.</p>
 
 </div>
 </div>
@@ -218,10 +218,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The URL that uniquely identifies this <a class="el" href="interfacetransit_1_1_transit_service.html" title="The TransitService is an interface to get Route/Fare/Detour information from a TransitProvider.">TransitService</a>. </p>
-<p>In a REST environment, this might be the root of the REST API path. In a SOAP environment, it could represent a SOAP endpoint.</p>
+<p>In a REST environment, this might be the root of the REST API path.</p>
 <dl class="section return"><dt>Returns</dt><dd>The URL of this service </dd></dl>
 
-<p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service.html#a840b0f525f17b40bf103bc8871f99d83">ITeamTransitService</a>.</p>
+<p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#a840b0f525f17b40bf103bc8871f99d83">ITeamTransitServiceController</a>.</p>
 
 </div>
 </div>
@@ -241,14 +241,14 @@ Public Member Functions</h2></td></tr>
 <p>Gets metadata about the Transit Authority providing the information retrieved from this service. </p>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classtransit_1_1_transit_info.html">TransitInfo</a> of the Transit Authority of this service. </dd></dl>
 
-<p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service.html#aa4819e59c9861ed3166265e0d0bcd945">ITeamTransitService</a>.</p>
+<p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#aa4819e59c9861ed3166265e0d0bcd945">ITeamTransitServiceController</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:20 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:03 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

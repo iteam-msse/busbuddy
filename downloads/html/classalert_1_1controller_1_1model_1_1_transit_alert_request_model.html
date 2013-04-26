@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,18 +82,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacealert.html">alert</a></li><li class="navelem"><b>controller</b></li><li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="classalert_1_1controller_1_1model_1_1_transit_alert_request_model.html">TransitAlertRequestModel</a></li>  </ul>
+<li class="navelem"><b>alert</b></li><li class="navelem"><a class="el" href="namespacealert_1_1controller.html">controller</a></li><li class="navelem"><a class="el" href="namespacealert_1_1controller_1_1model.html">model</a></li><li class="navelem"><a class="el" href="classalert_1_1controller_1_1model_1_1_transit_alert_request_model.html">TransitAlertRequestModel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="classalert_1_1controller_1_1model_1_1_transit_alert_request_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">TransitAlertRequestModel Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+
+<p>This model is a JSON representation of the request from Transit module.  
+ <a href="classalert_1_1controller_1_1model_1_1_transit_alert_request_model.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for TransitAlertRequestModel:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classalert_1_1controller_1_1model_1_1_transit_alert_request_model.png" usemap="#TransitAlertRequestModel_map" alt=""/>
+  <map id="TransitAlertRequestModel_map" name="TransitAlertRequestModel_map">
+<area href="classalert_1_1controller_1_1model_1_1_alert_request_model.html" title="A base model that contains bare minimum information about the alert request." alt="AlertRequestModel" shape="rect" coords="0,0,156,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_classalert_1_1controller_1_1model_1_1_alert_request_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalert_1_1controller_1_1model_1_1_alert_request_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html">AlertRequestModel</a></td></tr>
+<tr class="memitem:ad3cdaaef90eecc65be867d183d890b2d inherit pub_methods_classalert_1_1controller_1_1model_1_1_alert_request_model"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3cdaaef90eecc65be867d183d890b2d"></a>
+<a class="el" href="enumalert_1_1enums_1_1_alert_initiator.html">AlertInitiator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getAlertInitiator</b> ()</td></tr>
+<tr class="separator:ad3cdaaef90eecc65be867d183d890b2d inherit pub_methods_classalert_1_1controller_1_1model_1_1_alert_request_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4716f210f67b16c71e78e298ec5e8e0 inherit pub_methods_classalert_1_1controller_1_1model_1_1_alert_request_model"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4716f210f67b16c71e78e298ec5e8e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAlertInitiator</b> (<a class="el" href="enumalert_1_1enums_1_1_alert_initiator.html">AlertInitiator</a> <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_request_model.html#a12ac62ca570b6daeccc921d237dabef0">alertInitiator</a>)</td></tr>
+<tr class="separator:af4716f210f67b16c71e78e298ec5e8e0 inherit pub_methods_classalert_1_1controller_1_1model_1_1_alert_request_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This model is a JSON representation of the request from Transit module. </p>
+<p>During implementation, any additional data that is needed can be added. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:12 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:34:55 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

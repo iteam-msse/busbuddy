@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,19 +87,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classtransit_1_1_transit_provider-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">TransitProvider Class Reference</div>  </div>
+<div class="title">TransitProvider Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>A <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a> is a description of a company or organization that is the producer of public transportation services.  
  <a href="classtransit_1_1_transit_provider.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:add26cb94e4398ba8297c8774c2e6280d"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_transit_provider.html#add26cb94e4398ba8297c8774c2e6280d">providerId</a></td></tr>
+<tr class="memdesc:add26cb94e4398ba8297c8774c2e6280d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier that globally identifies this <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a>.  <a href="#add26cb94e4398ba8297c8774c2e6280d">More...</a><br/></td></tr>
+<tr class="separator:add26cb94e4398ba8297c8774c2e6280d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab007bf511eeb58ba421cae0a9172fcca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab007bf511eeb58ba421cae0a9172fcca"></a>
+Set&lt; <a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_transit_provider.html#ab007bf511eeb58ba421cae0a9172fcca">transitProviderObserver</a></td></tr>
+<tr class="memdesc:ab007bf511eeb58ba421cae0a9172fcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Observer Pattern mechanism to alertlink <a class="el" href="interfacetransit_1_1_transit_provider_observer.html" title="An asynchronous update interface for receiving notifications about TransitProvider Route disruptions...">TransitProviderObserver</a>}s of changes in <a class="el" href="classtransit_1_1_route.html">Route</a> service;. <br/></td></tr>
+<tr class="separator:ab007bf511eeb58ba421cae0a9172fcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2326f35466e54c36c070829245c557"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_transit_provider.html#a9a2326f35466e54c36c070829245c557">name</a></td></tr>
+<tr class="memdesc:a9a2326f35466e54c36c070829245c557"><td class="mdescLeft">&#160;</td><td class="mdescRight">A text description of the <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a>.  <a href="#a9a2326f35466e54c36c070829245c557">More...</a><br/></td></tr>
+<tr class="separator:a9a2326f35466e54c36c070829245c557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040d39d6768fd1903fdae860536b63b8"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_transit_provider.html#a040d39d6768fd1903fdae860536b63b8">fireRouteDistruptionEvent</a> ()</td></tr>
+<tr class="memdesc:a040d39d6768fd1903fdae860536b63b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called internally by the <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a> to fire a <a class="el" href="classtransit_1_1_route_disruption_event.html">RouteDisruptionEvent</a>.  <a href="#a040d39d6768fd1903fdae860536b63b8">More...</a><br/></td></tr>
+<tr class="separator:a040d39d6768fd1903fdae860536b63b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19647e81aa1f1ddd3ee65a302fc9b67f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19647e81aa1f1ddd3ee65a302fc9b67f"></a>
 String&#160;</td><td class="memItemRight" valign="bottom"><b>getProviderId</b> ()</td></tr>
 <tr class="separator:a19647e81aa1f1ddd3ee65a302fc9b67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,19 +124,96 @@ String&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()</td>
 <tr class="memitem:ad737b36b74be994e0d8420797ed72f78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad737b36b74be994e0d8420797ed72f78"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (String <a class="el" href="classtransit_1_1_transit_provider.html#a9a2326f35466e54c36c070829245c557">name</a>)</td></tr>
 <tr class="separator:ad737b36b74be994e0d8420797ed72f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:add26cb94e4398ba8297c8774c2e6280d"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_transit_provider.html#add26cb94e4398ba8297c8774c2e6280d">providerId</a></td></tr>
-<tr class="memdesc:add26cb94e4398ba8297c8774c2e6280d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier that globally identifies this <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a>.  <a href="#add26cb94e4398ba8297c8774c2e6280d">More...</a><br/></td></tr>
-<tr class="separator:add26cb94e4398ba8297c8774c2e6280d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a2326f35466e54c36c070829245c557"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_transit_provider.html#a9a2326f35466e54c36c070829245c557">name</a></td></tr>
-<tr class="memdesc:a9a2326f35466e54c36c070829245c557"><td class="mdescLeft">&#160;</td><td class="mdescRight">A text description of the <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a>.  <a href="#a9a2326f35466e54c36c070829245c557">More...</a><br/></td></tr>
-<tr class="separator:a9a2326f35466e54c36c070829245c557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cc6a4f81e6bb2f35cf5db71d2dff36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_transit_provider.html#a83cc6a4f81e6bb2f35cf5db71d2dff36">registerObserver</a> (<a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> <a class="el" href="classtransit_1_1_transit_provider.html#ab007bf511eeb58ba421cae0a9172fcca">transitProviderObserver</a>)</td></tr>
+<tr class="memdesc:a83cc6a4f81e6bb2f35cf5db71d2dff36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the provided <a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> as an observer to this class.  <a href="#a83cc6a4f81e6bb2f35cf5db71d2dff36">More...</a><br/></td></tr>
+<tr class="separator:a83cc6a4f81e6bb2f35cf5db71d2dff36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb6e9fe5ca62c0f651ef5245c3418fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_transit_provider.html#adfb6e9fe5ca62c0f651ef5245c3418fb">unregisterObserver</a> (<a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> <a class="el" href="classtransit_1_1_transit_provider.html#ab007bf511eeb58ba421cae0a9172fcca">transitProviderObserver</a>)</td></tr>
+<tr class="memdesc:adfb6e9fe5ca62c0f651ef5245c3418fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the provided <a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> as an observer to this class.  <a href="#adfb6e9fe5ca62c0f651ef5245c3418fb">More...</a><br/></td></tr>
+<tr class="separator:adfb6e9fe5ca62c0f651ef5245c3418fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a> is a description of a company or organization that is the producer of public transportation services. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p>Observers may subscribe to a <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a> to receive updates on <a class="el" href="classtransit_1_1_route.html">Route</a> disruptions, such as changes in service availability or schedule. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a040d39d6768fd1903fdae860536b63b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void fireRouteDistruptionEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called internally by the <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a> to fire a <a class="el" href="classtransit_1_1_route_disruption_event.html">RouteDisruptionEvent</a>. </p>
+<p><a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a> subclasses will determine when these Events are fired &ndash; for example, if a <a class="el" href="classtransit_1_1_transit_provider.html" title="A TransitProvider is a description of a company or organization that is the producer of public transp...">TransitProvider</a> has scheduled maintenance days, or known outages due to mechanical breakdown.</p>
+<p>After a <a class="el" href="classtransit_1_1_route_disruption_event.html">RouteDisruptionEvent</a> is fired, this class will perform the following:</p>
+<ul>
+<li>Notify all <a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a>s of the disruption with the updated <a class="el" href="classtransit_1_1_route.html">Route</a>. This updated <a class="el" href="classtransit_1_1_route.html">Route</a> should include all necessary <a class="el" href="classtransit_1_1_detour.html">Detour</a> information. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a83cc6a4f81e6bb2f35cf5db71d2dff36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registerObserver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a>&#160;</td>
+          <td class="paramname"><em>transitProviderObserver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the provided <a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> as an observer to this class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transitProviderObserver</td><td>The <a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> to unregister. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adfb6e9fe5ca62c0f651ef5245c3418fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unregisterObserver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a>&#160;</td>
+          <td class="paramname"><em>transitProviderObserver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister the provided <a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> as an observer to this class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transitProviderObserver</td><td>The <a class="el" href="interfacetransit_1_1_transit_provider_observer.html">TransitProviderObserver</a> to unregister. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a9a2326f35466e54c36c070829245c557"></a>
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +263,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:20 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:03 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

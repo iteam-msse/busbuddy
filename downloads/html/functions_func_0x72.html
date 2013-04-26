@@ -71,6 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -79,6 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_0x62.html#index_b"><span>b</span></a></li>
       <li><a href="functions_func_0x63.html#index_c"><span>c</span></a></li>
       <li><a href="functions_func_0x64.html#index_d"><span>d</span></a></li>
+      <li><a href="functions_func_0x65.html#index_e"><span>e</span></a></li>
       <li><a href="functions_func_0x66.html#index_f"><span>f</span></a></li>
       <li><a href="functions_func_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_0x68.html#index_h"><span>h</span></a></li>
@@ -101,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,19 +119,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>read()
 : <a class="el" href="interfacetransit_1_1_route_repository.html#a7a210c91c71b7dc64c05768038fbf711">RouteRepository</a>
 </li>
+<li>readFavorites()
+: <a class="el" href="classuser_1_1_i_team_user_favorites_service.html#ad2066eff94e839e776dcfa419fc85b14">ITeamUserFavoritesService</a>
+, <a class="el" href="interfaceuser_1_1_user_favorites_service.html#ad2066eff94e839e776dcfa419fc85b14">UserFavoritesService</a>
+</li>
 <li>registerGPSDevice()
 : <a class="el" href="classtracking_1_1_commercial_tracking.html#a99fc2e795b2937aff5c4325b19d658ba">CommercialTracking</a>
+, <a class="el" href="classtracking_1_1_g_p_s_location_tracking.html#a007d6902ffe4268cb7d2d4984d90cadf">GPSLocationTracking</a>
 , <a class="el" href="classtracking_1_1_g_p_s_puller.html#a99fc2e795b2937aff5c4325b19d658ba">GPSPuller</a>
 , <a class="el" href="classtracking_1_1_g_p_s_pusher.html#a99fc2e795b2937aff5c4325b19d658ba">GPSPusher</a>
-, <a class="el" href="classtracking_1_1_g_p_s_location_tracking.html#a007d6902ffe4268cb7d2d4984d90cadf">GPSLocationTracking</a>
+</li>
+<li>registerObserver()
+: <a class="el" href="classtransit_1_1_transit_provider.html#a83cc6a4f81e6bb2f35cf5db71d2dff36">TransitProvider</a>
 </li>
 <li>registerTrackingAlert()
-: <a class="el" href="classtracking_1_1_transit_vehicle.html#a67c2ac39e34faabbbae4f4963fea5ea5">TransitVehicle</a>
-, <a class="el" href="classtracking_1_1_bus_vehicle.html#a360b86f7bbbc29313beb9c85dd8c860f">BusVehicle</a>
+: <a class="el" href="classtracking_1_1_bus_vehicle.html#a360b86f7bbbc29313beb9c85dd8c860f">BusVehicle</a>
+, <a class="el" href="classtracking_1_1_transit_vehicle.html#a67c2ac39e34faabbbae4f4963fea5ea5">TransitVehicle</a>
 </li>
 <li>registerVehicleOnRoute()
-: <a class="el" href="classtracking_1_1_tracking_service_controller.html#ae6b6142ed226ab8cdd982efbd985294a">TrackingServiceController</a>
-, <a class="el" href="interfacetracking_1_1_i_tracking_service.html#ae6b6142ed226ab8cdd982efbd985294a">ITrackingService</a>
+: <a class="el" href="interfacetracking_1_1_i_tracking_service.html#ae6b6142ed226ab8cdd982efbd985294a">ITrackingService</a>
+, <a class="el" href="classtracking_1_1_tracking_service_controller.html#ae6b6142ed226ab8cdd982efbd985294a">TrackingServiceController</a>
 </li>
 <li>removeAlertSpecifcation()
 : <a class="el" href="classtracking_1_1_transit_vehicle.html#aa7434ca979a7ebb6caa6db510f492d22">TransitVehicle</a>
@@ -137,11 +146,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>removeVehicle()
 : <a class="el" href="classtracking_1_1_vehicle_repository.html#a7d755823f62cdbd1078f0abd3506275d">VehicleRepository</a>
 </li>
+<li>resetPassword()
+: <a class="el" href="interfaceuser_1_1_user_login_service.html#afe170f02c3c2773c5fd935c76703ad43">UserLoginService</a>
+, <a class="el" href="classuser_1_1_i_team_user_login_service.html#afe170f02c3c2773c5fd935c76703ad43">ITeamUserLoginService</a>
+</li>
+<li>RouteDisruptionEvent()
+: <a class="el" href="classtransit_1_1_route_disruption_event.html#ab70c1f02c9a5fb45c4e713a161b9f0f9">RouteDisruptionEvent</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:21 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:05 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

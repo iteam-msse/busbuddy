@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,8 +124,8 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An Alert indicating a disruption of normal <a class="el" href="classtransit_1_1_route.html">Route</a> availability or scheduling. </p>
-<p>Clients interested in more specific information about the disruption, including cause and affected <a class="el" href="classtransit_1_1_stop.html">Stop</a>s, should use the <a class="el" href="">getTransitServiceUrl()</a> method to establish a link to the appropriate <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>, and then obtain the affected <a class="el" href="classtransit_1_1_route.html">Route</a> using the routeId from the <a class="el" href="">getRouteId()</a> method.</p>
-<p>Once retrieved, current <a class="el" href="classtransit_1_1_detour.html">Detour</a> information can be accessed via the <a class="el" href="">Route#getDetours()</a> method on the given <a class="el" href="classtransit_1_1_route.html">Route</a>. This method, upon subsequent retrievals of the <a class="el" href="classtransit_1_1_route.html">Route</a>, will return an empty set when all <a class="el" href="classtransit_1_1_detour.html">Detour</a>s have cleared. </p>
+<p>Clients interested in more specific information about the disruption, including cause and affected <a class="el" href="classtransit_1_1_stop.html">Stop</a>s, should use the getTransitServiceUrl() method to establish a link to the appropriate <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a>, and then obtain the affected <a class="el" href="classtransit_1_1_route.html">Route</a> using the routeId from the getRouteId() method.</p>
+<p>Once retrieved, current <a class="el" href="classtransit_1_1_detour.html">Detour</a> information can be accessed via the <a class="el" href="classtransit_1_1_route.html">Route</a> getDetours() method on the given <a class="el" href="classtransit_1_1_route.html">Route</a>. This method, upon subsequent retrievals of the <a class="el" href="classtransit_1_1_route.html">Route</a>, will return an empty set when all <a class="el" href="classtransit_1_1_detour.html">Detour</a>s have cleared. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a80ebfcbbafca40b17ea2d81cfb71940a"></a>
 <div class="memitem">
@@ -176,7 +176,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:19 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:02 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

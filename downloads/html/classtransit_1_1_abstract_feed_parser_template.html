@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -156,10 +156,10 @@ Specification&lt; <a class="el" href="classtransit_1_1_route.html">Route</a> &gt
 <div class="textblock"><p>A Template Method pattern to allow for the import of data from different <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a>s in potentially different formats. </p>
 <p>The algorithm sequence is as follows:</p>
 <ol type="1">
-<li>A <a class="el" href="">URL</a> of a resource location is passed into the <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a48d3d5cc147a04f4e8e9dd24979d03e6">start(URL)</a> method. This method initiates the parsing/transformation process.</li>
-<li>The <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a48d3d5cc147a04f4e8e9dd24979d03e6">start(URL)</a> method calls the method <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#ac50fdc1c9975f64bac4bad95792296a4">loadFeed(URL)</a> to establish the InputStream.</li>
-<li>The InputStream returned by <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#ac50fdc1c9975f64bac4bad95792296a4">loadFeed(URL)</a> is passed into the abstract <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a33053e669e3739274deae5e52c251465">parseFeed(InputStream)</a> method. Subclasses will implement this as necessary to produce the resulting <a class="el" href="classtransit_1_1_route.html">Route</a>s</li>
-<li>The newly created <a class="el" href="classtransit_1_1_route.html">Route</a>s are saved to the <a class="el" href="interfacetransit_1_1_route_repository.html">RouteRepository</a> via the <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#af8e8edebec6285602371d40aa103306b">saveRoutes(Set&lt;Route&gt;)</a> method. </li>
+<li>A <a class="el" href="">URL</a> of a resource location is passed into the <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a48d3d5cc147a04f4e8e9dd24979d03e6">start</a> method. This method initiates the parsing/transformation process.</li>
+<li>The <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a48d3d5cc147a04f4e8e9dd24979d03e6">start</a> method calls the method <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#ac50fdc1c9975f64bac4bad95792296a4">loadFeed</a> to establish the InputStream.</li>
+<li>The InputStream returned by <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#ac50fdc1c9975f64bac4bad95792296a4">loadFeed</a> is passed into the abstract <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a33053e669e3739274deae5e52c251465">parseFeed</a> method. Subclasses will implement this as necessary to produce the resulting <a class="el" href="classtransit_1_1_route.html">Route</a>s</li>
+<li>The newly created <a class="el" href="classtransit_1_1_route.html">Route</a>s are saved to the <a class="el" href="interfacetransit_1_1_route_repository.html">RouteRepository</a> via the <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#af8e8edebec6285602371d40aa103306b">saveRoutes</a> method. </li>
 </ol>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac50fdc1c9975f64bac4bad95792296a4"></a>
@@ -340,7 +340,7 @@ Specification&lt; <a class="el" href="classtransit_1_1_route.html">Route</a> &gt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 23 2013 00:04:18 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 00:35:01 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

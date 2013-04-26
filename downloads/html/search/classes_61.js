@@ -17,5 +17,6 @@ var searchData=
   ['alertservicefactory',['AlertServiceFactory',['../classalert_1_1service_1_1_alert_service_factory.html',1,'alert::service']]],
   ['alertspecification',['AlertSpecification',['../interfacetracking_1_1_alert_specification.html',1,'tracking']]],
   ['alertstatus',['AlertStatus',['../enumalert_1_1enums_1_1_alert_status.html',1,'alert::enums']]],
-  ['alerttype',['AlertType',['../enumtracking_1_1_alert_type.html',1,'tracking']]]
+  ['alerttype',['AlertType',['../enumtracking_1_1_alert_type.html',1,'tracking']]],
+  ['alertuserclient',['AlertUserClient',['../classalert_1_1client_1_1_alert_user_client.html',1,'alert::client']]]
 ];
