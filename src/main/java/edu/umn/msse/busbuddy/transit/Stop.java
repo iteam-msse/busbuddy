@@ -18,6 +18,15 @@ import edu.umn.msse.busbuddy.tracking.TransitVehicle;
 public class Stop {
 	
 	/**
+	 * A unique identifier for this Stop. In some cases, it could be a String
+	 * representation of the {@link #location} - or possibly the {@link description}.
+	 * 
+	 * As a Stop is part of the {@link Route} Aggregate, this identifier needs only
+	 * be unique within the context of a {@link Route}.
+	 */
+	private String stopId;
+	
+	/**
 	 * A short text-based description of describing the Stop and its location.
 	 * 
 	 * This could be an intersection: 
@@ -35,6 +44,14 @@ public class Stop {
 	 * The physical location of the Stop.
 	 */
 	private Location location;
+	
+	/**
+	 * Whether or not this Stop is protected by some sort of enclosure. The type of
+	 * enclosure required to constitute 'covered' defined by each {@link TransitProvider},
+	 * but at a minimum there should be a roof protecting the immediate area before riders
+	 * board the vehicle.
+	 */
+	private boolean covered;
 		
 	/**
 	 * Reports the expected times in which a 
@@ -70,6 +87,22 @@ public class Stop {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getStopId() {
+		return stopId;
+	}
+
+	public void setStopId(String stopId) {
+		this.stopId = stopId;
+	}
+
+	public boolean isCovered() {
+		return covered;
+	}
+
+	public void setCovered(boolean covered) {
+		this.covered = covered;
 	}
 
 }

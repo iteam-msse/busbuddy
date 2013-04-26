@@ -17,7 +17,7 @@ public class GoogleTransitServiceAdapter implements TransitFeed {
 	 * Instantiates a new GoogleTransitServiceAdapter with a
 	 * {@link GoogleTransitServiceAPI} to delegate calls to.
 	 *
-	 * @param googleTransitServiceAPI the google transit service api
+	 * @param googleTransitServiceAPI The {@link GoogleTransitServiceAPI} to adapt.
 	 */
 	public GoogleTransitServiceAdapter(GoogleTransitServiceAPI googleTransitServiceAPI){
 		super();

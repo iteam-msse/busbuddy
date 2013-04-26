@@ -10,6 +10,15 @@ import java.util.Set;
  */
 public class Detour {
 	
+	/**
+	 * A unique identifier for this Detour. This is not intended to be human-readable
+	 * and can be generated.
+	 * 
+	 * As a Detour is part of the {@link Route} Aggregate, this identifier needs only
+	 * be unique within the context of a {@link Route}.
+	 */
+	private String detourId;
+	
 	/** 
 	 * A text-based description of the cause of the Detour, intended to be displayed
 	 * to customers. If null or blank, the cause is considered Unspecified or Unknown.
@@ -49,6 +58,14 @@ public class Detour {
 
 	public void setAffectedStops(Set<Stop> affectedStops) {
 		this.affectedStops = affectedStops;
+	}
+
+	public String getDetourId() {
+		return detourId;
+	}
+
+	public void setDetourId(String detourId) {
+		this.detourId = detourId;
 	}
 	
 }

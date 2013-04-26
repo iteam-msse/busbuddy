@@ -7,12 +7,12 @@ package edu.umn.msse.busbuddy.transit;
 public class Location {
 
 	/** 
-	 * The latitude of the point. 
+	 * The latitude of the geographic point. 
 	 */
 	private double latitude;
 	
 	/** 
-	 * The longitude of the point. 
+	 * The longitude of the geographic point. 
 	 */
 	private double longitude;
 

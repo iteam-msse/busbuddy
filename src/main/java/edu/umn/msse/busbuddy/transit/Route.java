@@ -10,6 +10,9 @@ import java.util.Set;
  * 
  * Note that Routes may add/remove stops, change {@link Stop} times, or be disrupted by
  * {@link Detour}s, while still remaining the same Route.
+ * 
+ * Route is also the AggregateRoot of the RouteAggregate, which implies that the
+ * {@link #routeId} parameter is globally unique.
  */
 public class Route {
 	
