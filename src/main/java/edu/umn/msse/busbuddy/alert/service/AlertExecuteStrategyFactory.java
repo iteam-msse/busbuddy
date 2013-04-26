@@ -11,7 +11,7 @@ public class AlertExecuteStrategyFactory {
 	/**
 	 * Based on the alertModel information, this method is going to pick the best strategy to send the alert.
 	 * 
-	 * @param {@link Alert} model which is used to pick the best strategy.
+	 * @param alertModel {@link Alert} model which is used to pick the best strategy.
 	 * @return An implementation of {@link IAlertExecuteStrategy} that can send the notification message for given
 	 *         alert.
 	 */
