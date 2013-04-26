@@ -9,9 +9,8 @@ import edu.umn.msse.busbuddy.alert.enums.AlertRunType;
 import edu.umn.msse.busbuddy.alert.enums.AlertStatus;
 
 /**
- * An alert factory that can create different types of semi-populated alert
- * models depending upon the information. Any additional create method can be
- * created during implementation phase.
+ * An alert factory that can create different types of semi-populated alert models depending upon the information. Any
+ * additional create method can be created during implementation phase.
  */
 public class AlertFactory {
 
@@ -19,6 +18,7 @@ public class AlertFactory {
 	 * Creates an alert model depending upon the run Type.
 	 * 
 	 * @param runType
+	 *            {@link AlertRunType} enum.
 	 * @return Either a Onetime or Recurring alert Model.
 	 */
 	public Alert createAlert(AlertRunType runType) {
@@ -40,7 +40,8 @@ public class AlertFactory {
 	 * Created alert model depending upon the recurringType
 	 * 
 	 * @param recurringType
-	 * @return An recurring alert Model
+	 *            {@link AlertRecurringType} enum
+	 * @return A recurring alert Model
 	 */
 	public Alert createAlert(AlertRecurringType recurringType) {
 		Alert alertModel = new RecurringAlert();

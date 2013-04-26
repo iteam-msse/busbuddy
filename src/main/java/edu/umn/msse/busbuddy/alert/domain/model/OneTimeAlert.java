@@ -3,12 +3,9 @@ package edu.umn.msse.busbuddy.alert.domain.model;
 import java.sql.Date;
 
 /**
- * 
- * This is a model of alert that is to be run one time only. This can be
- * configure by User (e.g., catch bus to Boston at 9am on MM/DD/YYYY) or by any
- * other module (e.g., Route to MSP downtown on MM/DD/YYYY is going to be
- * rerouted). This class extends the {@link Alert}.
- * 
+ * This is a model of alert that is to be run one time only. This can be configure by User (e.g., catch bus to Boston at
+ * 9am on MM/DD/YYYY) or by any other module (e.g., Route to MSP downtown on MM/DD/YYYY is going to be rerouted). This
+ * class extends the {@link Alert}.
  */
 public class OneTimeAlert extends Alert {
 

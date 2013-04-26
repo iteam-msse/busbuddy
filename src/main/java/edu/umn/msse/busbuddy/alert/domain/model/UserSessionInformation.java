@@ -1,5 +1,8 @@
 package edu.umn.msse.busbuddy.alert.domain.model;
 
+/**
+ * A model that stores all the information needed to call user module about user information.
+ */
 public class UserSessionInformation {
 
 	/**
@@ -8,9 +11,8 @@ public class UserSessionInformation {
 	private String userId;
 
 	/**
-	 * A long lived session token to validate the authenticity of request to
-	 * UserModule. This is required to get the current user information in order
-	 * to alert the user.
+	 * A long lived session token to validate the authenticity of request to UserModule. This is required to get the
+	 * current user information in order to alert the user.
 	 */
 	private String userSessionToken;
 

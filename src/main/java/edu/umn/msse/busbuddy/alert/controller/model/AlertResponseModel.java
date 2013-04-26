@@ -1,9 +1,8 @@
 package edu.umn.msse.busbuddy.alert.controller.model;
 
 /**
- * This is a basic alert response model that is returned for every alert related
- * requested. Additional parameter can be added as needed during implementation
- * phase.
+ * This is a basic alert response model that is returned for every alert related requested. Additional fields can be
+ * added as needed during implementation phase.
  */
 public class AlertResponseModel {
 	/**

@@ -1,5 +1,8 @@
 package edu.umn.msse.busbuddy.alert.domain.model;
 
+/**
+ * This model holds the information about the date and time the alert needs to run.
+ */
 public class RecurringData {
 
 	/**

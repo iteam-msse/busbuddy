@@ -6,11 +6,8 @@ import java.util.List;
 import edu.umn.msse.busbuddy.alert.enums.AlertRecurringType;
 
 /**
- * 
- * This is a model of alert that is to be run multiple times. Depending on User
- * or other modules, the alert will run yearly, monthly, daily in specified hour
- * and minute.
- * 
+ * This is a model of alert that is to be run multiple times. Depending on User or other modules, the alert will run
+ * yearly, monthly, daily in specified hour and minute.
  */
 public class RecurringAlert extends Alert {
 
@@ -32,21 +29,18 @@ public class RecurringAlert extends Alert {
 	private Date lastSuccessfullyRanOnDateTime;
 
 	/**
-	 * List of {@link RecurringData} that holds the information about when the
-	 * alert should actually run.
+	 * List of {@link RecurringData} that holds the information about when the alert should actually run.
 	 */
 	private List<RecurringData> recurringData;
 
 	/**
-	 * Parameter to signify the skip count. Valid value is >0 If alert is to
-	 * occur every Monday and the repeatEvery is set to 2, then it will repeat
-	 * once every 2 week.
+	 * Parameter to signify the skip count. Valid value is >0 If alert is to occur every Monday and the repeatEvery is
+	 * set to 2, then it will repeat once every 2 week.
 	 */
 	private int repeatEvery;
 
 	/**
-	 * Type of recurring alert. Value is as defined in
-	 * {@link AlertRecurringType}
+	 * Type of recurring alert. Value is as defined in {@link AlertRecurringType}
 	 */
 	private AlertRecurringType alertRecurringType;
 
@@ -70,8 +64,7 @@ public class RecurringAlert extends Alert {
 		return lastSuccessfullyRanOnDateTime;
 	}
 
-	public void setLastSuccessfullyRanOnDateTime(
-			Date lastSuccessfullyRanOnDateTime) {
+	public void setLastSuccessfullyRanOnDateTime(Date lastSuccessfullyRanOnDateTime) {
 		this.lastSuccessfullyRanOnDateTime = lastSuccessfullyRanOnDateTime;
 	}
 

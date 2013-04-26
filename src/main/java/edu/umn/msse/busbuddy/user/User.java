@@ -25,7 +25,7 @@ public class User {
 	 * @param userId This is the user's unique identifier, which should match the database.
 	 * @param username This is the user's username.  It cannot be changed.
 	 */
-	User(int userId, String username) {
+	protected User(int userId, String username) {
 		this.userId = userId;
 		this.username = username;
 	}
