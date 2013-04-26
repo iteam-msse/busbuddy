@@ -25,16 +25,33 @@ public class Detour {
 	 */
 	private String cause;
 	
-	/** 
-	 * The estimated time (in minutes) that each of the {@link Stop}s in the
-	 * {@link #affectedStops} will be delayed.
-	 */
+	/** The estimated time (in minutes) that each of the {@link Stop}s in the. {@link #affectedStops} will be delayed. */
 	private int estimatedDelay;
 	
 	/** 
 	 * All {@link Stop}s that are subject to the noted {@link #estimatedDelay}.
 	 */
 	private Set<Stop> affectedStops;
+
+	/**
+	 * Instantiates a new Detour with all required fields.
+	 *
+	 * @pre \paramname{estimatedDelay} >= 0	
+	 * @pre \paramname{affectedStops}.size() > 0
+	 *
+	 * @param detourId The Detour id
+	 * @param cause The cause
+	 * @param estimatedDelay The estimated delay (in minutes)
+	 * @param affectedStops The affected {@link Stop}s
+	 */
+	public Detour(String detourId, String cause, int estimatedDelay,
+			Set<Stop> affectedStops) {
+		super();
+		this.detourId = detourId;
+		this.cause = cause;
+		this.estimatedDelay = estimatedDelay;
+		this.affectedStops = affectedStops;
+	}
 
 	public String getCause() {
 		return cause;

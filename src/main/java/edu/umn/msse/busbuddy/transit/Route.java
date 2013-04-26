@@ -43,6 +43,22 @@ public class Route {
 	 */
 	private Set<Detour> detours;
 	
+	/**
+	 * Instantiates a new Route with all required fields.
+	 *
+	 * @pre \paramname{stops}.size() > 0
+	 *
+	 * @param routeId The Route id
+	 * @param routeName The Route name
+	 * @param stops The {@link Stop}s in this Route.
+	 */
+	protected Route(String routeId, String routeName, List<Stop> stops) {
+		super();
+		this.routeId = routeId;
+		this.routeName = routeName;
+		this.stops = stops;
+	}
+
 	public List<Stop> getStops() {
 		return stops;
 	}

@@ -52,7 +52,21 @@ public class Stop {
 	 * board the vehicle.
 	 */
 	private boolean covered;
-		
+
+	/**
+	 * Instantiates a new Stop with all the mandatory fields.
+	 *
+	 * @param stopId The unique identifier
+	 * @param description The description
+	 * @param location The {@link Location}
+	 */
+	protected Stop(String stopId, String description, Location location) {
+		super();
+		this.stopId = stopId;
+		this.description = description;
+		this.location = location;
+	}
+
 	/**
 	 * Reports the expected times in which a 
 	 * {@link edu.umn.msse.busbuddy.tracking.TransitVehicle TransitVehicle} will be
