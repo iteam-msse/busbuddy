@@ -6,7 +6,8 @@ import java.util.Set;
 import edu.umn.msse.busbuddy.tracking.TransitVehicle;
 
 /**
- * A point on a {@link Route} in which a {@link TransitVehicle} will stop to pick
+ * A point on a {@link Route} in which a 
+ * {@link edu.umn.msse.busbuddy.tracking.TransitVehicle TransitVehicle} will stop to pick
  * up and drop off passengers. A Stop also is responsible for providing a set of
  * the times in which the {@link TransitVehicle} will be at the Stop.
  * 
@@ -36,7 +37,8 @@ public class Stop {
 	private Location location;
 		
 	/**
-	 * Reports the expected times in which a {@link TransitVehicle} will be
+	 * Reports the expected times in which a 
+	 * {@link edu.umn.msse.busbuddy.tracking.TransitVehicle TransitVehicle} will be
 	 * at the given Stop for a given time period.
 	 * 
 	 * @pre \paramname{begin} < \paramname{end}.

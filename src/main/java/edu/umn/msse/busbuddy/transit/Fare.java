@@ -2,11 +2,10 @@ package edu.umn.msse.busbuddy.transit;
 
 import java.math.BigDecimal;
 
-import edu.umn.msse.busbuddy.tracking.TransitVehicle;
-
 /**
  * An immutable Value Object representing the cost, or 'fare,' required to ride
- * a {@link TransitVehicle} on a particular {@link Route}.
+ * a {@link edu.umn.msse.busbuddy.tracking.TransitVehicle TransitVehicle} 
+ * on a particular {@link Route}.
  */
 public class Fare {
 	

@@ -3,12 +3,10 @@ package edu.umn.msse.busbuddy.transit;
 import java.util.List;
 import java.util.Set;
 
-import edu.umn.msse.busbuddy.tracking.TransitVehicle;
-
 /**
- * A Route is a {@link TransitVehicle} path of travel, or a "Line," as referred to
- * by a {@link TransitProvider}. A Route can be thought of as an ordered
- * list of {@link Stop}s. 
+ * A Route is a {@link edu.umn.msse.busbuddy.tracking.TransitVehicle TransitVehicle} 
+ * path of travel, or a "Line," as referred to by a {@link TransitProvider}. 
+ * A Route can be thought of as an ordered list of {@link Stop}s. 
  * 
  * Note that Routes may add/remove stops, change {@link Stop} times, or be disrupted by
  * {@link Detour}s, while still remaining the same Route.
