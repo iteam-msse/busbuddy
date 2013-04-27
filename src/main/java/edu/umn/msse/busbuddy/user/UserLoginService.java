@@ -118,8 +118,10 @@ public interface UserLoginService {
 	 * 
 	 * @pre The mobile details provided must be linked to a valid and active account.
 	 * @post An SMS has been sent to the user, containing the user's username.
-	 * @param email
-	 *            E-mail address of the account to send to.
+	 * @param countryCode
+	 *            Country code of the mobile to send to.
+	 * @param mobile
+	 *            mobile number to send to (String should be all digits)
 	 * @throws BusBuddyBadRequestException
 	 *             This exception is thrown if the mobile is blank or non-numeric.
 	 * @throws BusBuddyForbiddenException
