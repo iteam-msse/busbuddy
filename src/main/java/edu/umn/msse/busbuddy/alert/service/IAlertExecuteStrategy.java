@@ -14,7 +14,7 @@ public interface IAlertExecuteStrategy {
 	 * A method that executes alert passed in based on the type of alert.
 	 * 
 	 * @param alertModel
-	 *            An {@link Alert} model fetched from database.
+	 *            An {@link alert.domain.model.Alert} model fetched from database.
 	 * @return A boolean indicating if overall process complete successfully.
 	 */
 	public boolean execute(Alert alertModel);

@@ -8,11 +8,11 @@ import edu.umn.msse.busbuddy.alert.enums.AlertInitiator;
 public class SessionVerificationFactory {
 
 	/**
-	 * This method takes in an {@link AlertInitiator} and depending upon the value can invoke different strategy to
+	 * This method takes in an {@link alert.enums.AlertInitiator} and depending upon the value can invoke different strategy to
 	 * verify the token.
 	 * 
 	 * @param alertInitiator
-	 *            A valid {@link AlertInitiator}
+	 *            A valid {@link alert.enums.AlertInitiator}
 	 * @return A implementation of {@link ISessionHandler}
 	 */
 	public static ISessionHandler getSessionTokenVerificationStrategy(AlertInitiator alertInitiator) {

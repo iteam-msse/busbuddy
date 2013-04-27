@@ -14,14 +14,14 @@ import edu.umn.msse.busbuddy.alert.domain.model.Alert;
 public class RouteAlertExecuteStrategy implements IAlertExecuteStrategy {
 
 	/**
-	 * An instance of {@link AlertRepository} that is used to fetch alerts that are effected by particular route. This
+	 * An instance of {@link alert.domain.AlertRepository} that is used to fetch alerts that are effected by particular route. This
 	 * is autowired via Spring Framework.
 	 */
 	@Autowired
 	AlertRepository alertRepository;
 
 	/**
-	 * A spring autowired instance of {@link AlertUserClient} that can call the User module to get user information.
+	 * A spring autowired instance of {@link alert.client.AlertUserClient} that can call the User module to get user information.
 	 * This is autowired via Spring Framework.
 	 */
 	@Autowired

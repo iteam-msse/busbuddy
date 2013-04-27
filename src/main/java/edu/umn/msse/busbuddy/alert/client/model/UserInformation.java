@@ -1,10 +1,9 @@
 package edu.umn.msse.busbuddy.alert.client.model;
 
-import edu.umn.msse.busbuddy.user.User;
 
 /**
  * UserInformation contains the user related data that we get from User Module. This is more or less an exact copy of
- * the {@link User} class.
+ * the {@link user.User} class.
  */
 public class UserInformation {
 

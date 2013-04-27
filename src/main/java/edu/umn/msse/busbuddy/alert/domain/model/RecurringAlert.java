@@ -29,7 +29,7 @@ public class RecurringAlert extends Alert {
 	private Date lastSuccessfullyRanOnDateTime;
 
 	/**
-	 * List of {@link RecurringData} that holds the information about when the alert should actually run.
+	 * List of {@link alert.domain.model.RecurringData} that holds the information about when the alert should actually run.
 	 */
 	private List<RecurringData> recurringData;
 

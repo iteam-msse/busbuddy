@@ -11,7 +11,7 @@ import edu.umn.msse.busbuddy.common.BusBuddyForbiddenException;
 public class SessionTokenHandler implements ISessionHandler {
 
 	/**
-	 * A spring autowired instance of {@link AlertUserClient} that can call the User module to verify the session token.
+	 * A spring autowired instance of {@link alert.client.AlertUserClient} that can call the User module to verify the session token.
 	 * This is autowired via Spring Framework.
 	 */
 	@Autowired

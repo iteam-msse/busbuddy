@@ -18,7 +18,7 @@ public class AlertFactory {
 	 * Creates an alert model depending upon the run Type.
 	 * 
 	 * @param runType
-	 *            {@link AlertRunType} enum.
+	 *            {@link alert.enums.AlertRunType} enum.
 	 * @return Either a Onetime or Recurring alert Model.
 	 */
 	public Alert createAlert(AlertRunType runType) {
@@ -40,7 +40,7 @@ public class AlertFactory {
 	 * Created alert model depending upon the recurringType
 	 * 
 	 * @param recurringType
-	 *            {@link AlertRecurringType} enum
+	 *            {@link alert.enums.AlertRecurringType} enum
 	 * @return A recurring alert Model
 	 */
 	public Alert createAlert(AlertRecurringType recurringType) {

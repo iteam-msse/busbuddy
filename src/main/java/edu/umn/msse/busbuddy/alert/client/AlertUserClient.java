@@ -24,7 +24,7 @@ public class AlertUserClient {
 	 *            User ID of the user that should receive the alert.
 	 * @param sessionToken
 	 *            Valid long lived session token that can be used to get information about a particular user.
-	 * @return A {@link UserInformation} that contains user data.
+	 * @return A {@link alert.client.model.UserInformation} that contains user data.
 	 */
 	public UserInformation getuserInformation(String userId, String sessionToken) {
 		/**

@@ -7,7 +7,7 @@ import java.util.List;
 import edu.umn.msse.busbuddy.alert.domain.model.Alert;
 
 /**
- * A Repository that handles the persistent behavior of the {@link Alert} aggregate. It has methods that can alter the
+ * A Repository that handles the persistent behavior of the {@link alert.domain.model.Alert} aggregate. It has methods that can alter the
  * lifecycle of the aggregate.
  */
 public class AlertRepository {
@@ -16,7 +16,7 @@ public class AlertRepository {
 	 * This methods take an Alert and saves it to the database.
 	 * 
 	 * @param alertModel
-	 *            {@link Alert} model to be saved
+	 *            {@link alert.domain.model.Alert} model to be saved
 	 * @return The saved object with updated property.
 	 */
 	public Alert saveAlert(Alert alertModel) {
@@ -32,7 +32,7 @@ public class AlertRepository {
 	 * @pre the alertModel being passed at least needs to have an ID defined.
 	 * @post the alert will be removed from the system and can no longer be accessed.
 	 * @param alertModel
-	 *            The {@link Alert} model that is to be deleted.
+	 *            The {@link alert.domain.model.Alert} model that is to be deleted.
 	 * @return A boolean to indicate whether the delete was success or not.
 	 */
 	public boolean deleteAlert(Alert alertModel) {
@@ -45,8 +45,8 @@ public class AlertRepository {
 	 * 
 	 * @pre the alert must exist in the system.
 	 * @param alertModel
-	 *            A {@link Alert} model that needs to be updated
-	 * @return Returns the updated {@link Alert} model back to the method that is calling.
+	 *            A {@link alert.domain.model.Alert} model that needs to be updated
+	 * @return Returns the updated {@link alert.domain.model.Alert} model back to the method that is calling.
 	 */
 	public Alert updateAlert(Alert alertModel) {
 		return alertModel;
@@ -60,7 +60,7 @@ public class AlertRepository {
 	 *            DateTime when the alert is supposed to run.
 	 * @param offsetMinute
 	 *            An int value that is used to fetch alerts within that minute in future.
-	 * @return Returns a list of {@link Alert} models that is to be run in next couple of minutes (offsetMinute) of
+	 * @return Returns a list of {@link alert.domain.model.Alert} models that is to be run in next couple of minutes (offsetMinute) of
 	 *         given date time.
 	 */
 	public List<Alert> getAlertByDateTime(Date dateTimeToFetch, int offsetMinute) {
@@ -73,7 +73,7 @@ public class AlertRepository {
 	 * 
 	 * @param routeId
 	 *            The route ID that is being affected.
-	 * @return A list of {@link Alert} models.
+	 * @return A list of {@link alert.domain.model.Alert} models.
 	 */
 	public List<Alert> getAlertByRoute(String routeId) {
 
@@ -85,7 +85,7 @@ public class AlertRepository {
 	 * 
 	 * @param userId
 	 *            userId that is being affected
-	 * @return A list of {@link Alert} models.
+	 * @return A list of {@link alert.domain.model.Alert} models.
 	 */
 	public List<Alert> getAlertByUserId(String userId) {
 

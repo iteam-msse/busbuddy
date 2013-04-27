@@ -9,7 +9,7 @@ import edu.umn.msse.busbuddy.alert.enums.AlertInitiator;
 public class AlertRequestModel {
 
 	/**
-	 * Alert Initiator {@see AlertInitiator}.
+	 * Alert Initiator {@see alert.enums.AlertInitiator}.
 	 */
 	private AlertInitiator alertInitiator;
 

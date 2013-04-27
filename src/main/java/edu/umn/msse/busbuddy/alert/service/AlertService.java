@@ -37,17 +37,17 @@ public abstract class AlertService {
 	 * 
 	 * @pre An alertRequest model must be supplied that must have necessary information to create an alert
 	 * @param requestModel
-	 *            A {@link AlertResponseModel} that has necessary information to create a new alert model.
-	 * @return Returns an {@link AlertReponseModel} that contains information needed by the caller.
+	 *            A {@link alert.controller.model.AlertResponseModel} that has necessary information to create a new alert model.
+	 * @return Returns an {@link alert.controller.model.AlertResponseModel} that contains information needed by the caller.
 	 */
 	protected abstract AlertResponseModel createAlert(AlertRequestModel requestModel);
 
 	/**
-	 * Takes in an {@link Alert} model to persist it into db.
+	 * Takes in an {@link alert.domain.model.Alert} model to persist it into db.
 	 * 
 	 * @param alertModel
-	 *            A valid {@link Alert} model
-	 * @return An {@link AlertResponseModel} that has the success or error message.
+	 *            A valid {@link alert.domain.model.Alert} model
+	 * @return An {@link alert.controller.model.AlertResponseModel} that has the success or error message.
 	 */
 	public AlertResponseModel saveAlert(Alert alertModel) {
 		return null;
@@ -58,8 +58,8 @@ public abstract class AlertService {
 	 * Takes in an Alert Model for deletion.
 	 * 
 	 * @param alertModel
-	 *            A valid {@link Alert} model
-	 * @return An {@link AlertResponseModel} that has the success or error message.
+	 *            A valid {@link alert.domain.model.Alert} model
+	 * @return An {@link alert.controller.model.AlertResponseModel} that has the success or error message.
 	 */
 	public AlertResponseModel deleteAlert(Alert alertModel) {
 		return null;
@@ -70,8 +70,8 @@ public abstract class AlertService {
 	 * Takes in a final Alert Model that needs to be updated in db.
 	 * 
 	 * @param alertModel
-	 *            A valid {@link Alert} model
-	 * @return An {@link AlertResponseModel} that has the success or error message.
+	 *            A valid {@link alert.domain.model.Alert} model
+	 * @return An {@link alert.controller.model.AlertResponseModel} that has the success or error message.
 	 */
 	protected abstract AlertResponseModel updateAlert(Alert alertModel);
 

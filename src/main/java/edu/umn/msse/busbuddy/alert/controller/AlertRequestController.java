@@ -34,10 +34,10 @@ public class AlertRequestController {
 	 * 
 	 * @param userAlertRequest
 	 *            An alertRequestModel that has the necessary information regarding creation of an alert. {@see
-	 *            UserAlertRequestModel}
+	 *            alert.controller.model.UserAlertRequestModel}
 	 * @param encryptedToken
 	 *            An encrypted token that can be validated.
-	 * @return An {@link AlertResponseModel} that has the success/error information.
+	 * @return An {@link alert.controller.model.AlertResponseModel} that has the success/error information.
 	 */
 	public AlertResponseModel processUserAlertRequest(UserAlertRequestModel userAlertRequest, String encryptedToken) {
 		verifySession(userAlertRequest, encryptedToken);
@@ -49,10 +49,10 @@ public class AlertRequestController {
 	 * Processes Alert manipulation request from Transit module
 	 * 
 	 * @param transitAlertRequest
-	 *            {@see TransitAlertRequestModel}
+	 *            {@see alert.controller.model.TransitAlertRequestModel}
 	 * @param encryptedToken
 	 *            - An encrypted token that can be validated.
-	 * @return An {@link AlertResponseModel} that has the success/error information.
+	 * @return An {@link alert.controller.model.AlertResponseModel} that has the success/error information.
 	 */
 	public AlertResponseModel processTransitAlertRequest(TransitAlertRequestModel transitAlertRequest, String encryptedToken) {
 		verifySession(transitAlertRequest, encryptedToken);
@@ -63,10 +63,10 @@ public class AlertRequestController {
 	 * Processes Alert manipulation request from Tracking module
 	 * 
 	 * @param trackingAlertRequest
-	 *            {@see TrackingAlertRequestModel}
+	 *            {@see alert.controller.model.TrackingAlertRequestModel}
 	 * @param encryptedToken
 	 *            An encrypted token that can be validated.
-	 * @return An {@link AlertResponseModel} that has the success/error information.
+	 * @return An {@link alert.controller.model.AlertResponseModel} that has the success/error information.
 	 */
 	public AlertResponseModel processTrackingAlertRequest(TrackingAlertRequestModel trackingAlertRequest, String encryptedToken) {
 		verifySession(trackingAlertRequest, encryptedToken);
