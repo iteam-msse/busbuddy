@@ -161,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> is created with the given user data. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">user</td><td><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> data of the user to create (the ID will be ignored). </td></tr>
+    <tr><td class="paramname">userToCreate</td><td><a class="el" href="classuser_1_1_user.html" title="This class represents a single user of the system, and all of the state data associated with that use...">User</a> data of the user to create (the ID will be ignored). </td></tr>
     <tr><td class="paramname">password</td><td>Password of the user to create. </td></tr>
   </table>
   </dd>
@@ -257,6 +257,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd>A user will be returned whose e-mail address matches the supplied e-mail address parameter. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">sessionToken</td><td><a class="el" href="classuser_1_1_session.html" title="This class represents a single session for a user of the system, and all of the state data associated...">Session</a> token of the currently logged in user. </td></tr>
     <tr><td class="paramname">email</td><td>This is the e-mail address to look up. </td></tr>
   </table>
   </dd>
@@ -311,6 +312,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section post"><dt>Postcondition</dt><dd>A user will be returned whose mobile phone details match the supplied parameters. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">sessionToken</td><td><a class="el" href="classuser_1_1_session.html" title="This class represents a single session for a user of the system, and all of the state data associated...">Session</a> token of the currently logged in user. </td></tr>
     <tr><td class="paramname">countryCode</td><td>This is the country code of the user's mobile phone number. </td></tr>
     <tr><td class="paramname">mobile</td><td>This is the remainder of the user's mobile phone number. This string should consist entirely of digits. </td></tr>
   </table>
@@ -361,6 +363,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">username</td><td>This is the username to look up. </td></tr>
+    <tr><td class="paramname">sessionToken</td><td><a class="el" href="classuser_1_1_session.html" title="This class represents a single session for a user of the system, and all of the state data associated...">Session</a> token of the currently logged in user. </td></tr>
   </table>
   </dd>
 </dl>
@@ -437,7 +440,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 26 2013 21:31:26 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 23:00:15 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

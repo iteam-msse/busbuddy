@@ -149,14 +149,14 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7dca6af6543abeece974c8e4dbf8847d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f9fadbac0b260ce5f2626fc40bd0649"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f9fadbac0b260ce5f2626fc40bd0649"></a>
 Specification&lt; <a class="el" href="classtransit_1_1_route.html">Route</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a4f9fadbac0b260ce5f2626fc40bd0649">routeSpecification</a></td></tr>
-<tr class="memdesc:a4f9fadbac0b260ce5f2626fc40bd0649"><td class="mdescLeft">&#160;</td><td class="mdescRight">This <a class="el" href="">Specification</a> allows subclasses to validate <a class="el" href="classtransit_1_1_route.html">Route</a>s as they are parsed. <br/></td></tr>
+<tr class="memdesc:a4f9fadbac0b260ce5f2626fc40bd0649"><td class="mdescLeft">&#160;</td><td class="mdescRight">This allows subclasses to validate <a class="el" href="classtransit_1_1_route.html">Route</a>s as they are parsed. <br/></td></tr>
 <tr class="separator:a4f9fadbac0b260ce5f2626fc40bd0649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Template Method pattern to allow for the import of data from different <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a>s in potentially different formats. </p>
 <p>The algorithm sequence is as follows:</p>
 <ol type="1">
-<li>A <a class="el" href="">URL</a> of a resource location is passed into the <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a48d3d5cc147a04f4e8e9dd24979d03e6">start</a> method. This method initiates the parsing/transformation process.</li>
+<li>A URL of a resource location is passed into the <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a48d3d5cc147a04f4e8e9dd24979d03e6">start</a> method. This method initiates the parsing/transformation process.</li>
 <li>The <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a48d3d5cc147a04f4e8e9dd24979d03e6">start</a> method calls the method <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#ac50fdc1c9975f64bac4bad95792296a4">loadFeed</a> to establish the InputStream.</li>
 <li>The InputStream returned by <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#ac50fdc1c9975f64bac4bad95792296a4">loadFeed</a> is passed into the abstract <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#a33053e669e3739274deae5e52c251465">parseFeed</a> method. Subclasses will implement this as necessary to produce the resulting <a class="el" href="classtransit_1_1_route.html">Route</a>s</li>
 <li>The newly created <a class="el" href="classtransit_1_1_route.html">Route</a>s are saved to the <a class="el" href="interfacetransit_1_1_route_repository.html">RouteRepository</a> via the <a class="el" href="classtransit_1_1_abstract_feed_parser_template.html#af8e8edebec6285602371d40aa103306b">saveRoutes</a> method. </li>
@@ -340,7 +340,7 @@ Specification&lt; <a class="el" href="classtransit_1_1_route.html">Route</a> &gt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 26 2013 21:31:23 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 23:00:12 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

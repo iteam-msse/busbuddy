@@ -113,7 +113,7 @@ Inheritance diagram for AlertService:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a349f75ee677a85ac0c555c0b4ca938e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a349f75ee677a85ac0c555c0b4ca938e1">saveAlert</a> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
-<tr class="memdesc:a349f75ee677a85ac0c555c0b4ca938e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an <a class="el" href="">Alert</a> model to persist it into db.  <a href="#a349f75ee677a85ac0c555c0b4ca938e1">More...</a><br/></td></tr>
+<tr class="memdesc:a349f75ee677a85ac0c555c0b4ca938e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">alert.domain.model.Alert</a> model to persist it into db.  <a href="#a349f75ee677a85ac0c555c0b4ca938e1">More...</a><br/></td></tr>
 <tr class="separator:a349f75ee677a85ac0c555c0b4ca938e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ae915fab337ffcbed5d8e8a4f6ad0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#ad6ae915fab337ffcbed5d8e8a4f6ad0e">deleteAlert</a> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
 <tr class="memdesc:ad6ae915fab337ffcbed5d8e8a4f6ad0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an Alert Model for deletion.  <a href="#ad6ae915fab337ffcbed5d8e8a4f6ad0e">More...</a><br/></td></tr>
@@ -173,11 +173,11 @@ Protected Attributes</h2></td></tr>
 <dl class="section pre"><dt>Precondition</dt><dd>An alertRequest model must be supplied that must have necessary information to create an alert </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">requestModel</td><td>A <a class="el" href="">AlertResponseModel</a> that has necessary information to create a new alert model. </td></tr>
+    <tr><td class="paramname">requestModel</td><td>A <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">alert.controller.model.AlertResponseModel</a> that has necessary information to create a new alert model. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns an <a class="el" href="">AlertReponseModel</a> that contains information needed by the caller. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">alert.controller.model.AlertResponseModel</a> that contains information needed by the caller. </dd></dl>
 
 <p>Implemented in <a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html#ac68f91048bb29048e970fdf3ed7ffa6d">TrackingAlertService</a>, <a class="el" href="classalert_1_1service_1_1_transit_alert_service.html#ac68f91048bb29048e970fdf3ed7ffa6d">TransitAlertService</a>, and <a class="el" href="classalert_1_1service_1_1_user_alert_service.html#ac68f91048bb29048e970fdf3ed7ffa6d">UserAlertService</a>.</p>
 
@@ -200,11 +200,11 @@ Protected Attributes</h2></td></tr>
 <p>Takes in an Alert Model for deletion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">alertModel</td><td>A valid <a class="el" href="">Alert</a> model </td></tr>
+    <tr><td class="paramname">alertModel</td><td>A valid <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">alert.domain.model.Alert</a> model </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="">AlertResponseModel</a> that has the success or error message. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">alert.controller.model.AlertResponseModel</a> that has the success or error message. </dd></dl>
 
 </div>
 </div>
@@ -222,14 +222,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Takes in an <a class="el" href="">Alert</a> model to persist it into db. </p>
+<p>Takes in an <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">alert.domain.model.Alert</a> model to persist it into db. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">alertModel</td><td>A valid <a class="el" href="">Alert</a> model </td></tr>
+    <tr><td class="paramname">alertModel</td><td>A valid <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">alert.domain.model.Alert</a> model </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="">AlertResponseModel</a> that has the success or error message. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">alert.controller.model.AlertResponseModel</a> that has the success or error message. </dd></dl>
 
 </div>
 </div>
@@ -289,11 +289,11 @@ Protected Attributes</h2></td></tr>
 <p>Takes in a final Alert Model that needs to be updated in db. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">alertModel</td><td>A valid <a class="el" href="">Alert</a> model </td></tr>
+    <tr><td class="paramname">alertModel</td><td>A valid <a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">alert.domain.model.Alert</a> model </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="">AlertResponseModel</a> that has the success or error message. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">alert.controller.model.AlertResponseModel</a> that has the success or error message. </dd></dl>
 
 <p>Implemented in <a class="el" href="classalert_1_1service_1_1_tracking_alert_service.html#af9ea19f3c1c4232e81f6a272b25a3aab">TrackingAlertService</a>, <a class="el" href="classalert_1_1service_1_1_transit_alert_service.html#af9ea19f3c1c4232e81f6a272b25a3aab">TransitAlertService</a>, and <a class="el" href="classalert_1_1service_1_1_user_alert_service.html#af9ea19f3c1c4232e81f6a272b25a3aab">UserAlertService</a>.</p>
 
@@ -372,7 +372,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 26 2013 21:31:17 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 23:00:07 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
