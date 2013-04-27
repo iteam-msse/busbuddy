@@ -12,8 +12,9 @@ import edu.umn.msse.busbuddy.common.BaseController;
  * and is beyond the scope of this project.
  * 
  * Errors should be communicated via standard HTTP error codes. 
- * The {@link BaseController} will be responsible for mapping Exception types to
- * HTTP error codes, so actual error codes are not specified explicitly here.
+ * The {@link common.BaseController} will be 
+ * responsible for mapping Exception types to HTTP error codes, so 
+ * actual error codes are not specified explicitly here.
  */
 @Controller
 public class ITeamTripServiceController extends BaseController implements TripService {

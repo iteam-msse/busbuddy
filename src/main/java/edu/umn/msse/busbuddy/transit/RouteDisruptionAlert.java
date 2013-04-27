@@ -19,14 +19,14 @@ public class RouteDisruptionAlert {
 
 	/**
 	 * The URL callback of the originating {@link TransitService}. Clients
-	 * should use this URL to obtain further distruption information,
+	 * should use this URL to obtain further disruption information,
 	 * such as {@link Detour}s of the affected {@link Route}.
 	 */
 	private URL transitServiceUrl;
 	
 	/**
 	 * The unique identifier of the affected {@link Route}. This can be used
-	 * in the {@link TransitService} method {@link TransitService#getRoute(String)}
+	 * in the {@link TransitService} method getRoute
 	 * to retrieve more information about the disruption.
 	 */
 	private String routeId;

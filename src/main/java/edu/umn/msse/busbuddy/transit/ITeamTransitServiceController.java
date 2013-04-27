@@ -17,8 +17,9 @@ import edu.umn.msse.busbuddy.common.BaseController;
  * HTTP REST URLs is left to the development phase and is not specified here.
  * 
  * Errors should be communicated via standard HTTP error codes. 
- * The {@link BaseController} will be responsible for mapping Exception types to
- * HTTP error codes, so actual error codes are not specified explicitly here.
+ * The {@link common.BaseController} will be responsible 
+ * for mapping Exception types to HTTP error codes, so actual error codes are 
+ * not specified explicitly here.
  */
 @Controller
 public class ITeamTransitServiceController 

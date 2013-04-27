@@ -41,7 +41,7 @@ public interface RouteRepository {
 	 * @post The {@link Route}s are available for retrieval by id and
 	 * also by appropriate Queries.
 	 * 
-	 * @param route The {@link Route} to save.
+	 * @param routes The {@link Route} to save.
 	 */
 	public void save(Set<Route> routes);
 

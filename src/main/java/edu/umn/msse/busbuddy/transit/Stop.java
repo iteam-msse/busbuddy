@@ -7,7 +7,7 @@ import edu.umn.msse.busbuddy.tracking.TransitVehicle;
 
 /**
  * A point on a {@link Route} in which a 
- * {@link edu.umn.msse.busbuddy.tracking.TransitVehicle TransitVehicle} will stop to pick
+ * {@link tracking.TransitVehicle} will stop to pick
  * up and drop off passengers. A Stop also is responsible for providing a set of
  * the times in which the {@link TransitVehicle} will be at the Stop.
  * 
