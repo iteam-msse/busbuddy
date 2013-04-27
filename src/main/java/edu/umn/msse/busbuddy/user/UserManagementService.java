@@ -23,7 +23,7 @@ public interface UserManagementService {
 	 * 
 	 * @pre No other user with this username, e-mail address, or mobile phone exists.
 	 * @post User is created with the given user data.
-	 * @param user
+	 * @param userToCreate
 	 *            User data of the user to create (the ID will be ignored).
 	 * @param password
 	 *            Password of the user to create.
@@ -44,6 +44,8 @@ public interface UserManagementService {
 	 * @post A user will be returned whose username matches the supplied username parameter.
 	 * @param username
 	 *            This is the username to look up.
+	 * @param sessionToken
+	 *            Session token of the currently logged in user.
 	 * @return The user with the given username.
 	 * @throws BusBuddyInternalException
 	 *             An internal error prevents execution of the request.
@@ -60,6 +62,8 @@ public interface UserManagementService {
 	 * 
 	 * @pre A user with the supplied e-mail address exists within the database.
 	 * @post A user will be returned whose e-mail address matches the supplied e-mail address parameter.
+	 * @param sessionToken
+	 *            Session token of the currently logged in user.
 	 * @param email
 	 *            This is the e-mail address to look up.
 	 * @return The user with the given e-mail address.
@@ -78,6 +82,8 @@ public interface UserManagementService {
 	 * 
 	 * @pre A user with the supplied mobile phone number exists within the database.
 	 * @post A user will be returned whose mobile phone details match the supplied parameters.
+	 * @param sessionToken
+	 *            Session token of the currently logged in user.
 	 * @param countryCode
 	 *            This is the country code of the user's mobile phone number.
 	 * @param mobile

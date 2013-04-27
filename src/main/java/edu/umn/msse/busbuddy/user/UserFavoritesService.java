@@ -40,7 +40,7 @@ public interface UserFavoritesService {
 	 * 
 	 * @param sessionToken
 	 *            Session whose user the favorites will be retrieved for.
-	 * @param favorties
+	 * @param favorites
 	 *            Favorites to set.
 	 * @throws BusBuddyInternalException
 	 *             This exception is thrown when there is an internal error.

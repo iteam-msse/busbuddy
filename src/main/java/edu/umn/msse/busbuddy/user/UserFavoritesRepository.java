@@ -35,7 +35,7 @@ class UserFavoritesRepository {
 	 * @pre The userId must be valid.
 	 * @param userId
 	 *            User to set favorites for.
-	 * @param favorties
+	 * @param favorites
 	 *            Favorites to set.
 	 * @throws BusBuddyInternalException
 	 *             This exception is thrown when there is a database error.
