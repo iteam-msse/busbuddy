@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['fare',['Fare',['../classtransit_1_1_fare.html#a09b03e069a67195248dfa9349a81f782',1,'transit.Fare.Fare(BigDecimal regularFare)'],['../classtransit_1_1_fare.html#a14f3f3d7b258e2dc59c712b713629a15',1,'transit.Fare.Fare(BigDecimal regularFare, BigDecimal discountedFare)']]],
   ['favoritetransitservice',['FavoriteTransitService',['../classuser_1_1_favorite_transit_service.html#a3ce150a6a176ca36eacf4f39691c76a4',1,'user::FavoriteTransitService']]],
   ['finduserbyemail',['findUserByEmail',['../classuser_1_1_i_team_user_management_service.html#ab97629f691e62aac8159b567bb7b7136',1,'user.ITeamUserManagementService.findUserByEmail()'],['../interfaceuser_1_1_user_management_service.html#ab97629f691e62aac8159b567bb7b7136',1,'user.UserManagementService.findUserByEmail()']]],
   ['finduserbymobile',['findUserByMobile',['../classuser_1_1_i_team_user_management_service.html#af72759f8d2da631ec6194a17ab903de7',1,'user.ITeamUserManagementService.findUserByMobile()'],['../interfaceuser_1_1_user_management_service.html#af72759f8d2da631ec6194a17ab903de7',1,'user.UserManagementService.findUserByMobile()']]],

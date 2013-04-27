@@ -157,6 +157,8 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The iTeam implementation of the <a class="el" href="interfacetransit_1_1_transit_service.html">TransitService</a> that exposes Transit data via a REST Service. </p>
+<p>Note that this is intended to receive and respond to HTTP requests via JSON. The actual Object -&gt; JSON transformation, as well as the specification of HTTP REST URLs is left to the development phase and is not specified here.</p>
+<p>Errors should be communicated via standard HTTP error codes. The <a class="el" href="">BaseController</a> will be responsible for mapping Exception types to HTTP error codes, so actual error codes are not specified explicitly here. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a5d93801c60b116410e94085defdf7a70"></a>
 <div class="memitem">
@@ -175,13 +177,19 @@ Private Attributes</h2></td></tr>
 <p>Gets a <a class="el" href="classtransit_1_1_route.html">Route</a> by its unique identifier. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">routeId</td><td>The unique identifier of the <a class="el" href="classtransit_1_1_route.html">Route</a> </td></tr>
+    <tr><td class="paramname">routeId</td><td>The unique identifier of the <a class="el" href="classtransit_1_1_route.html">Route</a></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The matching <a class="el" href="classtransit_1_1_route.html">Route</a>, or null if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The matching <a class="el" href="classtransit_1_1_route.html">Route</a> </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">routeId</b> is not null or blank. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>The <a class="el" href="classtransit_1_1_route.html">Route</a> is returned if the <b class="paramname">routeId</b> is found, else null. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>The <a class="el" href="classtransit_1_1_route.html">Route</a> is returned if the <b class="paramname">routeId</b> is found, else null.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>Thrown if the <a class="el" href="classtransit_1_1_route.html" title="A Route is a TransitVehicle path of travel, or a &quot;Line,&quot; as referred to by a TransitProvider.">Route</a> with the given <b class="paramname">routeId</b> is not found. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacetransit_1_1_transit_service.html#a5d93801c60b116410e94085defdf7a70">TransitService</a>.</p>
 
@@ -353,7 +361,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 26 2013 00:35:02 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 21:31:23 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

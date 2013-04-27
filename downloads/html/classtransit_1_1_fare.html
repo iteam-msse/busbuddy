@@ -100,6 +100,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a09b03e069a67195248dfa9349a81f782"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_fare.html#a09b03e069a67195248dfa9349a81f782">Fare</a> (BigDecimal <a class="el" href="classtransit_1_1_fare.html#a12ce8779ad974d13770993bc91e843f8">regularFare</a>)</td></tr>
+<tr class="memdesc:a09b03e069a67195248dfa9349a81f782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates a new <a class="el" href="classtransit_1_1_fare.html" title="An immutable Value Object representing the cost, or &#39;fare,&#39; required to ride a TransitVehicle on a pa...">Fare</a> with a regular fare and no discounted fair.  <a href="#a09b03e069a67195248dfa9349a81f782">More...</a><br/></td></tr>
+<tr class="separator:a09b03e069a67195248dfa9349a81f782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f3f3d7b258e2dc59c712b713629a15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_fare.html#a14f3f3d7b258e2dc59c712b713629a15">Fare</a> (BigDecimal <a class="el" href="classtransit_1_1_fare.html#a12ce8779ad974d13770993bc91e843f8">regularFare</a>, BigDecimal <a class="el" href="classtransit_1_1_fare.html#aaaa08296042e88d9f68fe1096be01cb4">discountedFare</a>)</td></tr>
+<tr class="memdesc:a14f3f3d7b258e2dc59c712b713629a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates a new <a class="el" href="classtransit_1_1_fare.html" title="An immutable Value Object representing the cost, or &#39;fare,&#39; required to ride a TransitVehicle on a pa...">Fare</a> with both a regular fare and a discounted fare.  <a href="#a14f3f3d7b258e2dc59c712b713629a15">More...</a><br/></td></tr>
+<tr class="separator:a14f3f3d7b258e2dc59c712b713629a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3329ebbcca8798ac0751d8e79f51fee1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3329ebbcca8798ac0751d8e79f51fee1"></a>
 BigDecimal&#160;</td><td class="memItemRight" valign="bottom"><b>getRegularFare</b> ()</td></tr>
 <tr class="separator:a3329ebbcca8798ac0751d8e79f51fee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,14 +123,81 @@ Private Attributes</h2></td></tr>
 BigDecimal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_fare.html#a12ce8779ad974d13770993bc91e843f8">regularFare</a></td></tr>
 <tr class="memdesc:a12ce8779ad974d13770993bc91e843f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normally applied fare. <br/></td></tr>
 <tr class="separator:a12ce8779ad974d13770993bc91e843f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa08296042e88d9f68fe1096be01cb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaa08296042e88d9f68fe1096be01cb4"></a>
-BigDecimal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_fare.html#aaaa08296042e88d9f68fe1096be01cb4">discountedFare</a></td></tr>
-<tr class="memdesc:aaaa08296042e88d9f68fe1096be01cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A discounted fare for children, elderly, or other adjustment criteria as supplied by the <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a>. <br/></td></tr>
+<tr class="memitem:aaaa08296042e88d9f68fe1096be01cb4"><td class="memItemLeft" align="right" valign="top">BigDecimal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtransit_1_1_fare.html#aaaa08296042e88d9f68fe1096be01cb4">discountedFare</a></td></tr>
+<tr class="memdesc:aaaa08296042e88d9f68fe1096be01cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A discounted fare for children, elderly, holidays, or other adjustment criteria as supplied by the <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a>.  <a href="#aaaa08296042e88d9f68fe1096be01cb4">More...</a><br/></td></tr>
 <tr class="separator:aaaa08296042e88d9f68fe1096be01cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An immutable Value Object representing the cost, or 'fare,' required to ride a <a class="el" href="classtracking_1_1_transit_vehicle.html">TransitVehicle</a> on a particular <a class="el" href="classtransit_1_1_route.html">Route</a>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>Although BusBuddy does not specify explicit rules governing the <a class="el" href="classtransit_1_1_fare.html#a12ce8779ad974d13770993bc91e843f8">regularFare</a> and the <a class="el" href="classtransit_1_1_fare.html#aaaa08296042e88d9f68fe1096be01cb4">discountedFare</a>, each <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a> must publicly state its <a class="el" href="classtransit_1_1_fare.html" title="An immutable Value Object representing the cost, or &#39;fare,&#39; required to ride a TransitVehicle on a pa...">Fare</a> policies on a website or other public forum.</p>
+<dl class="section invariant"><dt>Invariant</dt><dd>if <a class="el" href="classtransit_1_1_fare.html#aaaa08296042e88d9f68fe1096be01cb4">discountedFare</a> exists, <a class="el" href="classtransit_1_1_fare.html#aaaa08296042e88d9f68fe1096be01cb4">discountedFare</a> &lt;= <a class="el" href="classtransit_1_1_fare.html#a12ce8779ad974d13770993bc91e843f8">regularFare</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a09b03e069a67195248dfa9349a81f782"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtransit_1_1_fare.html">Fare</a> </td>
+          <td>(</td>
+          <td class="paramtype">BigDecimal&#160;</td>
+          <td class="paramname"><em>regularFare</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instantiates a new <a class="el" href="classtransit_1_1_fare.html" title="An immutable Value Object representing the cost, or &#39;fare,&#39; required to ride a TransitVehicle on a pa...">Fare</a> with a regular fare and no discounted fair. </p>
+<dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">regularFare</b> &gt;= 0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">regularFare</td><td>The Regular <a class="el" href="classtransit_1_1_fare.html" title="An immutable Value Object representing the cost, or &#39;fare,&#39; required to ride a TransitVehicle on a pa...">Fare</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a14f3f3d7b258e2dc59c712b713629a15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtransit_1_1_fare.html">Fare</a> </td>
+          <td>(</td>
+          <td class="paramtype">BigDecimal&#160;</td>
+          <td class="paramname"><em>regularFare</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BigDecimal&#160;</td>
+          <td class="paramname"><em>discountedFare</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instantiates a new <a class="el" href="classtransit_1_1_fare.html" title="An immutable Value Object representing the cost, or &#39;fare,&#39; required to ride a TransitVehicle on a pa...">Fare</a> with both a regular fare and a discounted fare. </p>
+<dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">regularFare</b> &gt;= 0 </dd>
+<dd>
+<b class="paramname">discountedFare</b> &gt;= 0 </dd>
+<dd>
+<b class="paramname">discountedFare</b> &lt;= <b class="paramname">discountedFare</b></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">regularFare</td><td>The Regular <a class="el" href="classtransit_1_1_fare.html" title="An immutable Value Object representing the cost, or &#39;fare,&#39; required to ride a TransitVehicle on a pa...">Fare</a> </td></tr>
+    <tr><td class="paramname">discountedFare</td><td>The Discounted <a class="el" href="classtransit_1_1_fare.html" title="An immutable Value Object representing the cost, or &#39;fare,&#39; required to ride a TransitVehicle on a pa...">Fare</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af4a2b9f596c4b45b0254426cbc3d90c8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +211,7 @@ BigDecimal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">discountedFare</b> &gt;= 0 </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">discountedFare</b> &gt;= 0 AND <b class="paramname">discountedFare</b> &lt;= <a class="el" href="classtransit_1_1_fare.html#a12ce8779ad974d13770993bc91e843f8">regularFare</a> if <a class="el" href="classtransit_1_1_fare.html#a12ce8779ad974d13770993bc91e843f8">regularFare</a> exists. </dd></dl>
 
 </div>
 </div>
@@ -159,10 +232,34 @@ BigDecimal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aaaa08296042e88d9f68fe1096be01cb4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BigDecimal discountedFare</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A discounted fare for children, elderly, holidays, or other adjustment criteria as supplied by the <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a>. </p>
+<p>This is optional. <a class="el" href="classtransit_1_1_transit_provider.html">TransitProvider</a>s are not required to provide discounted Fares for any reason. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 26 2013 00:35:01 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 21:31:23 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

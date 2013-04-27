@@ -6,6 +6,7 @@ var searchData=
   ['dayofyear',['dayOfYear',['../classalert_1_1domain_1_1model_1_1_recurring_data.html#a8b36355638b75d55ae2cb2afe9dac046',1,'alert::domain::model::RecurringData']]],
   ['deactive',['Deactive',['../enumalert_1_1enums_1_1_alert_status.html#aa1070be9ff855de513f10eb6a0ae013d',1,'alert::enums::AlertStatus']]],
   ['description',['description',['../classalert_1_1domain_1_1model_1_1_alert.html#a76d2b0133d83c43dfd8a19286ac55325',1,'alert.domain.model.Alert.description()'],['../classtransit_1_1_stop.html#a76d2b0133d83c43dfd8a19286ac55325',1,'transit.Stop.description()']]],
+  ['detourid',['detourId',['../classtransit_1_1_detour.html#a7aff0dfd3edcfb91d734348292a23b57',1,'transit::Detour']]],
   ['detours',['detours',['../classtransit_1_1_route.html#ace5d2567aa029857b0376b6696d0baf3',1,'transit::Route']]],
   ['discountedfare',['discountedFare',['../classtransit_1_1_fare.html#aaaa08296042e88d9f68fe1096be01cb4',1,'transit::Fare']]],
   ['disruptedroute',['disruptedRoute',['../classtransit_1_1_route_disruption_event.html#a77aa0c1058f32154a0b195bbd17f2e43',1,'transit::RouteDisruptionEvent']]]

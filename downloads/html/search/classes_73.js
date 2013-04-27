@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['schedulealertexecutestrategy',['ScheduleAlertExecuteStrategy',['../classalert_1_1service_1_1_schedule_alert_execute_strategy.html',1,'alert::service']]],
   ['session',['Session',['../classuser_1_1_session.html',1,'user']]],
   ['sessionrepository',['SessionRepository',['../classuser_1_1_session_repository.html',1,'user']]],
   ['sessiontokenhandler',['SessionTokenHandler',['../classalert_1_1controller_1_1_session_token_handler.html',1,'alert::controller']]],

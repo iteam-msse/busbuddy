@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classalert_1_1service_1_1_alert_service-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AlertService Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6ae915fab337ffcbed5d8e8a4f6ad0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#ad6ae915fab337ffcbed5d8e8a4f6ad0e">deleteAlert</a> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
 <tr class="memdesc:ad6ae915fab337ffcbed5d8e8a4f6ad0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an Alert Model for deletion.  <a href="#ad6ae915fab337ffcbed5d8e8a4f6ad0e">More...</a><br/></td></tr>
 <tr class="separator:ad6ae915fab337ffcbed5d8e8a4f6ad0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782186de312a78d01b583d7772a91bad"><td class="memItemLeft" align="right" valign="top">abstract boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a782186de312a78d01b583d7772a91bad">sendAlert</a> ()</td></tr>
+<tr class="memdesc:a782186de312a78d01b583d7772a91bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all the alerts that are initiated by this service and calls <a class="el" href="classalert_1_1service_1_1_alert_execute_strategy_factory.html">AlertExecuteStrategyFactory</a> to find appropriate strategy to send each type of alert.  <a href="#a782186de312a78d01b583d7772a91bad">More...</a><br/></td></tr>
+<tr class="separator:a782186de312a78d01b583d7772a91bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -127,18 +130,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9a3446a0da4ce9a980b171639bb2ab55"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="classalert_1_1controller_1_1model_1_1_alert_response_model.html">AlertResponseModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a9a3446a0da4ce9a980b171639bb2ab55">updateAlert</a> (<a class="el" href="classalert_1_1domain_1_1model_1_1_alert.html">Alert</a> alertModel)</td></tr>
 <tr class="memdesc:a9a3446a0da4ce9a980b171639bb2ab55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in a final Alert Model that needs to be updated in db.  <a href="#a9a3446a0da4ce9a980b171639bb2ab55">More...</a><br/></td></tr>
 <tr class="separator:a9a3446a0da4ce9a980b171639bb2ab55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a782186de312a78d01b583d7772a91bad"><td class="memItemLeft" align="right" valign="top">abstract boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a782186de312a78d01b583d7772a91bad">sendAlert</a> ()</td></tr>
-<tr class="memdesc:a782186de312a78d01b583d7772a91bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all the alerts that are initiated by this service and calls <a class="el" href="classalert_1_1service_1_1_alert_execute_strategy_factory.html">AlertExecuteStrategyFactory</a> to find appropriate strategy to send each type of alert.  <a href="#a782186de312a78d01b583d7772a91bad">More...</a><br/></td></tr>
-<tr class="separator:a782186de312a78d01b583d7772a91bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
-Package Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a4911088dc05a1d197203f9132f6d3148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1service_1_1_alert_execute_strategy_factory.html">AlertExecuteStrategyFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a4911088dc05a1d197203f9132f6d3148">alertExecuteStrategyFactory</a></td></tr>
 <tr class="memdesc:a4911088dc05a1d197203f9132f6d3148"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#a4911088dc05a1d197203f9132f6d3148">More...</a><br/></td></tr>
 <tr class="separator:a4911088dc05a1d197203f9132f6d3148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a234b64fa21554dc9b1acf3fa2080325f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1domain_1_1_alert_repository.html">AlertRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a234b64fa21554dc9b1acf3fa2080325f">alertRepository</a></td></tr>
 <tr class="memdesc:a234b64fa21554dc9b1acf3fa2080325f"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#a234b64fa21554dc9b1acf3fa2080325f">More...</a><br/></td></tr>
 <tr class="separator:a234b64fa21554dc9b1acf3fa2080325f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a33a0258c6912f99018a509bc6f77b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1domain_1_1_alert_factory.html">AlertFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1service_1_1_alert_service.html#a1a33a0258c6912f99018a509bc6f77b9">alertFactory</a></td></tr>
+<tr class="memdesc:a1a33a0258c6912f99018a509bc6f77b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">{  <a href="#a1a33a0258c6912f99018a509bc6f77b9">More...</a><br/></td></tr>
+<tr class="separator:a1a33a0258c6912f99018a509bc6f77b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Alert Service is a base class that is extended by other module specific services. </p>
@@ -246,7 +249,7 @@ Package Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -310,13 +313,36 @@ Package Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>{ </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="classalert_1_1service_1_1_alert_execute_strategy_factory.html" title="This factory is going to pick the best available strategy to execute the alert so that the user can b...">AlertExecuteStrategyFactory</a>}. This is autowired via Spring Framework. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a33a0258c6912f99018a509bc6f77b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1domain_1_1_alert_factory.html">AlertFactory</a> alertFactory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>{ </p>
+<dl class="section see"><dt>See Also</dt><dd>AlertFactory}. This is autowired via Spring framework. </dd></dl>
 
 </div>
 </div>
@@ -333,7 +359,7 @@ Package Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -346,7 +372,7 @@ Package Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 26 2013 00:34:56 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 21:31:17 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
 <a href="classalert_1_1controller_1_1_session_token_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SessionTokenHandler Class Reference</div>  </div>
@@ -111,6 +112,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f825e5b0959f4cc16855c2b0db28a40"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1_session_token_handler.html#a5f825e5b0959f4cc16855c2b0db28a40">verifySessionToken</a> (String sessionToken)  throws BusBuddyForbiddenException </td></tr>
 <tr class="memdesc:a5f825e5b0959f4cc16855c2b0db28a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method takes in an encrypted session token in a form of string and then validates for its authenticity.  <a href="#a5f825e5b0959f4cc16855c2b0db28a40">More...</a><br/></td></tr>
 <tr class="separator:a5f825e5b0959f4cc16855c2b0db28a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:aa201916236f2cbebf8ad50bf4fd04da4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalert_1_1client_1_1_alert_user_client.html">AlertUserClient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalert_1_1controller_1_1_session_token_handler.html#aa201916236f2cbebf8ad50bf4fd04da4">userClient</a></td></tr>
+<tr class="memdesc:aa201916236f2cbebf8ad50bf4fd04da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spring autowired instance of <a class="el" href="">AlertUserClient</a> that can call the User module to verify the session token.  <a href="#aa201916236f2cbebf8ad50bf4fd04da4">More...</a><br/></td></tr>
+<tr class="separator:aa201916236f2cbebf8ad50bf4fd04da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A concrete strategy implementation of <a class="el" href="interfacealert_1_1controller_1_1_i_session_handler.html">ISessionHandler</a> that can verify the session token being passed. </p>
@@ -144,10 +151,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa201916236f2cbebf8ad50bf4fd04da4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalert_1_1client_1_1_alert_user_client.html">AlertUserClient</a> userClient</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A spring autowired instance of <a class="el" href="">AlertUserClient</a> that can call the User module to verify the session token. </p>
+<p>This is autowired via Spring Framework. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 26 2013 00:34:55 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 21:31:16 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

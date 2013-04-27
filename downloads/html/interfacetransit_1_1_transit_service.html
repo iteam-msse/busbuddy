@@ -108,7 +108,7 @@ Inheritance diagram for TransitService:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5d93801c60b116410e94085defdf7a70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtransit_1_1_route.html">Route</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacetransit_1_1_transit_service.html#a5d93801c60b116410e94085defdf7a70">getRoute</a> (String routeId)</td></tr>
+<tr class="memitem:a5d93801c60b116410e94085defdf7a70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtransit_1_1_route.html">Route</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacetransit_1_1_transit_service.html#a5d93801c60b116410e94085defdf7a70">getRoute</a> (String routeId)  throws BusBuddyNotFoundException</td></tr>
 <tr class="memdesc:a5d93801c60b116410e94085defdf7a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="classtransit_1_1_route.html">Route</a> by its unique identifier.  <a href="#a5d93801c60b116410e94085defdf7a70">More...</a><br/></td></tr>
 <tr class="separator:a5d93801c60b116410e94085defdf7a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0f7c9671866ccefaf55f7ee5d4c3ef"><td class="memItemLeft" align="right" valign="top">Set&lt; <a class="el" href="classtransit_1_1_route.html">Route</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacetransit_1_1_transit_service.html#a3f0f7c9671866ccefaf55f7ee5d4c3ef">getRoutes</a> (<a class="el" href="classtransit_1_1_location.html">Location</a> pickup, <a class="el" href="classtransit_1_1_location.html">Location</a> dropoff, int distance)</td></tr>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>routeId</em></td><td>)</td>
-          <td></td>
+          <td>  throws <a class="el" href="classcommon_1_1_bus_buddy_not_found_exception.html">BusBuddyNotFoundException</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -142,13 +142,19 @@ Public Member Functions</h2></td></tr>
 <p>Gets a <a class="el" href="classtransit_1_1_route.html">Route</a> by its unique identifier. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">routeId</td><td>The unique identifier of the <a class="el" href="classtransit_1_1_route.html">Route</a> </td></tr>
+    <tr><td class="paramname">routeId</td><td>The unique identifier of the <a class="el" href="classtransit_1_1_route.html">Route</a></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The matching <a class="el" href="classtransit_1_1_route.html">Route</a>, or null if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The matching <a class="el" href="classtransit_1_1_route.html">Route</a> </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd><b class="paramname">routeId</b> is not null or blank. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>The <a class="el" href="classtransit_1_1_route.html">Route</a> is returned if the <b class="paramname">routeId</b> is found, else null. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>The <a class="el" href="classtransit_1_1_route.html">Route</a> is returned if the <b class="paramname">routeId</b> is found, else null.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">BusBuddyNotFoundException</td><td>Thrown if the <a class="el" href="classtransit_1_1_route.html" title="A Route is a TransitVehicle path of travel, or a &quot;Line,&quot; as referred to by a TransitProvider.">Route</a> with the given <b class="paramname">routeId</b> is not found. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classtransit_1_1_i_team_transit_service_controller.html#a5d93801c60b116410e94085defdf7a70">ITeamTransitServiceController</a>.</p>
 
@@ -248,7 +254,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 26 2013 00:35:03 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 26 2013 21:31:24 for BusBuddy by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

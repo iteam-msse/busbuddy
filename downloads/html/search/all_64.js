@@ -12,6 +12,8 @@ var searchData=
   ['deleteuser',['deleteUser',['../classuser_1_1_i_team_user_management_service.html#a238f78989c9b93d88aee4952b9eb21e4',1,'user.ITeamUserManagementService.deleteUser()'],['../interfaceuser_1_1_user_management_service.html#a238f78989c9b93d88aee4952b9eb21e4',1,'user.UserManagementService.deleteUser()'],['../classuser_1_1_user_repository.html#a6975d19c999c2af84c4be5009a340c14',1,'user.UserRepository.deleteUser()']]],
   ['description',['description',['../classalert_1_1domain_1_1model_1_1_alert.html#a76d2b0133d83c43dfd8a19286ac55325',1,'alert.domain.model.Alert.description()'],['../classtransit_1_1_stop.html#a76d2b0133d83c43dfd8a19286ac55325',1,'transit.Stop.description()']]],
   ['detour',['Detour',['../classtransit_1_1_detour.html',1,'transit']]],
+  ['detour',['Detour',['../classtransit_1_1_detour.html#a9cd23b802acdfa0cc5a64d1bc30a26cb',1,'transit::Detour']]],
+  ['detourid',['detourId',['../classtransit_1_1_detour.html#a7aff0dfd3edcfb91d734348292a23b57',1,'transit::Detour']]],
   ['detours',['detours',['../classtransit_1_1_route.html#ace5d2567aa029857b0376b6696d0baf3',1,'transit::Route']]],
   ['discountedfare',['discountedFare',['../classtransit_1_1_fare.html#aaaa08296042e88d9f68fe1096be01cb4',1,'transit::Fare']]],
   ['disruptedroute',['disruptedRoute',['../classtransit_1_1_route_disruption_event.html#a77aa0c1058f32154a0b195bbd17f2e43',1,'transit::RouteDisruptionEvent']]]

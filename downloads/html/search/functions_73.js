@@ -23,8 +23,10 @@ var searchData=
   ['setpasswordhash',['setPasswordHash',['../classuser_1_1_user.html#ab42766057b552ea996700449134f9cbc',1,'user::User']]],
   ['setregularfare',['setRegularFare',['../classtransit_1_1_fare.html#afd1a1b5ae03355e550514bd7af24677f',1,'transit::Fare']]],
   ['setspec',['setSpec',['../classtracking_1_1_tracking_alert_observer.html#a8dc938e256d81578fe7a9e4895407e46',1,'tracking::TrackingAlertObserver']]],
+  ['setstops',['setStops',['../classtransit_1_1_route.html#a02125984b32ea753d7e8386a00a593b5',1,'transit::Route']]],
   ['setusertype',['setUserType',['../classuser_1_1_user.html#abba73640d1c1cdc0ded5aa4cfb88494b',1,'user::User']]],
   ['setvalid',['setValid',['../classuser_1_1_session.html#ae2b83b559319f16161a22e455359790b',1,'user::Session']]],
   ['start',['start',['../classtransit_1_1_abstract_feed_parser_template.html#a48d3d5cc147a04f4e8e9dd24979d03e6',1,'transit::AbstractFeedParserTemplate']]],
-  ['starttrackingcontroller',['startTrackingController',['../interfacetracking_1_1_i_tracking_service.html#a6edaf9211b8dca5e842a3f32c1a4b7bf',1,'tracking.ITrackingService.startTrackingController()'],['../classtracking_1_1_tracking_service_controller.html#a6edaf9211b8dca5e842a3f32c1a4b7bf',1,'tracking.TrackingServiceController.startTrackingController()']]]
+  ['starttrackingcontroller',['startTrackingController',['../interfacetracking_1_1_i_tracking_service.html#a6edaf9211b8dca5e842a3f32c1a4b7bf',1,'tracking.ITrackingService.startTrackingController()'],['../classtracking_1_1_tracking_service_controller.html#a6edaf9211b8dca5e842a3f32c1a4b7bf',1,'tracking.TrackingServiceController.startTrackingController()']]],
+  ['stop',['Stop',['../classtransit_1_1_stop.html#abc9b58a093a253e3f80f2578bf7676c8',1,'transit::Stop']]]
 ];

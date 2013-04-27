@@ -1,7 +1,6 @@
 var searchData=
 [
   ['user',['User',['../classuser_1_1_user.html',1,'user']]],
-  ['useralertexecutestrategy',['UserAlertExecuteStrategy',['../classalert_1_1service_1_1_user_alert_execute_strategy.html',1,'alert::service']]],
   ['useralertrequestmodel',['UserAlertRequestModel',['../classalert_1_1controller_1_1model_1_1_user_alert_request_model.html',1,'alert::controller::model']]],
   ['useralertservice',['UserAlertService',['../classalert_1_1service_1_1_user_alert_service.html',1,'alert::service']]],
   ['userfavoriteslist',['UserFavoritesList',['../classuser_1_1_user_favorites_list.html',1,'user']]],
