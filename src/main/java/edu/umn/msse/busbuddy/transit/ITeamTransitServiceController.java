@@ -11,6 +11,14 @@ import edu.umn.msse.busbuddy.common.BaseController;
 /**
  * The iTeam implementation of the {@link TransitService} that exposes Transit
  * data via a REST Service.
+ * 
+ * Note that this is intended to receive and respond to HTTP requests via JSON.
+ * The actual Object -> JSON transformation, as well as the specification of
+ * HTTP REST URLs is left to the development phase and is not specified here.
+ * 
+ * Errors should be communicated via standard HTTP error codes. 
+ * The {@link BaseController} will be responsible for mapping Exception types to
+ * HTTP error codes, so actual error codes are not specified explicitly here.
  */
 @Controller
 public class ITeamTransitServiceController 

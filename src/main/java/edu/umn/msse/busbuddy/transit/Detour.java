@@ -40,7 +40,7 @@ public class Detour {
 	 * @pre \paramname{affectedStops}.size() > 0
 	 *
 	 * @param detourId The Detour id
-	 * @param cause The cause
+	 * @param cause The cause (a short, informative description) of the reason for the disruption.
 	 * @param estimatedDelay The estimated delay (in minutes)
 	 * @param affectedStops The affected {@link Stop}s
 	 */

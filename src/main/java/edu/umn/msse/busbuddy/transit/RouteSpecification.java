@@ -16,7 +16,7 @@ import edu.umn.msse.busbuddy.common.Specification;
  * This Specification must validate the following conditions:
  * -# Each {@link Route} has an non-null {@link Route#routeId routeId}
  * -# Each {@link Route} has an non-blank {@link Route#routeName routeName}
- * -# Each {@link Route} has one or more {@link Route#stops Stops}
+ * -# Each {@link Route} has two or more {@link Route#stops Stops}
  */
 public class RouteSpecification implements Specification<Route> {
 

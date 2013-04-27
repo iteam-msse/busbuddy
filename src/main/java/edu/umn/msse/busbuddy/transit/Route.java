@@ -13,6 +13,8 @@ import java.util.Set;
  * 
  * Route is also the AggregateRoot of the RouteAggregate, which implies that the
  * {@link #routeId} parameter is globally unique.
+ * 
+ * @invariant {@link #stops}.size() >= 2
  */
 public class Route {
 	
@@ -62,7 +64,6 @@ public class Route {
 	public List<Stop> getStops() {
 		return stops;
 	}
-
 
 	/**
 	 * Sets the {@link Stop}s of this Route.

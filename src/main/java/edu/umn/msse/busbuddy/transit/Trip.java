@@ -7,6 +7,8 @@ import java.util.List;
  * starting point to an ending point. A {@link Trip} can be thought of as a 
  * composition of Routes, and the {@link TripService} is the service 
  * that composes them.
+ * 
+ * @invariant {@link #routes}.size() > 0
  */
 public class Trip {
 
@@ -19,6 +21,8 @@ public class Trip {
 	/**
 	 * Instantiates a new Trip with the appropriate {@link Route}s.
 	 *
+	 * @pre \paramname{routes}.size() > 0
+	 * 
 	 * @param routes The {@link Route}s of this Trip
 	 */
 	protected Trip(List<Route> routes) {
