@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import edu.umn.msse.busbuddy.alert.controller.model.AlertRequestModel;
 import edu.umn.msse.busbuddy.alert.controller.model.AlertResponseModel;
+import edu.umn.msse.busbuddy.alert.domain.AlertFactory;
 import edu.umn.msse.busbuddy.alert.domain.AlertRepository;
 import edu.umn.msse.busbuddy.alert.domain.model.Alert;
 
@@ -17,13 +18,19 @@ public abstract class AlertService {
 	 * {@see AlertExecuteStrategyFactory}. This is autowired via Spring Framework.
 	 */
 	@Autowired
-	AlertExecuteStrategyFactory alertExecuteStrategyFactory;
+	protected AlertExecuteStrategyFactory alertExecuteStrategyFactory;
 
 	/**
 	 * {@see AlertRepository}. This is autowired via Spring Framework.
 	 */
 	@Autowired
-	AlertRepository alertRepository;
+	protected AlertRepository alertRepository;
+	
+	/**
+	 * {@see AlertFactory}. This is autowired via Spring framework.
+	 */
+	@Autowired
+	protected AlertFactory alertFactory;
 
 	/**
 	 * An abstract class that must be implemented by derived classes to create a new alert model.
@@ -76,6 +83,6 @@ public abstract class AlertService {
 	 * 
 	 * @return
 	 */
-	protected abstract boolean sendAlert();
+	public abstract boolean sendAlert();
 
 }

@@ -7,13 +7,13 @@ import edu.umn.msse.busbuddy.alert.domain.AlertRepository;
 import edu.umn.msse.busbuddy.alert.domain.model.Alert;
 
 /**
- * A concrete implementation of {@link IAlertExecuteStrategy} that handles executing alert related to user.
+ * A concrete implementation of {@link IAlertExecuteStrategy} that handles executing alert related to user's regular
+ * schedule.
  */
-public class UserAlertExecuteStrategy implements IAlertExecuteStrategy {
+public class ScheduleAlertExecuteStrategy implements IAlertExecuteStrategy {
 
 	/**
-	 * An instance of {@link AlertRepository} that is used to fetch alerts that are effected by particular route. This
-	 * is autowired via Spring Framework.
+	 * An instance of {@link AlertRepository} that is used to fetch alerts. This is autowired via Spring Framework.
 	 */
 	@Autowired
 	AlertRepository alertRepository;

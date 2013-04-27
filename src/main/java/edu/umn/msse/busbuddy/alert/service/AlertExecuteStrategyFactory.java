@@ -15,7 +15,7 @@ public class AlertExecuteStrategyFactory {
 	 * @return An implementation of {@link IAlertExecuteStrategy} that can send the notification message for given
 	 *         alert.
 	 */
-	public static IAlertExecuteStrategy getAlertService(Alert alertModel) {
+	public static IAlertExecuteStrategy getAlertExecuteStrategy(Alert alertModel) {
 		return null;
 	}
 }

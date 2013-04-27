@@ -21,7 +21,7 @@ public class AlertServiceFactory {
 	 * {@see TrackingAlertService}. This is autowired via Spring Framework.
 	 */
 	@Resource
-	private TrackingAlertService trackingAlertService;;
+	private TrackingAlertService trackingAlertService;
 
 	/**
 	 * {@see TransitAlertService}. This is autowired via Spring Framework.
