@@ -11,15 +11,15 @@ import edu.umn.msse.busbuddy.common.Specification;
  * {@link TransitProvider}s in potentially different formats.
  * 
  * The algorithm sequence is as follows:
- * -# A {@link URL} of a resource location is passed into the {@link #start(URL)} method.
+ * -# A {@link URL} of a resource location is passed into the {@link #start} method.
  * This method initiates the parsing/transformation process.
- * -# The {@link #start(URL)} method calls the method {@link #loadFeed(URL)} to
+ * -# The {@link #start} method calls the method {@link #loadFeed} to
  * establish the InputStream.
- * -# The InputStream returned by {@link #loadFeed(URL)} is passed into the
- * abstract {@link #parseFeed(InputStream)} method. Subclasses will implement this as
+ * -# The InputStream returned by {@link #loadFeed} is passed into the
+ * abstract {@link #parseFeed} method. Subclasses will implement this as
  * necessary to produce the resulting {@link Route}s
  * -# The newly created {@link Route}s are saved to the {@link RouteRepository} via the
- * {@link #saveRoutes(Set<Route>)} method.
+ * {@link #saveRoutes} method.
  */
 public abstract class AbstractFeedParserTemplate {
 	

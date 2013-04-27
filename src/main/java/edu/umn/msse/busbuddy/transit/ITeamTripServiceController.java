@@ -10,6 +10,10 @@ import edu.umn.msse.busbuddy.common.BaseController;
  * 
  * Note: The actual {@link Trip} calculation algorithm is not specified here
  * and is beyond the scope of this project.
+ * 
+ * Errors should be communicated via standard HTTP error codes. 
+ * The {@link BaseController} will be responsible for mapping Exception types to
+ * HTTP error codes, so actual error codes are not specified explicitly here.
  */
 @Controller
 public class ITeamTripServiceController extends BaseController implements TripService {

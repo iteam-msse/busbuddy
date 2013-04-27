@@ -14,7 +14,7 @@ public class GTFSFeedParser extends AbstractFeedParserTemplate {
 	 * Parse the <a href="https://developers.google.com/transit/gtfs/">GTFS</a> 
 	 * format ZIP files into {@link Route}s.
 	 * 
-	 * @see AbstractFeedParserTemplate#parseFeed(InputStream)
+	 * @see AbstractFeedParserTemplate#parseFeed
 	 */
 	@Override
 	protected Set<Route> parseFeed(InputStream feed) {

@@ -38,7 +38,7 @@ public interface RouteRepository {
 	 *
 	 * @pre The {@link Route}s have been validated with all appropriate
 	 * business rules. @see RouteSpecification
-	 * @post The {@link Routes} are available for retrieval by id and
+	 * @post The {@link Route}s are available for retrieval by id and
 	 * also by appropriate Queries.
 	 * 
 	 * @param route The {@link Route} to save.

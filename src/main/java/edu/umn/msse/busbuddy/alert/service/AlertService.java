@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import edu.umn.msse.busbuddy.alert.controller.model.AlertRequestModel;
 import edu.umn.msse.busbuddy.alert.controller.model.AlertResponseModel;
+import edu.umn.msse.busbuddy.alert.domain.AlertFactory;
 import edu.umn.msse.busbuddy.alert.domain.AlertRepository;
 import edu.umn.msse.busbuddy.alert.domain.model.Alert;
 
@@ -17,22 +18,29 @@ public abstract class AlertService {
 	 * {@see AlertExecuteStrategyFactory}. This is autowired via Spring Framework.
 	 */
 	@Autowired
-	AlertExecuteStrategyFactory alertExecuteStrategyFactory;
+	protected AlertExecuteStrategyFactory alertExecuteStrategyFactory;
 
 	/**
 	 * {@see AlertRepository}. This is autowired via Spring Framework.
 	 */
 	@Autowired
-	AlertRepository alertRepository;
+	protected AlertRepository alertRepository;
+	
+	/**
+	 * {@see AlertFactory}. This is autowired via Spring framework.
+	 */
+	@Autowired
+	protected AlertFactory alertFactory;
 
 	/**
 	 * An abstract class that must be implemented by derived classes to create a new alert model.
 	 * 
 	 * @pre An alertRequest model must be supplied that must have necessary information to create an alert
 	 * @param requestModel
+	 *            A {@link AlertResponseModel} that has necessary information to create a new alert model.
 	 * @return Returns an {@link AlertReponseModel} that contains information needed by the caller.
 	 */
-	public abstract AlertResponseModel createAlert(AlertRequestModel requestModel);
+	protected abstract AlertResponseModel createAlert(AlertRequestModel requestModel);
 
 	/**
 	 * Takes in an {@link Alert} model to persist it into db.
@@ -65,7 +73,7 @@ public abstract class AlertService {
 	 *            A valid {@link Alert} model
 	 * @return An {@link AlertResponseModel} that has the success or error message.
 	 */
-	public abstract AlertResponseModel updateAlert(Alert alertModel);
+	protected abstract AlertResponseModel updateAlert(Alert alertModel);
 
 	/**
 	 * Finds all the alerts that are initiated by this service and calls {@link AlertExecuteStrategyFactory} to find

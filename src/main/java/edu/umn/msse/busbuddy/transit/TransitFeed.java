@@ -6,7 +6,7 @@ import java.util.Set;
  * A TransitFeed is an abstraction over a service or set of services that
  * provide information about {@link Route}s. This differs from the
  * {@link TransitService} interface in that a TransitFeed does not expose
- * provenance information such as the {@link TransitService#getTransitlnfo()
+ * provenance information such as the {@link TransitService#getTransitlnfo}
  * method.
  * 
  * Because of this, a single {@link TransitService} (or {@link TransitProvider})

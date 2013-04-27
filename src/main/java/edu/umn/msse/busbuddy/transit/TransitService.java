@@ -3,6 +3,8 @@ package edu.umn.msse.busbuddy.transit;
 import java.net.URL;
 import java.util.Set;
 
+import edu.umn.msse.busbuddy.common.BusBuddyNotFoundException;
+
 /**
  * The TransitService is an interface to get {@link Route}/{@link Fare}/{@link Detour} 
  * information from a {@link TransitProvider}. This service will provide a consistent 
@@ -14,12 +16,16 @@ public interface TransitService {
 	 * Gets a {@link Route} by its unique identifier.
 	 *
 	 * @param routeId The unique identifier of the {@link Route}
-	 * @return The matching {@link Route}, or null if not found
+	 * 
+	 * @return The matching {@link Route}
 	 * @pre \paramname{routeId} is not null or blank.
 	 * @post The {@link Route} is returned if
 	 * the \paramname{routeId} is found, else null.
+	 * 
+	 * @throws BusBuddyNotFoundException 
+	 * 				Thrown if the Route with the given \paramname{routeId} is not found.
 	 */
-	public Route getRoute(String routeId);
+	public Route getRoute(String routeId) throws BusBuddyNotFoundException;
 	
 	/**
 	 * Gets all available {@link Route}s that match a \paramname{pickup}

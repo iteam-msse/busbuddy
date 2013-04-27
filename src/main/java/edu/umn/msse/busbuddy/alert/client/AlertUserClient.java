@@ -33,4 +33,15 @@ public class AlertUserClient {
 		return null;
 	}
 
+	/**
+	 * Calls the user module to verify the authenticity of session token being passed.
+	 * 
+	 * @param sessionToken
+	 *            An encrypted token that needs to be validated.
+	 * @return A boolean flag indicating the authenticity of the session token.
+	 */
+	public boolean verifySessionToken(String sessionToken) {
+		return true;
+	}
+
 }

@@ -3,21 +3,21 @@ package edu.umn.msse.busbuddy.transit;
 import java.util.Set;
 
 /**
- * An Adapter Class to allow a {@GoogleTransitServiceAPI} service to appear as
+ * An Adapter Class to allow a {@link GoogleTransitServiceAPI} service to appear as
  * a {@link TransitService}.
  */
 public class GoogleTransitServiceAdapter implements TransitFeed {
 
 	/** 
-	 * The {@GoogleTransitServiceAPI} to adapt as a {@link TransitService}.
+	 * The {@link GoogleTransitServiceAPI} to adapt as a {@link TransitService}.
 	 */
 	private GoogleTransitServiceAPI googleTransitServiceAPI;
 	
 	/**
 	 * Instantiates a new GoogleTransitServiceAdapter with a
-	 * {@GoogleTransitServiceAPI} to delegate calls to.
+	 * {@link GoogleTransitServiceAPI} to delegate calls to.
 	 *
-	 * @param googleTransitServiceAPI the google transit service api
+	 * @param googleTransitServiceAPI The {@link GoogleTransitServiceAPI} to adapt.
 	 */
 	public GoogleTransitServiceAdapter(GoogleTransitServiceAPI googleTransitServiceAPI){
 		super();

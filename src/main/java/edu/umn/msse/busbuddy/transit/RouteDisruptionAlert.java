@@ -6,12 +6,12 @@ import java.net.URL;
  * An Alert indicating a disruption of normal {@link Route} availability
  * or scheduling. Clients interested in more specific information about
  * the disruption, including cause and affected {@link Stop}s, should
- * use the {@link #getTransitServiceUrl()} method to establish a link to 
+ * use the getTransitServiceUrl() method to establish a link to 
  * the appropriate {@link TransitService}, and then obtain the affected
- * {@link Route} using the routeId from the {@link #getRouteId()} method.
+ * {@link Route} using the routeId from the getRouteId() method.
  * 
  * Once retrieved, current {@link Detour} information can be accessed
- * via the {@link Route#getDetours()} method on the given {@link Route}.
+ * via the {@link Route} getDetours() method on the given {@link Route}.
  * This method, upon subsequent retrievals of the {@link Route}, will
  * return an empty set when all {@link Detour}s have cleared. 
  */

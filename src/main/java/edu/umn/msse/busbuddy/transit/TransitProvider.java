@@ -65,10 +65,22 @@ public abstract class TransitProvider {
 		this.name = name;
 	}
 
+	/**
+	 * Register the provided {@link TransitProviderObserver} as an observer to this
+	 * class.
+	 * 
+	 * @param transitProviderObserver The {@link TransitProviderObserver} to unregister.
+	 */
 	public void registerObserver(TransitProviderObserver transitProviderObserver) {
 		//
 	}
 
+	/**
+	 * Unregister the provided {@link TransitProviderObserver} as an observer to this
+	 * class.
+	 * 
+	 * @param transitProviderObserver The {@link TransitProviderObserver} to unregister.
+	 */
 	public void unregisterObserver(TransitProviderObserver transitProviderObserver) {
 		//
 	}

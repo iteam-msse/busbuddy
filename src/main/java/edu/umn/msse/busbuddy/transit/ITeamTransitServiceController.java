@@ -11,6 +11,14 @@ import edu.umn.msse.busbuddy.common.BaseController;
 /**
  * The iTeam implementation of the {@link TransitService} that exposes Transit
  * data via a REST Service.
+ * 
+ * Note that this is intended to receive and respond to HTTP requests via JSON.
+ * The actual Object -> JSON transformation, as well as the specification of
+ * HTTP REST URLs is left to the development phase and is not specified here.
+ * 
+ * Errors should be communicated via standard HTTP error codes. 
+ * The {@link BaseController} will be responsible for mapping Exception types to
+ * HTTP error codes, so actual error codes are not specified explicitly here.
  */
 @Controller
 public class ITeamTransitServiceController 
@@ -26,14 +34,18 @@ public class ITeamTransitServiceController
 	private TransitFeed transitFeed;
 	
 	/**
-	 * The inter-module dependency to the Alert Module. The {@link AlertRequestController}
+	 * The inter-module dependency to the Alert Module. The
+	 * {@link edu.umn.msse.busbuddy.tracking.TransitVehicle AlertRequestController}
 	 * accepts requests from this class to inform the Alert Module of a
 	 * {@link RouteDisruptionAlert}.
 	 * 
-	 * NOTE: This represents a conceptual dependency to the {@link AlertRequestController}.
-	 * During implementation phase, actual communication with the {@link AlertRequestController}
+	 * NOTE: This represents a conceptual dependency to the 
+	 * {@link edu.umn.msse.busbuddy.alert.controller.AlertRequestController AlertRequestController}.
+	 * During implementation phase, actual communication with the 
+	 * {@link edu.umn.msse.busbuddy.alert.controller.AlertRequestController AlertRequestController}
 	 * will happen via some client object or service. Implementation of the actual client and
-	 * its link to the {@link AlertRequestController} (to include REST URLS and JSON structure)
+	 * its link to the 
+	 * {@link edu.umn.msse.busbuddy.alert.controller.AlertRequestController AlertRequestController} (to include REST URLS and JSON structure)
 	 * will be left to the next phase, or as design details for the development team.
 	 */
 	private AlertRequestController alertRequestController;
@@ -44,7 +56,8 @@ public class ITeamTransitServiceController
 	 * 
 	 * - Internally register the {@link RouteDisruptionEvent} so that any subsequent requests
 	 * for affected {@link Route}s will include appropriate {@link Detour} information.
-	 * - Notify the Alert module via the {@link AlertRequestController} of the disruption with the updated
+	 * - Notify the Alert module via the 
+	 * {@link edu.umn.msse.busbuddy.alert.controller.AlertRequestController AlertRequestController} of the disruption with the updated
 	 * {@link Route}. This updated {@link Route} should include all necessary {@link Detour} information.
 	 */
 	@Override
