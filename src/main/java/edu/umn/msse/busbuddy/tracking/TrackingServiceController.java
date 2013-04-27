@@ -56,7 +56,7 @@ public class TrackingServiceController implements ITrackingService {
 	}
 	
 	/**
-	 * Gets a list of saved alerts from the {@link AlertService} and restores then on tracking module startup.
+	 * Gets a list of saved alerts from the {@link alert.service.AlertService} and restores then on tracking module startup.
 	 */
 	public void startTrackingController() {}
 

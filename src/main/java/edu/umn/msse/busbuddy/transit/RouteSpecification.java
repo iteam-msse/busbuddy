@@ -5,7 +5,7 @@ import edu.umn.msse.busbuddy.common.Specification;
 /**
  * A Specification Pattern class for validating a {@link Route}. Validation
  * can happen in this class, or business rules can be combined using the 
- * and, or, or not methods of separate {@link common.Specification}s. 
+ * and, or, or not methods of separate Specifications. 
  * 
  * This Specification is necessary because {@link Route}s aren't necessarily created
  * by a controlled Factory, but as a result of parsing of input files via subclasses 

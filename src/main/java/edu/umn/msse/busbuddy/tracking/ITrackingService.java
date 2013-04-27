@@ -29,7 +29,7 @@ public interface ITrackingService {
 	public void addUserTrackingAlert(UserTrackingAlertObject utao);
 	/**
 	 * Logic necessary when the tracking controller is cold started.  
-	 * Retrieves the saved user alerts from the {@link IAlertService} 
+	 * Retrieves the saved user alerts from the {@link alert.service.AlertService} 
 	 */
 	public void startTrackingController();
 	/**

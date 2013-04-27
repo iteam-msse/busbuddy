@@ -33,7 +33,7 @@ public class Route {
 	/**
 	 * And ordered list of {@link Stop}s to be visited in this Route. Stops
 	 * must be visited in order unless there is a disruption in service, in
-	 * which case clients can expect a {@link RouteDistruptionAlert} and/or
+	 * which case clients can expect a {@link RouteDisruptionAlert} and/or
 	 * an {@link Detour}.
 	 */
 	private List<Stop> stops;

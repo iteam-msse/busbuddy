@@ -40,7 +40,7 @@ public class RecurringAlert extends Alert {
 	private int repeatEvery;
 
 	/**
-	 * Type of recurring alert. Value is as defined in {@link AlertRecurringType}
+	 * Type of recurring alert. Value is as defined in {@link alert.enums.AlertRecurringType}
 	 */
 	private AlertRecurringType alertRecurringType;
 
