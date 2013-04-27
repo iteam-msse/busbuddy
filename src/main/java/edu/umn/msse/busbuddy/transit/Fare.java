@@ -30,8 +30,10 @@ public class Fare {
 	private BigDecimal discountedFare;
 	
 	/**
-	 * Instantiates a new Fare.
-	 *
+	 * Instantiates a new Fare with a regular fare and no discounted fair.
+	 * 
+	 * @pre \paramname{regularFare} >= 0  
+	 * 
 	 * @param regularFare The Regular Fare
 	 */
 	public Fare(BigDecimal regularFare){
@@ -40,13 +42,13 @@ public class Fare {
 	
 	/**
 	 * Instantiates a new Fare with both a regular fare and a discounted fare.
-	 *
-	 * @param regularFare The Regular Fare
-	 * @param discountedFare The Discounted Fare
 	 * 
 	 * @pre \paramname{regularFare} >= 0 
 	 * @pre \paramname{discountedFare} >= 0 
 	 * @pre \paramname{discountedFare} <= \paramname{discountedFare} 
+	 * 
+	 * @param regularFare The Regular Fare
+	 * @param discountedFare The Discounted Fare
 	 */
 	public Fare(BigDecimal regularFare, BigDecimal discountedFare){
 		super();
